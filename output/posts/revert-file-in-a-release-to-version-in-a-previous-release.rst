@@ -51,7 +51,7 @@ Steps
 
 #. Verify changes
 
-   See link://slug/comparing-versions-of-a-file-between-2-git-branches
+   See `here <link://slug/comparing-versions-of-a-file-between-2-git-branches>`_
 
    .. code-block::
 
@@ -60,7 +60,7 @@ Steps
    Should show changes because file has been overwritten.
 
 
-
+comparing-versions-of-a-file-between-2-git-branches
 
 
 
