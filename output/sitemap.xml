@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.SoftDevTrain.com/2018/index.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/archive.html</loc>
@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_git-standard-usage.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_nikola.html</loc>
@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/git-release.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/git.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/index.html</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/index.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/listings/index.html</loc>
@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html</loc>
-  <lastmod>2018-03-14T21:42:00Z</lastmod>
+  <lastmod>2018-03-14T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</loc>

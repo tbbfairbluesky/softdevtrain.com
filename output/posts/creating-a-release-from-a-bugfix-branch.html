@@ -100,59 +100,60 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first">Check out the <tt class="docutils literal"><span class="pre">release-branch</span></tt> (the branch that the <tt class="docutils literal"><span class="pre">bugfix-branch</span></tt> came off of in the first place).</p>
-<pre class="code text"><a name="rest_code_c4926e3d8c04436fb3f83c3b5a6e75ea-1"></a>$ git checkout release/v3.25.0
+<pre class="code text"><a name="rest_code_f4c7e9eff47141078bcc4d8527b3daba-1"></a>$ git checkout release/v3.25.0
 </pre>
 </li>
 <li>
 <p class="first">Create and checkout a <em>new</em> branch which will contain the bugfix changes and the release. We'll
 call this <em>new</em> branch the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> branch.</p>
-<pre class="code bash"><a name="rest_code_4812d2dc95384634956cdc4f1d0127da-1"></a>$ git branch release/v3.25.1    <span class="c1"># create the bugfix-release branch</span>
-<a name="rest_code_4812d2dc95384634956cdc4f1d0127da-2"></a>$ git checkout release/v3.25.1  <span class="c1"># checkout the bugfix-release branch</span>
+<pre class="code bash"><a name="rest_code_d7d86b19b26848bf898eb072406a670e-1"></a>$ git branch release/v3.25.1    <span class="c1"># create the bugfix-release branch</span>
+<a name="rest_code_d7d86b19b26848bf898eb072406a670e-2"></a>$ git checkout release/v3.25.1  <span class="c1"># checkout the bugfix-release branch</span>
 </pre>
 </li>
 <li>
 <p class="first">Merge the <tt class="docutils literal"><span class="pre">bugfix-branch</span></tt> changes into the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> branch and squash the changes into one big change set.</p>
-<pre class="code text"><a name="rest_code_ad712dc387a24f498191db19f438fb98-1"></a>$ git merge --squash bugfix-branch
+<pre class="code text"><a name="rest_code_d9710155c494433fa9529b428077cbb1-1"></a>$ git merge --squash bugfix-branch
 </pre>
 </li>
 <li>
 <p class="first">Fix up the <tt class="docutils literal">version.txt</tt> file</p>
-<pre class="code text"><a name="rest_code_9823c45c89fc44368a2a383e9d242878-1"></a>$ git_current_branch &gt; version.txt
+<pre class="code text"><a name="rest_code_8522c6a7dc6a495d8de33e8f1d7e9e55-1"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_8522c6a7dc6a495d8de33e8f1d7e9e55-2"></a>$ git add version.txt
 </pre>
 <p>Note: <tt class="docutils literal">git_current_branch</tt> should be an alias defined as:</p>
-<pre class="code text"><a name="rest_code_7b263bca89644e678fe1f0e6b99182bb-1"></a>$ alias git_current_branch='git symbolic-ref -q HEAD --short'
+<pre class="code text"><a name="rest_code_b07f4fef3ad944c38a043ca4a67283dd-1"></a>$ alias git_current_branch='git symbolic-ref -q HEAD --short'
 </pre>
 </li>
 <li>
 <p class="first">Commit all changes to the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> branch</p>
-<pre class="code text"><a name="rest_code_46bc2a053f45416e8a3b0762794d53da-1"></a>$ git commit -m "Big description of the bugfix changes"
+<pre class="code text"><a name="rest_code_f20adf2a949a4f95b7df9915fb1e7e8a-1"></a>$ git commit -m "Big description of the bugfix changes"
 </pre>
 <p>Now all the changes from the <tt class="docutils literal"><span class="pre">bugfix-branch</span></tt> are in the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> (e.g. release/v3.25.1) branch.</p>
 </li>
 <li>
 <p class="first">Push everything to the origin (GitHub)</p>
-<pre class="code text"><a name="rest_code_d5e887e4f72b4c7aa591c442991c324d-1"></a>$ git push origin --all
+<pre class="code text"><a name="rest_code_d482138c95084d7d8fc06d57a5eb1652-1"></a>$ git push origin --all
 </pre>
 </li>
 <li>
 <p class="first">Remove the local <tt class="docutils literal"><span class="pre">bugfix-branch</span></tt> whose changes you've now merged and committed to the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> branch.</p>
-<pre class="code text"><a name="rest_code_2ce084a143f8483c8ad048ad4d442654-1"></a>$ git branch -D bugfix-branch
+<pre class="code text"><a name="rest_code_d13579e6b13b44cda1611de2f6f89848-1"></a>$ git branch -D bugfix-branch
 </pre>
 </li>
 <li>
 <p class="first">Remove the remote <tt class="docutils literal"><span class="pre">bugfix-branch</span></tt> from the origin repository (GitHub)</p>
-<pre class="code text"><a name="rest_code_c89cfb3241f244bdb55a3df141bc2f8c-1"></a>$ git push origin --delete bugfix-branch
+<pre class="code text"><a name="rest_code_98e69533b54d4ed6afb8488d3265d337-1"></a>$ git push origin --delete bugfix-branch
 </pre>
 </li>
 <li>
 <p class="first">Create a tag in the <tt class="docutils literal"><span class="pre">bugfix-release</span></tt> branch</p>
-<pre class="code text"><a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-1"></a>$ git checkout *&lt;bugfix-release&gt;*
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-2"></a>$ git checkout release/v3.25.1
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-3"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-4"></a>$ git add version.txt
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-5"></a>$ git commit -m "Created v3.25.1"
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-6"></a>$ git tag -a v3.25.1 -m "Tagging v3.25.1"
-<a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-7"></a>$ git push --tags origin release/v3.25.1
+<pre class="code text"><a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-1"></a>$ git checkout *&lt;bugfix-release&gt;*
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-2"></a>$ git checkout release/v3.25.1
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-3"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-4"></a>$ git add version.txt
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-5"></a>$ git commit -m "Created v3.25.1"
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-6"></a>$ git tag -a v3.25.1 -m "Tagging v3.25.1"
+<a name="rest_code_1abe2cfe3c82478e94fc92c2d29241c5-7"></a>$ git push --tags origin release/v3.25.1
 </pre>
 </li>
 <li>
@@ -168,73 +169,17 @@ call this <em>new</em> branch the <tt class="docutils literal"><span class="pre"
 <p>You do not want to make further changes to that branch.</p>
 <p>Also, you <em>most likely</em> (but not always) want your bug fix to go into the master branch so that it gets included
 in any future releases.</p>
-<pre class="code bash"><a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-1"></a>$ git checkout master
-<a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-2"></a>$ git merge release/v3.25.1 <span class="c1"># substitute your bugfix release</span>
-<a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-3"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-4"></a>$ git add version.txt
-<a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-5"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
-<a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-6"></a>$ git push origin --all
+<pre class="code bash"><a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-1"></a>$ git checkout master
+<a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-2"></a>$ git merge release/v3.25.1 <span class="c1"># substitute your bugfix release</span>
+<a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-3"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-4"></a>$ git add version.txt
+<a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-5"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
+<a name="rest_code_c3d99416f30e42cba23e25e5c427c11d-6"></a>$ git push origin --all
 </pre>
 </li>
 <li>
 <p class="first">As always, further feature changes should go in a feature branch (off of <tt class="docutils literal">master</tt>) and further bugfix changes should
 go in a bugfix branch (off of the release for which the bugs are being fixed).</p>
-</li>
-<li>
-<p class="first">Push everything to the origin (GitHub)</p>
-<pre class="code text"><a name="rest_code_29f286123c6047b8a8960f490126cbf5-1"></a>$ git push origin --all
-</pre>
-</li>
-<li>
-<p class="first">Remove the local <tt class="docutils literal"><span class="pre">feature-branch</span></tt> whose changes you've now merged and committed to the <tt class="docutils literal">master</tt> branch.</p>
-<pre class="code text"><a name="rest_code_26e1a22e7c664c30a12ededcb4dc4268-1"></a>$ git branch -D feature-branch
-</pre>
-</li>
-<li>
-<p class="first">Remove the remote <tt class="docutils literal"><span class="pre">feature-branch</span></tt> from the origin repository (GitHub)</p>
-<pre class="code text"><a name="rest_code_935c1db37f274edcacb61a212b87ae4e-1"></a>$ git push origin --delete feature-branch
-</pre>
-</li>
-<li>
-<p class="first">Create a release version in a release branch</p>
-<pre class="code bash"><a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-1"></a>$ git checkout master
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-3"></a>$ git checkout release/v1.7.0
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-4"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-5"></a>$ git add version.txt
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
-<a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-8"></a>$ git push --tags origin release/v1.7.0
-</pre>
-</li>
-<li>
-<p class="first">Go to <a class="reference external" href="https://github.com">https://github.com</a>, login in, and create a release from the tag</p>
-<p>Releases --&gt; Draft a new release --&gt; Select tag</p>
-<ul class="simple">
-<li>Provide a Title: e.g. "Multirun ICA+fIX on 7T Retinotopy Data"</li>
-<li>Provide a Description: e.g. "This release is intended to be used for running Multirun ICA+FIX processing on 7T Retinotopy data"</li>
-<li>Publish the release</li>
-</ul>
-</li>
-<li>
-<p class="first">Make sure you don't leave your local <tt class="docutils literal">git</tt> repository with the release branch checked out.</p>
-<p>You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
-e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch.</p>
-<pre class="code text"><a name="rest_code_1ef1ac41fd134831ac3485a064250026-1"></a>$ git checkout master
-</pre>
-</li>
-<li>
-<p class="first">Make sure all the changes in the release branch are merged into the <tt class="docutils literal">master</tt> branch and the <tt class="docutils literal">master</tt>
-branch is ready to use as a starting point for future changes.</p>
-<pre class="code bash"><a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
-<a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-2"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-3"></a>$ git add version.txt
-<a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
-<a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-5"></a>$ git push origin --all
-</pre>
-</li>
-<li>
-<p class="first">Further changes should be done in a new feature branch, not on the <tt class="docutils literal">master</tt> branch.</p>
 </li>
 </ol>
 </div>
