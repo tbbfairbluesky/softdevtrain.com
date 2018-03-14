@@ -7,15 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.SoftDevTrain.com/2018/index.html</loc>
-  <lastmod>2018-03-14T18:19:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/archive.html</loc>
-  <lastmod>2018-03-14T18:08:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_git-standard-usage.html</loc>
-  <lastmod>2018-03-14T18:19:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_nikola.html</loc>
@@ -27,11 +27,11 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/git.html</loc>
-  <lastmod>2018-03-14T18:19:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/index.html</loc>
-  <lastmod>2018-03-14T18:08:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/nikola-setup-git.html</loc>
@@ -51,7 +51,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/index.html</loc>
-  <lastmod>2018-03-14T18:19:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/listings/index.html</loc>
@@ -60,6 +60,10 @@
  <url>
   <loc>http://www.SoftDevTrain.com/pages/setting-up-nikola-git-and-git-ftp.html</loc>
   <lastmod>2018-03-13T19:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</loc>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</loc>
@@ -75,6 +79,6 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/update-git.html</loc>
-  <lastmod>2018-03-14T18:12:00Z</lastmod>
+  <lastmod>2018-03-14T19:56:00Z</lastmod>
  </url>
 </urlset>
