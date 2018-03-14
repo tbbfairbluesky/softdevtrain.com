@@ -22,7 +22,7 @@ article: http://ogp.me/ns/article#
 <meta property="og:url" content="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html">
 <meta property="og:description" content="Step by step guide to creating a release from a git feature branch">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-03-14T10:13:36-05:00">
+<meta property="article:published_time" content="2018-03-14T11:35:00-05:00">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content="git release">
 </head>
@@ -68,7 +68,7 @@ article: http://ogp.me/ns/article#
             </span>
             <span class="dateline">
                 <a href="#" rel="bookmark"><i class="mdi-device-access-time"></i>
-                    <time class="published dt-published" datetime="2018-03-14T10:13:36-05:00" itemprop="datePublished" title="2018-03-14 10:13">2018-03-14 10:13</time></a>
+                    <time class="published dt-published" datetime="2018-03-14T11:35:00-05:00" itemprop="datePublished" title="2018-03-14 11:35">2018-03-14 11:35</time></a>
             </span>
                 <meta name="description" itemprop="description" content="Step by step guide to creating a release from a git feature branch">
 </div>
@@ -95,8 +95,8 @@ article: http://ogp.me/ns/article#
 <p class="first">Merge the <tt class="docutils literal">master</tt> branch into the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> and get all conflicts resolved.</p>
 <p>This is in case any changes were made in the <tt class="docutils literal">master</tt> branch since the point at which
 the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> was branched off from the <tt class="docutils literal">master</tt></p>
-<pre class="code text"><a name="rest_code_67564b57365a40d296ab96176273fe63-1"></a>$ git checkout feature-branch
-<a name="rest_code_67564b57365a40d296ab96176273fe63-2"></a>$ git merge master
+<pre class="code text"><a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-1"></a>$ git checkout feature-branch
+<a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-2"></a>$ git merge master
 </pre>
 </li>
 <li>
@@ -105,51 +105,51 @@ the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> wa
 to ensure that these changes are included in any subsequent feature change branches. (Since
 feature change branches should be branches off of the <tt class="docutils literal">master</tt>.) The squashing means that all the
 changes for the current feature will be under one commit comment.</p>
-<pre class="code text"><a name="rest_code_e9e758f4356743299ccfb134739d2050-1"></a>$ git checkout master
-<a name="rest_code_e9e758f4356743299ccfb134739d2050-2"></a>$ git merge --squash feature-branch
+<pre class="code text"><a name="rest_code_0a23fb20e6d540d7b083d73334682a90-1"></a>$ git checkout master
+<a name="rest_code_0a23fb20e6d540d7b083d73334682a90-2"></a>$ git merge --squash feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Fix up the <tt class="docutils literal">version.txt</tt> file -- make it say <tt class="docutils literal">master</tt></p>
-<pre class="code text"><a name="rest_code_9fb0679218914fe1b2dad464e5978201-1"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_9fb0679218914fe1b2dad464e5978201-2"></a>$ get add version.txt
+<pre class="code text"><a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-1"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-2"></a>$ get add version.txt
 </pre>
-<p>Note: <tt class="docutils literal">git_current_branch</tt> is an alias defined as:</p>
-<pre class="code text"><a name="rest_code_0862e8161ce64d7580c32aab13304778-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
+<p>Note: <tt class="docutils literal">git_current_branch</tt> should be an alias defined as:</p>
+<pre class="code text"><a name="rest_code_6bc3b41f4f8448fdaeea4019f220c198-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
 </pre>
 </li>
 <li>
 <p class="first">Commit all changes to the <tt class="docutils literal">master</tt> branch. This is the one commit for all of the
 feature-related changes</p>
-<pre class="code text"><a name="rest_code_d989e47c18264266a69aaeb5eca5d412-1"></a>$ git commit -m "Big description of feature branch changes"
+<pre class="code text"><a name="rest_code_f322d0c9e6f24b04bcd5c7947ab859c7-1"></a>$ git commit -m "Big description of feature branch changes"
 </pre>
 <p>Now all the changes you made in <tt class="docutils literal"><span class="pre">feature-branch</span></tt> are in the <tt class="docutils literal">master</tt> branch.</p>
 </li>
 <li>
 <p class="first">Push everything to the origin (GitHub)</p>
-<pre class="code text"><a name="rest_code_f74b6bba9f0f4c98ae6870d503e428f6-1"></a>$ git push origin --all
+<pre class="code text"><a name="rest_code_e6d6b24d7a1d4dbdb9f431d7b99ab398-1"></a>$ git push origin --all
 </pre>
 </li>
 <li>
 <p class="first">Remove the local <tt class="docutils literal"><span class="pre">feature-branch</span></tt> whose changes you've now merged and committed to the <tt class="docutils literal">master</tt> branch.</p>
-<pre class="code text"><a name="rest_code_69331e5767f84a36aac54f69d4a5af3e-1"></a>$ git branch -D feature-branch
+<pre class="code text"><a name="rest_code_1d0ca537b90940bda022c72976706e95-1"></a>$ git branch -D feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Remove the remote <tt class="docutils literal"><span class="pre">feature-branch</span></tt> from the origin repository (GitHub)</p>
-<pre class="code text"><a name="rest_code_a55c32fc403a4a6f91fdfd578a9b37a4-1"></a>$ git push origin --delete feature-branch
+<pre class="code text"><a name="rest_code_99d72456c4a34062ab20c022c2f1d9cf-1"></a>$ git push origin --delete feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Create a release version in a release branch</p>
-<pre class="code bash"><a name="rest_code_06e999a5d7364027aa1da5f26a200184-1"></a>$ git checkout master
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-3"></a>$ git checkout release/v1.7.0
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-4"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-5"></a>$ git add version.txt
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
-<a name="rest_code_06e999a5d7364027aa1da5f26a200184-8"></a>$ git push --tags origin release/v1.7.0
+<pre class="code bash"><a name="rest_code_93525035aef94cc2a73e76855c131801-1"></a>$ git checkout master
+<a name="rest_code_93525035aef94cc2a73e76855c131801-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
+<a name="rest_code_93525035aef94cc2a73e76855c131801-3"></a>$ git checkout release/v1.7.0
+<a name="rest_code_93525035aef94cc2a73e76855c131801-4"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_93525035aef94cc2a73e76855c131801-5"></a>$ git add version.txt
+<a name="rest_code_93525035aef94cc2a73e76855c131801-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
+<a name="rest_code_93525035aef94cc2a73e76855c131801-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
+<a name="rest_code_93525035aef94cc2a73e76855c131801-8"></a>$ git push --tags origin release/v1.7.0
 </pre>
 </li>
 <li>
@@ -165,16 +165,17 @@ feature-related changes</p>
 <p class="first">Make sure you don't leave your local <tt class="docutils literal">git</tt> repository with the release branch checked out.</p>
 <p>You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
 e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch.</p>
-<pre class="code text"><a name="rest_code_f7db56dd18dd4b849e89db6194a50f81-1"></a>$ git checkout master
+<pre class="code text"><a name="rest_code_c429251b1427488bbdde1ae0b0dc76f2-1"></a>$ git checkout master
 </pre>
 </li>
 <li>
 <p class="first">Make sure all the changes in the release branch are merged into the <tt class="docutils literal">master</tt> branch and the <tt class="docutils literal">master</tt>
 branch is ready to use as a starting point for future changes.</p>
-<pre class="code bash"><a name="rest_code_ae92f81fde3140e49b7b57a62c692214-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
-<a name="rest_code_ae92f81fde3140e49b7b57a62c692214-2"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_ae92f81fde3140e49b7b57a62c692214-3"></a>$ git add version.txt
-<a name="rest_code_ae92f81fde3140e49b7b57a62c692214-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
+<pre class="code bash"><a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
+<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-2"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-3"></a>$ git add version.txt
+<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
+<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-5"></a>$ git push origin --all
 </pre>
 </li>
 <li>

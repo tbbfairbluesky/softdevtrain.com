@@ -1,11 +1,12 @@
 .. title: Creating a Release from a Feature Branch
 .. slug: creating-a-release-from-a-feature-branch
-.. date: 2018-03-14 10:13:36 UTC-05:00
+.. date: 2018-03-14 11:35:00 UTC-05:00
 .. tags: git release, git
 .. category: Git Standard Usage 
 .. link: 
 .. description: Step by step guide to creating a release from a git feature branch
 .. type: text
+.. updated: 2018-03-14 11:35:00 UTC-05:00
 
 Assumptions
 ===========
@@ -48,7 +49,7 @@ Steps
 	  $ git_current_branch > version.txt
 	  $ get add version.txt
 
-   Note: ``git_current_branch`` is an alias defined as:
+   Note: ``git_current_branch`` should be an alias defined as:
 
    .. code-block::
 
@@ -120,6 +121,7 @@ Steps
 	  $ git_current_branch > version.txt
 	  $ git add version.txt
 	  $ git commit -m "Updated version.txt"
+	  $ git push origin --all
 
 #. Further changes should be done in a new feature branch, not on the ``master`` branch.
    

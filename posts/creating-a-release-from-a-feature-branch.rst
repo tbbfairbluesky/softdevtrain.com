@@ -49,7 +49,7 @@ Steps
 	  $ git_current_branch > version.txt
 	  $ get add version.txt
 
-   Note: ``git_current_branch`` is an alias defined as:
+   Note: ``git_current_branch`` should be an alias defined as:
 
    .. code-block::
 
@@ -121,6 +121,7 @@ Steps
 	  $ git_current_branch > version.txt
 	  $ git add version.txt
 	  $ git commit -m "Updated version.txt"
+	  $ git push origin --all
 
 #. Further changes should be done in a new feature branch, not on the ``master`` branch.
    
