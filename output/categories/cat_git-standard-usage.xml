@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Software Development Training, LLC (Posts about Git Standard Usage)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link rel="self" href="http://www.SoftDevTrain.com/categories/cat_git-standard-usage.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 19:56:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Comparing versions of a file between 2 Git Branches</title><link>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC (Posts about Git Standard Usage)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link rel="self" href="http://www.SoftDevTrain.com/categories/cat_git-standard-usage.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 20:33:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Revert file in a release to version in a previous release</title><link>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#example-situation" id="id1"&gt;Example Situation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#steps" id="id2"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#notes" id="id3"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="example-situation"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id1"&gt;Example Situation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We have a file, &lt;tt class="docutils literal"&gt;FreeSurfer/FreeSurferPipeline.sh&lt;/tt&gt;, that was released with version v3.25.0 (from branch
+&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt; that needs to be reverted to the state it was in in version v3.24.0 (branch
+&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;. We need to use this reverted file as part of a bugfix release, v3.25.1, that
+is from a branch off of &lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_2cba315b6e3c451f9fc1cf6c6e22411e-1"&gt;&lt;/a&gt;git diff branch1 branch2 path/to/myfile.ext
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fdb791b37c23448899aee20db36959d2-1"&gt;&lt;/a&gt;git difftool branch1 branch2 path/to/myfile.ext
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id3"&gt;Notes&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;If the files are identical, the command will silently return, show no output, and not
+start any external tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</guid><pubDate>Wed, 14 Mar 2018 20:28:00 GMT</pubDate></item><item><title>Comparing versions of a file between 2 Git Branches</title><link>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#command" id="id1"&gt;Command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#notes" id="id2"&gt;Notes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="command"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#id1"&gt;Command&lt;/a&gt;&lt;/h2&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_df5bf623d0eb4dcf9f4d810044d8dd95-1"&gt;&lt;/a&gt;git diff branch1 branch2 path/to/myfile.ext
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f6b620cde2a5492bb41bc727db81c614-1"&gt;&lt;/a&gt;git diff branch1 branch2 path/to/myfile.ext
 &lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_2ed3088ba86d4abb947b7c53cba1a152-1"&gt;&lt;/a&gt;git difftool branch1 branch2 path/to/myfile.ext
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</guid><pubDate>Wed, 14 Mar 2018 19:52:34 GMT</pubDate></item><item><title>Update Git</title><link>http://www.SoftDevTrain.com/posts/update-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_edc274c48ca44bfbb305f9e6ca7fa505-1"&gt;&lt;/a&gt;git difftool branch1 branch2 path/to/myfile.ext
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#id2"&gt;Notes&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;If the files are identical, the command will silently return, show no output, and not
+start any external tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</guid><pubDate>Wed, 14 Mar 2018 19:52:34 GMT</pubDate></item><item><title>Update Git</title><link>http://www.SoftDevTrain.com/posts/update-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;

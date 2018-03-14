@@ -25,3 +25,10 @@ or
 
    git difftool branch1 branch2 path/to/myfile.ext
 
+----
+
+Notes
+=====
+
+#. If the files are identical, the command will silently return, show no output, and not
+   start any external tool.
