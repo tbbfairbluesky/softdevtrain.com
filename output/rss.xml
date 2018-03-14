@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Software Development Training, LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link rel="self" type="application/rss+xml" href="http://www.SoftDevTrain.com/rss.xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Tue, 13 Mar 2018 22:16:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up Nikola, Git, and git-ftp</title><link>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="section" id="important-links"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link rel="self" href="http://www.SoftDevTrain.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 16:07:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a Release from a Feature Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;All changes to be included in the release have been made on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;We release from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch by merging &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;feature release&lt;/strong&gt; (e.g. X.Y.0) gets a branch of its own off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all your changes on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch into the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; and get all conflicts resolved.&lt;/p&gt;
+&lt;p&gt;This is in case any changes were made in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch since the point at which
+the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; was branched off from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_17796af4e1d04b208c506a8521380c2a-1"&gt;&lt;/a&gt;$ git checkout feature-branch
+&lt;a name="rest_code_17796af4e1d04b208c506a8521380c2a-2"&gt;&lt;/a&gt;$ git merge master
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and squash the changes into one big change set.&lt;/p&gt;
+&lt;p&gt;This is to get the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; changes into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; for use in the release and
+to ensure that these changes are included in any subsequent feature change branches. (Since
+feature change branches should be branches off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;.) The squashing means that all the
+changes for the current feature will be under one commit comment.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_2f2db7cfeb2044e19f4b575a5d9455e5-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_2f2db7cfeb2044e19f4b575a5d9455e5-2"&gt;&lt;/a&gt;$ git merge --squash feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Fix up the &lt;tt class="docutils literal"&gt;version.txt&lt;/tt&gt; file -- make it say &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_20c5475471f74895aa40bd2cc41be8e2-1"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_20c5475471f74895aa40bd2cc41be8e2-2"&gt;&lt;/a&gt;$ get add version.txt
+&lt;/pre&gt;&lt;p&gt;Note: &lt;tt class="docutils literal"&gt;git_current_branch&lt;/tt&gt; is an alias defined as:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_6133d9b7893b454caf9cab42fe4342e7-1"&gt;&lt;/a&gt;alias git_current_branch='git symbolic-ref -q HEAD --short'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all changes to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch. This is the one commit for all of the
+feature-related changes&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1a6ec500bbc348cca0b4df29170960c6-1"&gt;&lt;/a&gt;$ git commit -m "Big description of feature branch changes"
+&lt;/pre&gt;&lt;p&gt;Now all the changes you made in &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; are in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Push everything to the origin (GitHub)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>git</category><category>git release</category><guid>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</guid><pubDate>Wed, 14 Mar 2018 15:13:36 GMT</pubDate></item><item><title>Setting up Nikola, Git, and git-ftp</title><link>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="section" id="important-links"&gt;
 &lt;h2&gt;Important Links&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://getnikola.com/getting-started.html"&gt;Nikola Getting Started Guide&lt;/a&gt;&lt;/li&gt;

@@ -28,6 +28,10 @@ SITE_URL = "http://www.SoftDevTrain.com/"
 BLOG_EMAIL = "tbb@SoftDevTrain.com"
 BLOG_DESCRIPTION = "Thoughts and information on Software Development"  # (translatable)
 
+SHOW_SOURCELINK = False
+
+
+
 # Nikola is multilingual!
 #
 # Currently supported languages are:

@@ -6,12 +6,20 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://www.SoftDevTrain.com/categories/cat_git-standard-usage.xml</loc>
+  <lastmod>2018-03-14T16:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/cat_nikola.xml</loc>
   <lastmod>2018-03-13T22:16:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://www.SoftDevTrain.com/categories/git-release.xml</loc>
+  <lastmod>2018-03-14T16:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/git.xml</loc>
-  <lastmod>2018-03-13T22:16:00Z</lastmod>
+  <lastmod>2018-03-14T16:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/nikola-setup-git.xml</loc>
@@ -27,14 +35,14 @@
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/galleries/rss.xml</loc>
-  <lastmod>2018-03-13T20:31:00Z</lastmod>
+  <lastmod>2018-03-14T15:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/rss.xml</loc>
-  <lastmod>2018-03-13T22:16:00Z</lastmod>
+  <lastmod>2018-03-14T16:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/sitemap.xml</loc>
-  <lastmod>2018-03-13T22:16:00Z</lastmod>
+  <lastmod>2018-03-14T16:07:00Z</lastmod>
  </sitemap>
 </sitemapindex>

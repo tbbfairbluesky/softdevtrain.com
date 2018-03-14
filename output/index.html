@@ -14,7 +14,7 @@ article: http://ogp.me/ns/article#
 <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
-        <![endif]--><link rel="prefetch" href="posts/setting-up-nikola-git-and-git-ftp.html" type="text/html">
+        <![endif]--><link rel="prefetch" href="posts/creating-a-release-from-a-feature-branch.html" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -50,7 +50,69 @@ article: http://ogp.me/ns/article#
 
     <div class="postindex well post-material ">
     
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/setting-up-nikola-git-and-git-ftp.html" class="u-url">Setting up Nikola, Git, and git-ftp</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/creating-a-release-from-a-feature-branch.html" class="u-url">Creating a Release from a Feature Branch</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training, LLC
+                </span>
+                <span class="dateline"><a href="posts/creating-a-release-from-a-feature-branch.html" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-03-14T10:13:36-05:00" title="2018-03-14 10:13">2018-03-14 10:13</time></a></span>
+            </div>
+            <hr></header><div class="e-content entry-content">
+        <div>
+<ul class="simple">
+<li>All changes to be included in the release have been made on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt>
+</li>
+<li>We release from the <tt class="docutils literal">master</tt> branch by merging <tt class="docutils literal"><span class="pre">feature-branch</span></tt> into the <tt class="docutils literal">master</tt> branch</li>
+<li>A <strong>feature release</strong> (e.g. X.Y.0) gets a branch of its own off of the <tt class="docutils literal">master</tt>
+</li>
+</ul>
+<ol class="arabic">
+<li>
+<p class="first">Commit all your changes on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt></p>
+</li>
+<li>
+<p class="first">Merge the <tt class="docutils literal">master</tt> branch into the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> and get all conflicts resolved.</p>
+<p>This is in case any changes were made in the <tt class="docutils literal">master</tt> branch since the point at which
+the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> was branched off from the <tt class="docutils literal">master</tt></p>
+<pre class="code text"><a name="rest_code_17796af4e1d04b208c506a8521380c2a-1"></a>$ git checkout feature-branch
+<a name="rest_code_17796af4e1d04b208c506a8521380c2a-2"></a>$ git merge master
+</pre>
+</li>
+<li>
+<p class="first">Merge the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> into the <tt class="docutils literal">master</tt> branch and squash the changes into one big change set.</p>
+<p>This is to get the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> changes into the <tt class="docutils literal">master</tt> for use in the release and
+to ensure that these changes are included in any subsequent feature change branches. (Since
+feature change branches should be branches off of the <tt class="docutils literal">master</tt>.) The squashing means that all the
+changes for the current feature will be under one commit comment.</p>
+<pre class="code text"><a name="rest_code_2f2db7cfeb2044e19f4b575a5d9455e5-1"></a>$ git checkout master
+<a name="rest_code_2f2db7cfeb2044e19f4b575a5d9455e5-2"></a>$ git merge --squash feature-branch
+</pre>
+</li>
+<li>
+<p class="first">Fix up the <tt class="docutils literal">version.txt</tt> file -- make it say <tt class="docutils literal">master</tt></p>
+<pre class="code text"><a name="rest_code_20c5475471f74895aa40bd2cc41be8e2-1"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_20c5475471f74895aa40bd2cc41be8e2-2"></a>$ get add version.txt
+</pre>
+<p>Note: <tt class="docutils literal">git_current_branch</tt> is an alias defined as:</p>
+<pre class="code text"><a name="rest_code_6133d9b7893b454caf9cab42fe4342e7-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
+</pre>
+</li>
+<li>
+<p class="first">Commit all changes to the <tt class="docutils literal">master</tt> branch. This is the one commit for all of the
+feature-related changes</p>
+<pre class="code text"><a name="rest_code_1a6ec500bbc348cca0b4df29170960c6-1"></a>$ git commit -m "Big description of feature branch changes"
+</pre>
+<p>Now all the changes you made in <tt class="docutils literal"><span class="pre">feature-branch</span></tt> are in the <tt class="docutils literal">master</tt> branch.</p>
+</li>
+<li>
+<p class="first">Push everything to the origin (GitHub)</p>
+</li>
+</ol>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/setting-up-nikola-git-and-git-ftp.html" class="u-url">Setting up Nikola, Git, and git-ftp</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <i class="mdi-action-face-unlock"></i>
