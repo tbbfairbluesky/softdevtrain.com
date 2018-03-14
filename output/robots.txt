@@ -1,4 +1,0 @@
-Sitemap: http://www.SoftDevTrain.com/sitemapindex.xml
-
-User-Agent: *
-Host: www.SoftDevTrain.com

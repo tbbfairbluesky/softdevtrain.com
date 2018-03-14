@@ -102,7 +102,7 @@ Steps
 	  $ git tag -a v1.7.0 -m "Tagging v1.7.0"
 	  $ git push --tags origin release/v1.7.0
 
-#. Go to https://github.com, login in, and create a release from the tag
+#. Go to https://github.com, log in, and create a release from the tag
 
    Releases --> Draft a new release --> Select tag
 
@@ -113,7 +113,7 @@ Steps
 #. Make sure you don't leave your local ``git`` repository with the release branch checked out.
 
    You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
-   e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch. 
+   e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off of the release branch. 
 
    .. code-block::
 

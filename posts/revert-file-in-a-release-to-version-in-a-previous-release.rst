@@ -51,7 +51,7 @@ Steps
 
 #. Verify changes
 
-   See `here <link://slug/comparing-versions-of-a-file-between-2-git-branches>`_
+   See `Comparing versions of a file between 2 Git Branches <link://slug/comparing-versions-of-a-file-between-2-git-branches>`_
 
    .. code-block::
 
@@ -59,14 +59,13 @@ Steps
 
    Should show changes because file has been overwritten.
 
+   .. code-block::
 
-comparing-versions-of-a-file-between-2-git-branches
+	  $ git difftool release/v3.24.0 revert-freesurfer-6-changes FreeSurfer/FreeSurferPipelinesh
 
+   Should show *no* changes because the version in branch ``revert-freesurfer-6-changes`` should now be the
+   same as that in branch ``release/v3.24.0``.
 
+#. Create a bugfix release
 
-
-Notes
-=====
-
-#. If the files are identical, the command will silently return, show no output, and not
-   start any external tool.
+   See `Creating a Release from a Bugfix Branch <link::/slug/creating-a-release-from-a-bugfix-branch>`_

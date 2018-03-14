@@ -3,3 +3,4 @@ cache/*
 *.pyc
 *~
 .git-ftp-tmp
+output/*
