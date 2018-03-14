@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC (Posts about Git Standard Usage)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link type="application/rss+xml" href="http://www.SoftDevTrain.com/categories/cat_git-standard-usage.xml" rel="self"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 21:42:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a Release from a Bugfix Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html#steps" id="id2"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;All changes to be included in the release have been made on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; is a branch off of a &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;release-branch&lt;/span&gt;&lt;/tt&gt; (e.g. &lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all your changes on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Check out the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;release-branch&lt;/span&gt;&lt;/tt&gt; (the branch that the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; came off of in the first place).&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c4926e3d8c04436fb3f83c3b5a6e75ea-1"&gt;&lt;/a&gt;$ git checkout release/v3.25.0
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create and checkout a &lt;em&gt;new&lt;/em&gt; branch which will contain the bugfix changes and the release. We'll
+call this &lt;em&gt;new&lt;/em&gt; branch the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_4812d2dc95384634956cdc4f1d0127da-1"&gt;&lt;/a&gt;$ git branch release/v3.25.1    &lt;span class="c1"&gt;# create the bugfix-release branch&lt;/span&gt;
+&lt;a name="rest_code_4812d2dc95384634956cdc4f1d0127da-2"&gt;&lt;/a&gt;$ git checkout release/v3.25.1  &lt;span class="c1"&gt;# checkout the bugfix-release branch&lt;/span&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; changes into the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; branch and squash the changes into one big change set.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ad712dc387a24f498191db19f438fb98-1"&gt;&lt;/a&gt;$ git merge --squash bugfix-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Fix up the &lt;tt class="docutils literal"&gt;version.txt&lt;/tt&gt; file&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_9823c45c89fc44368a2a383e9d242878-1"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;/pre&gt;&lt;p&gt;Note: &lt;tt class="docutils literal"&gt;git_current_branch&lt;/tt&gt; should be an alias defined as:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7b263bca89644e678fe1f0e6b99182bb-1"&gt;&lt;/a&gt;$ alias git_current_branch='git symbolic-ref -q HEAD --short'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all changes to the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; branch&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_46bc2a053f45416e8a3b0762794d53da-1"&gt;&lt;/a&gt;$ git commit -m "Big description of the bugfix changes"
+&lt;/pre&gt;&lt;p&gt;Now all the changes from the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; are in the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; (e.g. release/v3.25.1) branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Push everything to the origin (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d5e887e4f72b4c7aa591c442991c324d-1"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the local &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; whose changes you've now merged and committed to the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_2ce084a143f8483c8ad048ad4d442654-1"&gt;&lt;/a&gt;$ git branch -D bugfix-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the remote &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-branch&lt;/span&gt;&lt;/tt&gt; from the origin repository (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c89cfb3241f244bdb55a3df141bc2f8c-1"&gt;&lt;/a&gt;$ git push origin --delete bugfix-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create a tag in the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;bugfix-release&lt;/span&gt;&lt;/tt&gt; branch&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-1"&gt;&lt;/a&gt;$ git checkout *&amp;lt;bugfix-release&amp;gt;*
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-2"&gt;&lt;/a&gt;$ git checkout release/v3.25.1
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-3"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-4"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-5"&gt;&lt;/a&gt;$ git commit -m "Created v3.25.1"
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-6"&gt;&lt;/a&gt;$ git tag -a v3.25.1 -m "Tagging v3.25.1"
+&lt;a name="rest_code_f194e613525f46d4b0c9c5c71da916e7-7"&gt;&lt;/a&gt;$ git push --tags origin release/v3.25.1
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Go to &lt;a class="reference external" href="https://github.com"&gt;https://github.com&lt;/a&gt;, log in, and create a release from the tag&lt;/p&gt;
+&lt;p&gt;Releases --&amp;gt; Draft a new release --&amp;gt; Select tag&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Provide a Title and Description&lt;/li&gt;
+&lt;li&gt;Publish the release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make sure you don't leave your local &lt;tt class="docutils literal"&gt;git&lt;/tt&gt; repository with the release branch checked out.&lt;/p&gt;
+&lt;p&gt;You do not want to make further changes to that branch.&lt;/p&gt;
+&lt;p&gt;Also, you &lt;em&gt;most likely&lt;/em&gt; (but not always) want your bug fix to go into the master branch so that it gets included
+in any future releases.&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-2"&gt;&lt;/a&gt;$ git merge release/v3.25.1 &lt;span class="c1"&gt;# substitute your bugfix release&lt;/span&gt;
+&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-3"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-4"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-5"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Updated version.txt"&lt;/span&gt;
+&lt;a name="rest_code_7084e72b0ae24fbd8013ab8b719408cd-6"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;As always, further feature changes should go in a feature branch (off of &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;) and further bugfix changes should
+go in a bugfix branch (off of the release for which the bugs are being fixed).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Push everything to the origin (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_29f286123c6047b8a8960f490126cbf5-1"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the local &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; whose changes you've now merged and committed to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_26e1a22e7c664c30a12ededcb4dc4268-1"&gt;&lt;/a&gt;$ git branch -D feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the remote &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; from the origin repository (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_935c1db37f274edcacb61a212b87ae4e-1"&gt;&lt;/a&gt;$ git push origin --delete feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create a release version in a release branch&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-2"&gt;&lt;/a&gt;$ git branch release/v1.7.0  &lt;span class="c1"&gt;# substitute your intended release number&lt;/span&gt;
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-3"&gt;&lt;/a&gt;$ git checkout release/v1.7.0
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-4"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-5"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-6"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Created v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-7"&gt;&lt;/a&gt;$ git tag -a v1.7.0 -m &lt;span class="s2"&gt;"Tagging v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_827f5bc843844bf0b9b9ced0a6c6f69d-8"&gt;&lt;/a&gt;$ git push --tags origin release/v1.7.0
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Go to &lt;a class="reference external" href="https://github.com"&gt;https://github.com&lt;/a&gt;, login in, and create a release from the tag&lt;/p&gt;
+&lt;p&gt;Releases --&amp;gt; Draft a new release --&amp;gt; Select tag&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Provide a Title: e.g. "Multirun ICA+fIX on 7T Retinotopy Data"&lt;/li&gt;
+&lt;li&gt;Provide a Description: e.g. "This release is intended to be used for running Multirun ICA+FIX processing on 7T Retinotopy data"&lt;/li&gt;
+&lt;li&gt;Publish the release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make sure you don't leave your local &lt;tt class="docutils literal"&gt;git&lt;/tt&gt; repository with the release branch checked out.&lt;/p&gt;
+&lt;p&gt;You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
+e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1ef1ac41fd134831ac3485a064250026-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make sure all the changes in the release branch are merged into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;
+branch is ready to use as a starting point for future changes.&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-1"&gt;&lt;/a&gt;$ git merge release/v1.7.0 &lt;span class="c1"&gt;# substitute your release number&lt;/span&gt;
+&lt;a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-2"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-3"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-4"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Updated version.txt"&lt;/span&gt;
+&lt;a name="rest_code_2e2030de0c37494cbd8ebe6607ace34f-5"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Further changes should be done in a new feature branch, not on the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>git release</category><guid>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html</guid><pubDate>Wed, 14 Mar 2018 21:04:00 GMT</pubDate></item><item><title>Revert file in a release to version in a previous release</title><link>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#example-situation" id="id1"&gt;Example Situation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#steps" id="id2"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="example-situation"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id1"&gt;Example Situation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We have a file, &lt;tt class="docutils literal"&gt;FreeSurfer/FreeSurferPipeline.sh&lt;/tt&gt;, that was released with version v3.25.0 (from branch
+&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt; that needs to be reverted to the state it was in in version v3.24.0 (branch
+&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;. We need to use this reverted file as part of a bugfix release, v3.25.1, that
+is from a branch off of &lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Checkout the release on which you are going to base the bugfix release (&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_784a5c42a32640768e83e33812724e4e-1"&gt;&lt;/a&gt;$ git checkout release/v3.25.0
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create and checkout a new branch that is based upon the currently checked out branch&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b7c81f1cf9ff4fca86b1bed13133f8c4-1"&gt;&lt;/a&gt;$ git branch revert-freesurfer-6-changes
+&lt;a name="rest_code_b7c81f1cf9ff4fca86b1bed13133f8c4-2"&gt;&lt;/a&gt;$ git checkout revert-freesurfer-6-changes
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make changes in the new branch and commit them&lt;/p&gt;
+&lt;p&gt;In this case, the change is to overwrite a file in the branch with the same file from another branch.
+The other branch in this case is the previous release branch (&lt;tt class="docutils literal"&gt;release/v3.24.0&lt;/tt&gt;).&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d2dbbfce98304936b09e171e425908ea-1"&gt;&lt;/a&gt;$ git checkout *&amp;lt;other-branch&amp;gt;* *&amp;lt;file&amp;gt;*
+&lt;a name="rest_code_d2dbbfce98304936b09e171e425908ea-2"&gt;&lt;/a&gt;$ git checkout release/v3.24.0 FreeSurfer/FreeSurferPipeline.sh
+&lt;a name="rest_code_d2dbbfce98304936b09e171e425908ea-3"&gt;&lt;/a&gt;$ git commit -m "Reverted FreeSurfer/FreeSurferPipeline.sh to the code released with version v3.24.0"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Verify changes&lt;/p&gt;
+&lt;p&gt;See &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html"&gt;Comparing versions of a file between 2 Git Branches&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_11b22f50d256489fbe7b4df034c7e869-1"&gt;&lt;/a&gt;$ git difftool revert-freesurfer-6-changes release/v3.25.0 FreeSurfer/FreeSurferPipeline.sh
+&lt;/pre&gt;&lt;p&gt;Should show changes because file has been overwritten.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7e96f0768df24870b141ff51d2eec403-1"&gt;&lt;/a&gt;$ git difftool release/v3.24.0 revert-freesurfer-6-changes FreeSurfer/FreeSurferPipelinesh
+&lt;/pre&gt;&lt;p&gt;Should show &lt;em&gt;no&lt;/em&gt; changes because the version in branch &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;revert-freesurfer-6-changes&lt;/span&gt;&lt;/tt&gt; should now be the
+same as that in branch &lt;tt class="docutils literal"&gt;release/v3.24.0&lt;/tt&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create a bugfix release&lt;/p&gt;
+&lt;p&gt;See &lt;a class="reference external" href=":/slug/creating-a-release-from-a-bugfix-branch"&gt;Creating a Release from a Bugfix Branch&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</guid><pubDate>Wed, 14 Mar 2018 20:28:00 GMT</pubDate></item><item><title>Comparing versions of a file between 2 Git Branches</title><link>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#command" id="id1"&gt;Command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#notes" id="id2"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="command"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#id1"&gt;Command&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b50caaa8842540ba98313820b56a4ff7-1"&gt;&lt;/a&gt;git diff branch1 branch2 path/to/myfile.ext
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c9f9da76d2844e3a83f648eca4e47909-1"&gt;&lt;/a&gt;git difftool branch1 branch2 path/to/myfile.ext
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html#id2"&gt;Notes&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;If the files are identical, the command will silently return, show no output, and not
+start any external tool.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</guid><pubDate>Wed, 14 Mar 2018 19:52:34 GMT</pubDate></item><item><title>Update Git</title><link>http://www.SoftDevTrain.com/posts/update-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#useful-links" id="id2"&gt;Useful Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#steps" id="id3"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You are using Git from Ubuntu/Debian Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="useful-links"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id2"&gt;Useful Links&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git"&gt;Stackoverflow question about saving credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://git-scm.com/docs/gitcredentials"&gt;Git Credentials Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id3"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add the git-core Personal Package Archive (PPA) repository&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c23cd9fa07a34cadba7816f330de2b0f-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:git-core/ppa
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Download package lists for repositories and update them to get newest versions of packages&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_5e1d28f07de3444395932777180abd92-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install the latest version of git&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_3e5149b80b6f4278977e00fb06436c36-1"&gt;&lt;/a&gt;$ sudo apt-get install git
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/update-git.html</guid><pubDate>Wed, 14 Mar 2018 18:03:35 GMT</pubDate></item><item><title>How to save remote username and password for Git</title><link>http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#useful-links" id="id2"&gt;Useful Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#steps" id="id3"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You are using Git version 2.16.2 or greater&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="useful-links"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id2"&gt;Useful Links&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git"&gt;Stackoverflow question about saving credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://git-scm.com/docs/gitcredentials"&gt;Git Credentials Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id3"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Configure the &lt;em&gt;credential helper&lt;/em&gt; for the repository to be the &lt;em&gt;store&lt;/em&gt; helper&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;store&lt;/em&gt; helper stores the credentials in a user readable only file after the
+credentials are supplied once.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_8ff7d1d7c5e44bb4b70379a87df9ae54-1"&gt;&lt;/a&gt;$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-WUSTL'
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_64985990093f407ca48c615d40e283f8-1"&gt;&lt;/a&gt;$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-PERSONAL'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Issue a command that requires the credentials&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_a6b009b8e53d41a29d2486278bb87662-1"&gt;&lt;/a&gt;$ git push origin --all &lt;span class="c1"&gt;# supply username and password as prompted&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;If the credentials have already been stored in the specified file, then they will be used.&lt;/p&gt;
+&lt;p&gt;If the credentials have &lt;em&gt;not&lt;/em&gt; already been stored in the specified file, then the username
+and password will then be stored in the specified file. Next time they are needed,
+they will be retrieved from the &lt;em&gt;store&lt;/em&gt; (the file) and you will no longer need to supply them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;To reset them, you can delete the specified store file and issue a command that requires the
+credentials.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html</guid><pubDate>Wed, 14 Mar 2018 17:48:35 GMT</pubDate></item><item><title>Creating a Release from a Feature Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#steps" id="id2"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;All changes to be included in the release have been made on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;We release from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch by merging &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;feature release&lt;/strong&gt; (e.g. X.Y.0) gets a branch of its own off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all your changes on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch into the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; and get all conflicts resolved.&lt;/p&gt;
+&lt;p&gt;This is in case any changes were made in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch since the point at which
+the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; was branched off from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_bb12c411c2de4551b01644373f1db166-1"&gt;&lt;/a&gt;$ git checkout feature-branch
+&lt;a name="rest_code_bb12c411c2de4551b01644373f1db166-2"&gt;&lt;/a&gt;$ git merge master
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and squash the changes into one big change set.&lt;/p&gt;
+&lt;p&gt;This is to get the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; changes into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; for use in the release and
+to ensure that these changes are included in any subsequent feature change branches. (Since
+feature change branches should be branches off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;.) The squashing means that all the
+changes for the current feature will be under one commit comment.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_305c047d67614159a5a2367f6604dd03-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_305c047d67614159a5a2367f6604dd03-2"&gt;&lt;/a&gt;$ git merge --squash feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Fix up the &lt;tt class="docutils literal"&gt;version.txt&lt;/tt&gt; file -- make it say &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_e6e7fcc83efa4cf591a64f6987412203-1"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_e6e7fcc83efa4cf591a64f6987412203-2"&gt;&lt;/a&gt;$ get add version.txt
+&lt;/pre&gt;&lt;p&gt;Note: &lt;tt class="docutils literal"&gt;git_current_branch&lt;/tt&gt; should be an alias defined as:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_e6ed625456fd48be8111c3475b7bd74c-1"&gt;&lt;/a&gt;alias git_current_branch='git symbolic-ref -q HEAD --short'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Commit all changes to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch. This is the one commit for all of the
+feature-related changes&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f86956e19bc44cbb905256d9943bdeaf-1"&gt;&lt;/a&gt;$ git commit -m "Big description of feature branch changes"
+&lt;/pre&gt;&lt;p&gt;Now all the changes you made in &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; are in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Push everything to the origin (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1b0af826eb47423da3bfbc645105f141-1"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the local &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; whose changes you've now merged and committed to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fd2d7bfe448843ef8868afa5552807b4-1"&gt;&lt;/a&gt;$ git branch -D feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Remove the remote &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; from the origin repository (GitHub)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_5f90d933123045a5b03065343c5830c5-1"&gt;&lt;/a&gt;$ git push origin --delete feature-branch
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create a release version in a release branch&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-2"&gt;&lt;/a&gt;$ git branch release/v1.7.0  &lt;span class="c1"&gt;# substitute your intended release number&lt;/span&gt;
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-3"&gt;&lt;/a&gt;$ git checkout release/v1.7.0
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-4"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-5"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-6"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Created v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-7"&gt;&lt;/a&gt;$ git tag -a v1.7.0 -m &lt;span class="s2"&gt;"Tagging v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-8"&gt;&lt;/a&gt;$ git push --tags origin release/v1.7.0
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Go to &lt;a class="reference external" href="https://github.com"&gt;https://github.com&lt;/a&gt;, log in, and create a release from the tag&lt;/p&gt;
+&lt;p&gt;Releases --&amp;gt; Draft a new release --&amp;gt; Select tag&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Provide a Title: e.g. "Multirun ICA+fIX on 7T Retinotopy Data"&lt;/li&gt;
+&lt;li&gt;Provide a Description: e.g. "This release is intended to be used for running Multirun ICA+FIX processing on 7T Retinotopy data"&lt;/li&gt;
+&lt;li&gt;Publish the release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make sure you don't leave your local &lt;tt class="docutils literal"&gt;git&lt;/tt&gt; repository with the release branch checked out.&lt;/p&gt;
+&lt;p&gt;You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
+e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off of the release branch.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a96ab670933a4afeb81af37b1e9b474c-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make sure all the changes in the release branch are merged into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;
+branch is ready to use as a starting point for future changes.&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_06785330a4464040a7fb05f2b9bc4834-1"&gt;&lt;/a&gt;$ git merge release/v1.7.0 &lt;span class="c1"&gt;# substitute your release number&lt;/span&gt;
+&lt;a name="rest_code_06785330a4464040a7fb05f2b9bc4834-2"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_06785330a4464040a7fb05f2b9bc4834-3"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_06785330a4464040a7fb05f2b9bc4834-4"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Updated version.txt"&lt;/span&gt;
+&lt;a name="rest_code_06785330a4464040a7fb05f2b9bc4834-5"&gt;&lt;/a&gt;$ git push origin --all
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Further changes should be done in a new feature branch, not on the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>git release</category><guid>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</guid><pubDate>Wed, 14 Mar 2018 16:35:00 GMT</pubDate></item></channel></rss>

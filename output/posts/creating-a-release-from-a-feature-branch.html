@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Step by step guide to creating a release from a git feature branch">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creating a Release from a Feature Branch | Software Development Training, LLC</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html">
+<!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+        <![endif]--><meta name="description" itemprop="description" content="Step by step guide to creating a release from a git feature branch">
+<meta name="author" content="Software Development Training, LLC">
+<link rel="prev" href="setting-up-nikola-git-and-git-ftp.html" title="Setting up Nikola, Git, and git-ftp" type="text/html">
+<link rel="next" href="how-to-save-remote-username-and-password-for-git.html" title="How to save remote username and password for Git" type="text/html">
+<meta property="og:site_name" content="Software Development Training, LLC">
+<meta property="og:title" content="Creating a Release from a Feature Branch">
+<meta property="og:url" content="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html">
+<meta property="og:description" content="Step by step guide to creating a release from a git feature branch">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-03-14T11:35:00-05:00">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="git release">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar  header-panel shadow-z-3" role="navigation"><div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3">
+            <h1 class="title-blog">
+                <a href="http://www.SoftDevTrain.com/">
+                        <span id="blog-title">Software Development Training, LLC</span>
+                    </a>
+            </h1>
+          </div>
+          <div class="col-xs-9">
+            <a id="hamburger" class="btn btn-raised" href="javascript:void(0);" onclick="menuToggle();">☰</a>
+          </div>
+        </div>
+      </div>
+<!-- /.container-fluid -->
+</nav><div class="container-fluid main" id="content" role="main">
+        <div class="row">
+            <nav class="col-xs-12 col-sm-3 menu"><ul>
+<li class="withripple"><a href="../archive.html">Archive</a></li>
+                <li class="withripple"><a href="../categories/index.html">Tags</a></li>
+                <li class="withripple"><a href="../rss.xml">RSS feed</a></li>
+
+                    
+                </ul>
+<ul></ul></nav><div class="posts-material col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-md-11 content-material">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Creating a Release from a Feature Branch</a></h1>
+<hr>
+<div class="metadata">
+            <span class="byline author vcard">
+                <a href="#">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training, LLC
+                </a>
+            </span>
+            <span class="dateline">
+                <a href="#" rel="bookmark"><i class="mdi-device-access-time"></i>
+                    <time class="published dt-published" datetime="2018-03-14T11:35:00-05:00" itemprop="datePublished" title="2018-03-14 11:35">2018-03-14 11:35</time></a>
+            </span>
+                <meta name="description" itemprop="description" content="Step by step guide to creating a release from a git feature branch">
+</div>
+        
+        <hr></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="creating-a-release-from-a-feature-branch.html#assumptions" id="id1">Assumptions</a></li>
+<li><a class="reference internal" href="creating-a-release-from-a-feature-branch.html#steps" id="id2">Steps</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="assumptions">
+<h2><a class="toc-backref" href="creating-a-release-from-a-feature-branch.html#id1">Assumptions</a></h2>
+<ul class="simple">
+<li>All changes to be included in the release have been made on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt>
+</li>
+<li>We release from the <tt class="docutils literal">master</tt> branch by merging <tt class="docutils literal"><span class="pre">feature-branch</span></tt> into the <tt class="docutils literal">master</tt> branch</li>
+<li>A <strong>feature release</strong> (e.g. X.Y.0) gets a branch of its own off of the <tt class="docutils literal">master</tt>
+</li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="steps">
+<h2><a class="toc-backref" href="creating-a-release-from-a-feature-branch.html#id2">Steps</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Commit all your changes on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt></p>
+</li>
+<li>
+<p class="first">Merge the <tt class="docutils literal">master</tt> branch into the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> and get all conflicts resolved.</p>
+<p>This is in case any changes were made in the <tt class="docutils literal">master</tt> branch since the point at which
+the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> was branched off from the <tt class="docutils literal">master</tt></p>
+<pre class="code text"><a name="rest_code_bb12c411c2de4551b01644373f1db166-1"></a>$ git checkout feature-branch
+<a name="rest_code_bb12c411c2de4551b01644373f1db166-2"></a>$ git merge master
+</pre>
+</li>
+<li>
+<p class="first">Merge the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> into the <tt class="docutils literal">master</tt> branch and squash the changes into one big change set.</p>
+<p>This is to get the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> changes into the <tt class="docutils literal">master</tt> for use in the release and
+to ensure that these changes are included in any subsequent feature change branches. (Since
+feature change branches should be branches off of the <tt class="docutils literal">master</tt>.) The squashing means that all the
+changes for the current feature will be under one commit comment.</p>
+<pre class="code text"><a name="rest_code_305c047d67614159a5a2367f6604dd03-1"></a>$ git checkout master
+<a name="rest_code_305c047d67614159a5a2367f6604dd03-2"></a>$ git merge --squash feature-branch
+</pre>
+</li>
+<li>
+<p class="first">Fix up the <tt class="docutils literal">version.txt</tt> file -- make it say <tt class="docutils literal">master</tt></p>
+<pre class="code text"><a name="rest_code_e6e7fcc83efa4cf591a64f6987412203-1"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_e6e7fcc83efa4cf591a64f6987412203-2"></a>$ get add version.txt
+</pre>
+<p>Note: <tt class="docutils literal">git_current_branch</tt> should be an alias defined as:</p>
+<pre class="code text"><a name="rest_code_e6ed625456fd48be8111c3475b7bd74c-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
+</pre>
+</li>
+<li>
+<p class="first">Commit all changes to the <tt class="docutils literal">master</tt> branch. This is the one commit for all of the
+feature-related changes</p>
+<pre class="code text"><a name="rest_code_f86956e19bc44cbb905256d9943bdeaf-1"></a>$ git commit -m "Big description of feature branch changes"
+</pre>
+<p>Now all the changes you made in <tt class="docutils literal"><span class="pre">feature-branch</span></tt> are in the <tt class="docutils literal">master</tt> branch.</p>
+</li>
+<li>
+<p class="first">Push everything to the origin (GitHub)</p>
+<pre class="code text"><a name="rest_code_1b0af826eb47423da3bfbc645105f141-1"></a>$ git push origin --all
+</pre>
+</li>
+<li>
+<p class="first">Remove the local <tt class="docutils literal"><span class="pre">feature-branch</span></tt> whose changes you've now merged and committed to the <tt class="docutils literal">master</tt> branch.</p>
+<pre class="code text"><a name="rest_code_fd2d7bfe448843ef8868afa5552807b4-1"></a>$ git branch -D feature-branch
+</pre>
+</li>
+<li>
+<p class="first">Remove the remote <tt class="docutils literal"><span class="pre">feature-branch</span></tt> from the origin repository (GitHub)</p>
+<pre class="code text"><a name="rest_code_5f90d933123045a5b03065343c5830c5-1"></a>$ git push origin --delete feature-branch
+</pre>
+</li>
+<li>
+<p class="first">Create a release version in a release branch</p>
+<pre class="code bash"><a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-1"></a>$ git checkout master
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-3"></a>$ git checkout release/v1.7.0
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-4"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-5"></a>$ git add version.txt
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
+<a name="rest_code_b8548df3a2cc468f9efa958cd1b27e89-8"></a>$ git push --tags origin release/v1.7.0
+</pre>
+</li>
+<li>
+<p class="first">Go to <a class="reference external" href="https://github.com">https://github.com</a>, log in, and create a release from the tag</p>
+<p>Releases --&gt; Draft a new release --&gt; Select tag</p>
+<ul class="simple">
+<li>Provide a Title: e.g. "Multirun ICA+fIX on 7T Retinotopy Data"</li>
+<li>Provide a Description: e.g. "This release is intended to be used for running Multirun ICA+FIX processing on 7T Retinotopy data"</li>
+<li>Publish the release</li>
+</ul>
+</li>
+<li>
+<p class="first">Make sure you don't leave your local <tt class="docutils literal">git</tt> repository with the release branch checked out.</p>
+<p>You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
+e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off of the release branch.</p>
+<pre class="code text"><a name="rest_code_a96ab670933a4afeb81af37b1e9b474c-1"></a>$ git checkout master
+</pre>
+</li>
+<li>
+<p class="first">Make sure all the changes in the release branch are merged into the <tt class="docutils literal">master</tt> branch and the <tt class="docutils literal">master</tt>
+branch is ready to use as a starting point for future changes.</p>
+<pre class="code bash"><a name="rest_code_06785330a4464040a7fb05f2b9bc4834-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
+<a name="rest_code_06785330a4464040a7fb05f2b9bc4834-2"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_06785330a4464040a7fb05f2b9bc4834-3"></a>$ git add version.txt
+<a name="rest_code_06785330a4464040a7fb05f2b9bc4834-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
+<a name="rest_code_06785330a4464040a7fb05f2b9bc4834-5"></a>$ git push origin --all
+</pre>
+</li>
+<li>
+<p class="first">Further changes should be done in a new feature branch, not on the <tt class="docutils literal">master</tt> branch.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><div itemprop="keywords" class="tags">
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/git.html" rel="tag">git</a>
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/git-release.html" rel="tag">git release</a>
+        </div>
+
+            <ul class="pager">
+<li class="previous">
+                <a href="setting-up-nikola-git-and-git-ftp.html" rel="prev" title="Setting up Nikola, Git, and git-ftp">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="how-to-save-remote-username-and-password-for-git.html" rel="next" title="How to save remote username and password for Git">Next post</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+            </div>
+        </div>
+        <button class="btn btn-fab btn-raised btn-material-green btn-footer" data-toggle="modal" data-target="#footer-dialog">
+            <i class="mdi-communication-message"></i>
+        </button>
+        <div id="footer-dialog" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Software Development Training, LLC credits</h4>
+              </div>
+              <div class="modal-body">
+                    Contents © 2018         <a href="mailto:tbb@SoftDevTrain.com">Software Development Training, LLC</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="source-button">
+        </div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script>
+
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+
+            $(window).on("resize", function() {
+                if($(window).width() > 767) {
+                  $("html, body").height($(window).height());
+                  $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight() - 76 );
+                  $(".posts-material").height($(window).height());
+                } else {
+                  $("html, body").css('height', '');
+                  $(".main, .menu").css('height', '');
+                  $(".posts-material").css('height', '');
+                }
+            }).trigger("resize");
+
+            function menuToggle() {
+                $("nav.menu, ul").toggleClass('responsive', '');
+            }
+        </script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
