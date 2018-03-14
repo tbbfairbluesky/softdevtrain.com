@@ -52,7 +52,10 @@ Steps
 
 	  $ git push origin --all # supply username and password as prompted
 
-   The username and password will then be stored in the specified file. Next time they are needed,
+   If the credentials have already been stored in the specified file, then they will be used.
+
+   If the credentials have *not* already been stored in the specified file, then the username 
+   and password will then be stored in the specified file. Next time they are needed,
    they will be retrieved from the *store* (the file) and you will no longer need to supply them.
 
 #. To reset them, you can delete the specified store file and issue a command that requires the 

@@ -149,17 +149,19 @@ article: http://ogp.me/ns/article#
 <p class="first">Configure the <em>credential helper</em> for the repository to be the <em>store</em> helper</p>
 <p>The <em>store</em> helper stores the credentials in a user readable only file after the
 credentials are supplied once.</p>
-<pre class="code text"><a name="rest_code_dd51b9fb89bc469c9d53174bfef997f6-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-WUSTL'
+<pre class="code text"><a name="rest_code_b829e6e4d8a2440a8740ec235136bbef-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-WUSTL'
 </pre>
 <p>or</p>
-<pre class="code text"><a name="rest_code_6b09f9c579a648e4a5be5d00c8aced15-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-PERSONAL'
+<pre class="code text"><a name="rest_code_96cee7eba38349d0816e62c77b8c4775-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-PERSONAL'
 </pre>
 </li>
 <li>
 <p class="first">Issue a command that requires the credentials</p>
-<pre class="code bash"><a name="rest_code_63a8b5a8107d44d0977387bb672d2dc7-1"></a>$ git push origin --all <span class="c1"># supply username and password as prompted</span>
+<pre class="code bash"><a name="rest_code_8fbef76c931b41db9cd1c0c84d6c587b-1"></a>$ git push origin --all <span class="c1"># supply username and password as prompted</span>
 </pre>
-<p>The username and password will then be stored in the specified file. Next time they are needed,
+<p>If the credentials have already been stored in the specified file, then they will be used.</p>
+<p>If the credentials have <em>not</em> already been stored in the specified file, then the username
+and password will then be stored in the specified file. Next time they are needed,
 they will be retrieved from the <em>store</em> (the file) and you will no longer need to supply them.</p>
 </li>
 <li>

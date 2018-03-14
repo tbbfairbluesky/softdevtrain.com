@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/cat_git-standard-usage.xml</loc>
-  <lastmod>2018-03-14T18:12:00Z</lastmod>
+  <lastmod>2018-03-14T18:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/cat_nikola.xml</loc>
@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/git.xml</loc>
-  <lastmod>2018-03-14T18:12:00Z</lastmod>
+  <lastmod>2018-03-14T18:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/categories/nikola-setup-git.xml</loc>
@@ -39,10 +39,10 @@
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/rss.xml</loc>
-  <lastmod>2018-03-14T18:12:00Z</lastmod>
+  <lastmod>2018-03-14T18:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.SoftDevTrain.com/sitemap.xml</loc>
-  <lastmod>2018-03-14T18:12:00Z</lastmod>
+  <lastmod>2018-03-14T18:19:00Z</lastmod>
  </sitemap>
 </sitemapindex>
