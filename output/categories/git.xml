@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC (Posts about git)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link rel="self" href="http://www.SoftDevTrain.com/categories/git.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 20:33:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Revert file in a release to version in a previous release</title><link>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC (Posts about git)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://www.SoftDevTrain.com/categories/git.xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 20:47:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Revert file in a release to version in a previous release</title><link>http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#example-situation" id="id1"&gt;Example Situation&lt;/a&gt;&lt;/li&gt;
@@ -18,11 +18,28 @@ is from a branch off of &lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/t
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="steps"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_2cba315b6e3c451f9fc1cf6c6e22411e-1"&gt;&lt;/a&gt;git diff branch1 branch2 path/to/myfile.ext
-&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_fdb791b37c23448899aee20db36959d2-1"&gt;&lt;/a&gt;git difftool branch1 branch2 path/to/myfile.ext
-&lt;/pre&gt;&lt;/div&gt;
-&lt;hr class="docutils"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Checkout the release on which you are going to base the bugfix release (&lt;tt class="docutils literal"&gt;release/v3.25.0&lt;/tt&gt;)&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_011276c085a8455fa20b1e956d747945-1"&gt;&lt;/a&gt;$ git checkout release/v3.25.0
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create and checkout a new branch that is based upon the currently checked out branch&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7aa4795c325c47b2bf9571a2d22731a2-1"&gt;&lt;/a&gt;$ git branch revert-freesurfer-6-changes
+&lt;a name="rest_code_7aa4795c325c47b2bf9571a2d22731a2-2"&gt;&lt;/a&gt;$ git checkout revert-freesurfer-6-changes
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make changes in the new branch and commit them&lt;/p&gt;
+&lt;p&gt;In this case, the change is to overwrite a file in the branch with the same file from another branch.
+The other branch in this case is the previous release branch (&lt;tt class="docutils literal"&gt;release/v3.24.0&lt;/tt&gt;).&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-1"&gt;&lt;/a&gt;$ git checkout *&amp;lt;other-branch&amp;gt;* *&amp;lt;file&amp;gt;*
+&lt;a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-2"&gt;&lt;/a&gt;$ git checkout release/v3.24.0 FreeSurfer/FreeSurferPipeline.sh
+&lt;a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-3"&gt;&lt;/a&gt;$ git commit -m "Reverted FreeSurfer/FreeSurferPipeline.sh to the code released with version v3.24.0"
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Verify changes&lt;/p&gt;
+&lt;p&gt;See link://slug/comparing-versions-of-a-file-between-2-git-branches&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_003e0d1ffbcd456b9b804541d4375707-1"&gt;&lt;/a&gt;$ git difftool revert-freesurfer-6-changes release/v3.25.0 FreeSurfer/FreeSurferPipeline.sh
+&lt;/pre&gt;&lt;p&gt;Should show changes because file has been overwritten.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 &lt;div class="section" id="notes"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id3"&gt;Notes&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;

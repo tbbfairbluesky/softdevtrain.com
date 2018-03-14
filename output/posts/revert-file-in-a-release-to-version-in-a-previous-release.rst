@@ -25,22 +25,45 @@ is from a branch off of ``release/v3.25.0``.
 Steps
 =====
 
+#. Checkout the release on which you are going to base the bugfix release (``release/v3.25.0``)
+
+   .. code-block::
+
+	  $ git checkout release/v3.25.0
+
+#. Create and checkout a new branch that is based upon the currently checked out branch
+
+   .. code-block::
+
+	  $ git branch revert-freesurfer-6-changes
+	  $ git checkout revert-freesurfer-6-changes
+
+#. Make changes in the new branch and commit them
+
+   In this case, the change is to overwrite a file in the branch with the same file from another branch.
+   The other branch in this case is the previous release branch (``release/v3.24.0``).
+
+   .. code-block::
+
+	  $ git checkout *<other-branch>* *<file>*
+	  $ git checkout release/v3.24.0 FreeSurfer/FreeSurferPipeline.sh
+	  $ git commit -m "Reverted FreeSurfer/FreeSurferPipeline.sh to the code released with version v3.24.0"
+
+#. Verify changes
+
+   See link://slug/comparing-versions-of-a-file-between-2-git-branches
+
+   .. code-block::
+
+	  $ git difftool revert-freesurfer-6-changes release/v3.25.0 FreeSurfer/FreeSurferPipeline.sh
+
+   Should show changes because file has been overwritten.
 
 
 
 
 
-.. code-block::
 
-   git diff branch1 branch2 path/to/myfile.ext
-
-or 
-
-.. code-block::
-
-   git difftool branch1 branch2 path/to/myfile.ext
-
-----
 
 Notes
 =====

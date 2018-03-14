@@ -80,13 +80,36 @@ is from a branch off of <tt class="docutils literal">release/v3.25.0</tt>.</p>
 <hr class="docutils">
 <div class="section" id="steps">
 <h2><a class="toc-backref" href="posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id2">Steps</a></h2>
-<pre class="code text"><a name="rest_code_2cba315b6e3c451f9fc1cf6c6e22411e-1"></a>git diff branch1 branch2 path/to/myfile.ext
+<ol class="arabic">
+<li>
+<p class="first">Checkout the release on which you are going to base the bugfix release (<tt class="docutils literal">release/v3.25.0</tt>)</p>
+<pre class="code text"><a name="rest_code_011276c085a8455fa20b1e956d747945-1"></a>$ git checkout release/v3.25.0
 </pre>
-<p>or</p>
-<pre class="code text"><a name="rest_code_fdb791b37c23448899aee20db36959d2-1"></a>git difftool branch1 branch2 path/to/myfile.ext
+</li>
+<li>
+<p class="first">Create and checkout a new branch that is based upon the currently checked out branch</p>
+<pre class="code text"><a name="rest_code_7aa4795c325c47b2bf9571a2d22731a2-1"></a>$ git branch revert-freesurfer-6-changes
+<a name="rest_code_7aa4795c325c47b2bf9571a2d22731a2-2"></a>$ git checkout revert-freesurfer-6-changes
 </pre>
+</li>
+<li>
+<p class="first">Make changes in the new branch and commit them</p>
+<p>In this case, the change is to overwrite a file in the branch with the same file from another branch.
+The other branch in this case is the previous release branch (<tt class="docutils literal">release/v3.24.0</tt>).</p>
+<pre class="code text"><a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-1"></a>$ git checkout *&lt;other-branch&gt;* *&lt;file&gt;*
+<a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-2"></a>$ git checkout release/v3.24.0 FreeSurfer/FreeSurferPipeline.sh
+<a name="rest_code_539ba6b7f73f41cb99c05c0cd1cab3ea-3"></a>$ git commit -m "Reverted FreeSurfer/FreeSurferPipeline.sh to the code released with version v3.24.0"
+</pre>
+</li>
+<li>
+<p class="first">Verify changes</p>
+<p>See link://slug/comparing-versions-of-a-file-between-2-git-branches</p>
+<pre class="code text"><a name="rest_code_003e0d1ffbcd456b9b804541d4375707-1"></a>$ git difftool revert-freesurfer-6-changes release/v3.25.0 FreeSurfer/FreeSurferPipeline.sh
+</pre>
+<p>Should show changes because file has been overwritten.</p>
+</li>
+</ol>
 </div>
-<hr class="docutils">
 <div class="section" id="notes">
 <h2><a class="toc-backref" href="posts/revert-file-in-a-release-to-version-in-a-previous-release.html#id3">Notes</a></h2>
 <ol class="arabic simple">
