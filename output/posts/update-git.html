@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Steps for updating to the latest version of Git">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update Git | Software Development Training, LLC</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://www.SoftDevTrain.com/posts/update-git.html">
+<!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+        <![endif]--><meta name="description" itemprop="description" content="Steps for updating to the latest version of Git">
+<meta name="author" content="Software Development Training, LLC">
+<link rel="prev" href="how-to-save-remote-username-and-password-for-git.html" title="How to save remote username and password for Git" type="text/html">
+<meta property="og:site_name" content="Software Development Training, LLC">
+<meta property="og:title" content="Update Git">
+<meta property="og:url" content="http://www.SoftDevTrain.com/posts/update-git.html">
+<meta property="og:description" content="Steps for updating to the latest version of Git">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-03-14T13:03:35-05:00">
+<meta property="article:tag" content="git">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar  header-panel shadow-z-3" role="navigation"><div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3">
+            <h1 class="title-blog">
+                <a href="http://www.SoftDevTrain.com/">
+                        <span id="blog-title">Software Development Training, LLC</span>
+                    </a>
+            </h1>
+          </div>
+          <div class="col-xs-9">
+            <a id="hamburger" class="btn btn-raised" href="javascript:void(0);" onclick="menuToggle();">☰</a>
+          </div>
+        </div>
+      </div>
+<!-- /.container-fluid -->
+</nav><div class="container-fluid main" id="content" role="main">
+        <div class="row">
+            <nav class="col-xs-12 col-sm-3 menu"><ul>
+<li class="withripple"><a href="../archive.html">Archive</a></li>
+                <li class="withripple"><a href="../categories/index.html">Tags</a></li>
+                <li class="withripple"><a href="../rss.xml">RSS feed</a></li>
+
+                    
+                </ul>
+<ul></ul></nav><div class="posts-material col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-md-11 content-material">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Update Git</a></h1>
+<hr>
+<div class="metadata">
+            <span class="byline author vcard">
+                <a href="#">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training, LLC
+                </a>
+            </span>
+            <span class="dateline">
+                <a href="#" rel="bookmark"><i class="mdi-device-access-time"></i>
+                    <time class="published dt-published" datetime="2018-03-14T13:03:35-05:00" itemprop="datePublished" title="2018-03-14 13:03">2018-03-14 13:03</time></a>
+            </span>
+                <meta name="description" itemprop="description" content="Steps for updating to the latest version of Git">
+</div>
+        
+        <hr></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="update-git.html#assumptions" id="id1">Assumptions</a></li>
+<li><a class="reference internal" href="update-git.html#useful-links" id="id2">Useful Links</a></li>
+<li><a class="reference internal" href="update-git.html#steps" id="id3">Steps</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="assumptions">
+<h2><a class="toc-backref" href="update-git.html#id1">Assumptions</a></h2>
+<ul class="simple">
+<li>You are using Git from Ubuntu/Debian Linux</li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="useful-links">
+<h2><a class="toc-backref" href="update-git.html#id2">Useful Links</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git">Stackoverflow question about saving credentials</a></li>
+<li><a class="reference external" href="https://git-scm.com/docs/gitcredentials">Git Credentials Documentation</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="steps">
+<h2><a class="toc-backref" href="update-git.html#id3">Steps</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Add the git-core Personal Package Archive (PPA) repository</p>
+<pre class="code text"><a name="rest_code_1e27ebfe03be48c288e5de5887b03f5b-1"></a>$ sudo add-apt-repository ppa:git-core/ppa
+</pre>
+</li>
+<li>
+<p class="first">Download package lists for repositories and update them to get newest versions of packages</p>
+<pre class="code text"><a name="rest_code_0b2d7b90ce1c4b36905ed622740eb146-1"></a>$ sudo apt-get update
+</pre>
+</li>
+<li>
+<p class="first">Install the latest version of git</p>
+<pre class="code text"><a name="rest_code_b711aa7954b34efa85509bb7ea1b6454-1"></a>$ sudo apt-get install git
+</pre>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><div itemprop="keywords" class="tags">
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/git.html" rel="tag">git</a>
+        </div>
+
+            <ul class="pager">
+<li class="previous">
+                <a href="how-to-save-remote-username-and-password-for-git.html" rel="prev" title="How to save remote username and password for Git">Previous post</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+            </div>
+        </div>
+        <button class="btn btn-fab btn-raised btn-material-green btn-footer" data-toggle="modal" data-target="#footer-dialog">
+            <i class="mdi-communication-message"></i>
+        </button>
+        <div id="footer-dialog" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Software Development Training, LLC credits</h4>
+              </div>
+              <div class="modal-body">
+                    Contents © 2018         <a href="mailto:tbb@SoftDevTrain.com">Software Development Training, LLC</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="source-button">
+        </div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script>
+
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+
+            $(window).on("resize", function() {
+                if($(window).width() > 767) {
+                  $("html, body").height($(window).height());
+                  $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight() - 76 );
+                  $(".posts-material").height($(window).height());
+                } else {
+                  $("html, body").css('height', '');
+                  $(".main, .menu").css('height', '');
+                  $(".posts-material").css('height', '');
+                }
+            }).trigger("resize");
+
+            function menuToggle() {
+                $("nav.menu, ul").toggleClass('responsive', '');
+            }
+        </script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

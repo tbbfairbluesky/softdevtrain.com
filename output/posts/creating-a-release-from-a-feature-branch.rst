@@ -8,12 +8,19 @@
 .. type: text
 .. updated: 2018-03-14 11:35:00 UTC-05:00
 
+.. contents:: Table of Contents
+   :depth: 1
+
+----
+
 Assumptions
 ===========
 
 * All changes to be included in the release have been made on the ``feature-branch``
 * We release from the ``master`` branch by merging ``feature-branch`` into the ``master`` branch
 * A **feature release** (e.g. X.Y.0) gets a branch of its own off of the ``master``	
+
+----
 
 Steps
 =====
@@ -124,6 +131,3 @@ Steps
 	  $ git push origin --all
 
 #. Further changes should be done in a new feature branch, not on the ``master`` branch.
-   
-
-

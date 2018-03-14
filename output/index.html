@@ -14,7 +14,7 @@ article: http://ogp.me/ns/article#
 <!--[if lt IE 9]>
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
-        <![endif]--><link rel="prefetch" href="posts/creating-a-release-from-a-feature-branch.html" type="text/html">
+        <![endif]--><link rel="prefetch" href="posts/update-git.html" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -50,7 +50,127 @@ article: http://ogp.me/ns/article#
 
     <div class="postindex well post-material ">
     
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/creating-a-release-from-a-feature-branch.html" class="u-url">Creating a Release from a Feature Branch</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/update-git.html" class="u-url">Update Git</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training, LLC
+                </span>
+                <span class="dateline"><a href="posts/update-git.html" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-03-14T13:03:35-05:00" title="2018-03-14 13:03">2018-03-14 13:03</time></a></span>
+            </div>
+            <hr></header><div class="e-content entry-content">
+        <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="posts/update-git.html#assumptions" id="id1">Assumptions</a></li>
+<li><a class="reference internal" href="posts/update-git.html#useful-links" id="id2">Useful Links</a></li>
+<li><a class="reference internal" href="posts/update-git.html#steps" id="id3">Steps</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="assumptions">
+<h2><a class="toc-backref" href="posts/update-git.html#id1">Assumptions</a></h2>
+<ul class="simple">
+<li>You are using Git from Ubuntu/Debian Linux</li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="useful-links">
+<h2><a class="toc-backref" href="posts/update-git.html#id2">Useful Links</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git">Stackoverflow question about saving credentials</a></li>
+<li><a class="reference external" href="https://git-scm.com/docs/gitcredentials">Git Credentials Documentation</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="steps">
+<h2><a class="toc-backref" href="posts/update-git.html#id3">Steps</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Add the git-core Personal Package Archive (PPA) repository</p>
+<pre class="code text"><a name="rest_code_1e27ebfe03be48c288e5de5887b03f5b-1"></a>$ sudo add-apt-repository ppa:git-core/ppa
+</pre>
+</li>
+<li>
+<p class="first">Download package lists for repositories and update them to get newest versions of packages</p>
+<pre class="code text"><a name="rest_code_0b2d7b90ce1c4b36905ed622740eb146-1"></a>$ sudo apt-get update
+</pre>
+</li>
+<li>
+<p class="first">Install the latest version of git</p>
+<pre class="code text"><a name="rest_code_b711aa7954b34efa85509bb7ea1b6454-1"></a>$ sudo apt-get install git
+</pre>
+</li>
+</ol>
+</div>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/how-to-save-remote-username-and-password-for-git.html" class="u-url">How to save remote username and password for Git</a></h1>
+            <div class="metadata">
+                <span class="byline author vcard">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training, LLC
+                </span>
+                <span class="dateline"><a href="posts/how-to-save-remote-username-and-password-for-git.html" rel="bookmark">
+                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2018-03-14T12:48:35-05:00" title="2018-03-14 12:48">2018-03-14 12:48</time></a></span>
+            </div>
+            <hr></header><div class="e-content entry-content">
+        <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="posts/how-to-save-remote-username-and-password-for-git.html#assumptions" id="id1">Assumptions</a></li>
+<li><a class="reference internal" href="posts/how-to-save-remote-username-and-password-for-git.html#useful-links" id="id2">Useful Links</a></li>
+<li><a class="reference internal" href="posts/how-to-save-remote-username-and-password-for-git.html#steps" id="id3">Steps</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="assumptions">
+<h2><a class="toc-backref" href="posts/how-to-save-remote-username-and-password-for-git.html#id1">Assumptions</a></h2>
+<ul class="simple">
+<li>You are using Git version 2.16.2 or greater</li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="useful-links">
+<h2><a class="toc-backref" href="posts/how-to-save-remote-username-and-password-for-git.html#id2">Useful Links</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git">Stackoverflow question about saving credentials</a></li>
+<li><a class="reference external" href="https://git-scm.com/docs/gitcredentials">Git Credentials Documentation</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="steps">
+<h2><a class="toc-backref" href="posts/how-to-save-remote-username-and-password-for-git.html#id3">Steps</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Configure the <em>credential helper</em> for the repository to be the <em>store</em> helper</p>
+<p>The <em>store</em> helper stores the credentials in a user readable only file after the
+credentials are supplied once.</p>
+<pre class="code text"><a name="rest_code_dd51b9fb89bc469c9d53174bfef997f6-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-WUSTL'
+</pre>
+<p>or</p>
+<pre class="code text"><a name="rest_code_6b09f9c579a648e4a5be5d00c8aced15-1"></a>$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-PERSONAL'
+</pre>
+</li>
+<li>
+<p class="first">Issue a command that requires the credentials</p>
+<pre class="code bash"><a name="rest_code_63a8b5a8107d44d0977387bb672d2dc7-1"></a>$ git push origin --all <span class="c1"># supply username and password as prompted</span>
+</pre>
+<p>The username and password will then be stored in the specified file. Next time they are needed,
+they will be retrieved from the <em>store</em> (the file) and you will no longer need to supply them.</p>
+</li>
+<li>
+<p class="first">To reset them, you can delete the specified store file and issue a command that requires the
+credentials.</p>
+</li>
+</ol>
+</div>
+</div>
+        </div>
+        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/creating-a-release-from-a-feature-branch.html" class="u-url">Creating a Release from a Feature Branch</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <i class="mdi-action-face-unlock"></i>
@@ -61,8 +181,16 @@ article: http://ogp.me/ns/article#
             </div>
             <hr></header><div class="e-content entry-content">
         <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="posts/creating-a-release-from-a-feature-branch.html#assumptions" id="id1">Assumptions</a></li>
+<li><a class="reference internal" href="posts/creating-a-release-from-a-feature-branch.html#steps" id="id2">Steps</a></li>
+</ul>
+</div>
+<hr class="docutils">
 <div class="section" id="assumptions">
-<h2>Assumptions</h2>
+<h2><a class="toc-backref" href="posts/creating-a-release-from-a-feature-branch.html#id1">Assumptions</a></h2>
 <ul class="simple">
 <li>All changes to be included in the release have been made on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt>
 </li>
@@ -71,8 +199,9 @@ article: http://ogp.me/ns/article#
 </li>
 </ul>
 </div>
+<hr class="docutils">
 <div class="section" id="steps">
-<h2>Steps</h2>
+<h2><a class="toc-backref" href="posts/creating-a-release-from-a-feature-branch.html#id2">Steps</a></h2>
 <ol class="arabic">
 <li>
 <p class="first">Commit all your changes on the <tt class="docutils literal"><span class="pre">feature-branch</span></tt></p>
@@ -81,8 +210,8 @@ article: http://ogp.me/ns/article#
 <p class="first">Merge the <tt class="docutils literal">master</tt> branch into the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> and get all conflicts resolved.</p>
 <p>This is in case any changes were made in the <tt class="docutils literal">master</tt> branch since the point at which
 the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> was branched off from the <tt class="docutils literal">master</tt></p>
-<pre class="code text"><a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-1"></a>$ git checkout feature-branch
-<a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-2"></a>$ git merge master
+<pre class="code text"><a name="rest_code_d201e9bc59fd4efc810a1537bbd298cc-1"></a>$ git checkout feature-branch
+<a name="rest_code_d201e9bc59fd4efc810a1537bbd298cc-2"></a>$ git merge master
 </pre>
 </li>
 <li>
@@ -91,51 +220,51 @@ the <tt class="docutils literal"><span class="pre">feature-branch</span></tt> wa
 to ensure that these changes are included in any subsequent feature change branches. (Since
 feature change branches should be branches off of the <tt class="docutils literal">master</tt>.) The squashing means that all the
 changes for the current feature will be under one commit comment.</p>
-<pre class="code text"><a name="rest_code_0a23fb20e6d540d7b083d73334682a90-1"></a>$ git checkout master
-<a name="rest_code_0a23fb20e6d540d7b083d73334682a90-2"></a>$ git merge --squash feature-branch
+<pre class="code text"><a name="rest_code_18d2937fe8ad4b68b849a6109ce9e07d-1"></a>$ git checkout master
+<a name="rest_code_18d2937fe8ad4b68b849a6109ce9e07d-2"></a>$ git merge --squash feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Fix up the <tt class="docutils literal">version.txt</tt> file -- make it say <tt class="docutils literal">master</tt></p>
-<pre class="code text"><a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-1"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-2"></a>$ get add version.txt
+<pre class="code text"><a name="rest_code_396e653c557c466abd458a503e050194-1"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_396e653c557c466abd458a503e050194-2"></a>$ get add version.txt
 </pre>
 <p>Note: <tt class="docutils literal">git_current_branch</tt> should be an alias defined as:</p>
-<pre class="code text"><a name="rest_code_6bc3b41f4f8448fdaeea4019f220c198-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
+<pre class="code text"><a name="rest_code_3171364b1ebc475c9d2ff15d02af377a-1"></a>alias git_current_branch='git symbolic-ref -q HEAD --short'
 </pre>
 </li>
 <li>
 <p class="first">Commit all changes to the <tt class="docutils literal">master</tt> branch. This is the one commit for all of the
 feature-related changes</p>
-<pre class="code text"><a name="rest_code_f322d0c9e6f24b04bcd5c7947ab859c7-1"></a>$ git commit -m "Big description of feature branch changes"
+<pre class="code text"><a name="rest_code_8eba37d2d3834ca4a767510618bd2439-1"></a>$ git commit -m "Big description of feature branch changes"
 </pre>
 <p>Now all the changes you made in <tt class="docutils literal"><span class="pre">feature-branch</span></tt> are in the <tt class="docutils literal">master</tt> branch.</p>
 </li>
 <li>
 <p class="first">Push everything to the origin (GitHub)</p>
-<pre class="code text"><a name="rest_code_e6d6b24d7a1d4dbdb9f431d7b99ab398-1"></a>$ git push origin --all
+<pre class="code text"><a name="rest_code_957dba1bf606440883429af4ebcf1a26-1"></a>$ git push origin --all
 </pre>
 </li>
 <li>
 <p class="first">Remove the local <tt class="docutils literal"><span class="pre">feature-branch</span></tt> whose changes you've now merged and committed to the <tt class="docutils literal">master</tt> branch.</p>
-<pre class="code text"><a name="rest_code_1d0ca537b90940bda022c72976706e95-1"></a>$ git branch -D feature-branch
+<pre class="code text"><a name="rest_code_513a87d18d984189bea7254986567e12-1"></a>$ git branch -D feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Remove the remote <tt class="docutils literal"><span class="pre">feature-branch</span></tt> from the origin repository (GitHub)</p>
-<pre class="code text"><a name="rest_code_99d72456c4a34062ab20c022c2f1d9cf-1"></a>$ git push origin --delete feature-branch
+<pre class="code text"><a name="rest_code_fcbc16a95eea4b129f1077ce56fd71cb-1"></a>$ git push origin --delete feature-branch
 </pre>
 </li>
 <li>
 <p class="first">Create a release version in a release branch</p>
-<pre class="code bash"><a name="rest_code_93525035aef94cc2a73e76855c131801-1"></a>$ git checkout master
-<a name="rest_code_93525035aef94cc2a73e76855c131801-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
-<a name="rest_code_93525035aef94cc2a73e76855c131801-3"></a>$ git checkout release/v1.7.0
-<a name="rest_code_93525035aef94cc2a73e76855c131801-4"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_93525035aef94cc2a73e76855c131801-5"></a>$ git add version.txt
-<a name="rest_code_93525035aef94cc2a73e76855c131801-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
-<a name="rest_code_93525035aef94cc2a73e76855c131801-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
-<a name="rest_code_93525035aef94cc2a73e76855c131801-8"></a>$ git push --tags origin release/v1.7.0
+<pre class="code bash"><a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-1"></a>$ git checkout master
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-2"></a>$ git branch release/v1.7.0  <span class="c1"># substitute your intended release number</span>
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-3"></a>$ git checkout release/v1.7.0
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-4"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-5"></a>$ git add version.txt
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-6"></a>$ git commit -m <span class="s2">"Created v1.7.0"</span>
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-7"></a>$ git tag -a v1.7.0 -m <span class="s2">"Tagging v1.7.0"</span>
+<a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-8"></a>$ git push --tags origin release/v1.7.0
 </pre>
 </li>
 <li>
@@ -151,17 +280,17 @@ feature-related changes</p>
 <p class="first">Make sure you don't leave your local <tt class="docutils literal">git</tt> repository with the release branch checked out.</p>
 <p>You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
 e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch.</p>
-<pre class="code text"><a name="rest_code_c429251b1427488bbdde1ae0b0dc76f2-1"></a>$ git checkout master
+<pre class="code text"><a name="rest_code_fa6802741e144bed99cdd9422781f07a-1"></a>$ git checkout master
 </pre>
 </li>
 <li>
 <p class="first">Make sure all the changes in the release branch are merged into the <tt class="docutils literal">master</tt> branch and the <tt class="docutils literal">master</tt>
 branch is ready to use as a starting point for future changes.</p>
-<pre class="code bash"><a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
-<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-2"></a>$ git_current_branch &gt; version.txt
-<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-3"></a>$ git add version.txt
-<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
-<a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-5"></a>$ git push origin --all
+<pre class="code bash"><a name="rest_code_4e3616f4830b4430998cd75073043583-1"></a>$ git merge release/v1.7.0 <span class="c1"># substitute your release number</span>
+<a name="rest_code_4e3616f4830b4430998cd75073043583-2"></a>$ git_current_branch &gt; version.txt
+<a name="rest_code_4e3616f4830b4430998cd75073043583-3"></a>$ git add version.txt
+<a name="rest_code_4e3616f4830b4430998cd75073043583-4"></a>$ git commit -m <span class="s2">"Updated version.txt"</span>
+<a name="rest_code_4e3616f4830b4430998cd75073043583-5"></a>$ git push origin --all
 </pre>
 </li>
 <li>
@@ -182,15 +311,33 @@ branch is ready to use as a starting point for future changes.</p>
             </div>
             <hr></header><div class="e-content entry-content">
         <div>
-<div class="section" id="important-links">
-<h2>Important Links</h2>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#useful-links" id="id1">Useful Links</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#assumptions" id="id2">Assumptions</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#substitutions-in-commands" id="id3">Substitutions in commands</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#installation-of-nikola" id="id4">Installation of Nikola</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository" id="id5">Associating your site source code with a GitHub Repository</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally" id="id6">Building and viewing your site locally</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp" id="id7">Preparing to deploy your site using git-ftp</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#make-a-change-to-your-content-and-build-your-site-locally" id="id8">Make a change to your content and build your site locally</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#deploy-your-site" id="id9">Deploy your site</a></li>
+<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#notes" id="id10">Notes</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="useful-links">
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id1">Useful Links</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://getnikola.com/getting-started.html">Nikola Getting Started Guide</a></li>
 <li><a class="reference external" href="https://getnikola.com/handbook.html">The Nikola Handbook</a></li>
+<li><a class="reference external" href="https://github.com/git-ftp/git-ftp">git-ftp</a></li>
 </ul>
 </div>
+<hr class="docutils">
 <div class="section" id="assumptions">
-<h2>Assumptions</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id2">Assumptions</a></h2>
 <p>The following assumes:</p>
 <ul class="simple">
 <li>You already have a Python 3 environment set up using Anaconda.</li>
@@ -198,17 +345,9 @@ branch is ready to use as a starting point for future changes.</p>
 <li>You are working with your Python 3 and git tools at a <tt class="docutils literal">bash</tt> shell</li>
 </ul>
 </div>
-<div class="section" id="links-to-sub-tasks-covered-within-this-page">
-<h2>Links to Sub-Tasks covered within this page</h2>
-<ol class="arabic simple">
-<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#installation-of-nikola">Installation of Nikola</a></li>
-<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository">Associating your site source code with a GitHub Repository</a></li>
-<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally">Building and viewing your site locally</a></li>
-<li><a class="reference internal" href="posts/setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp">Preparing to deploy your site using git-ftp</a></li>
-</ol>
-</div>
+<hr class="docutils">
 <div class="section" id="substitutions-in-commands">
-<h2>Substitutions in commands</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id3">Substitutions in commands</a></h2>
 <p>Make the following substitutions in the commands below:</p>
 <ul class="simple">
 <li>Substitute your Python 3 environment name for <tt class="docutils literal">python3</tt>
@@ -222,33 +361,33 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </div>
 <hr class="docutils">
 <div class="section" id="installation-of-nikola">
-<h2>Installation of Nikola</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id4">Installation of Nikola</a></h2>
 <ol class="arabic">
 <li>
 <p class="first">Start your Python 3 environment</p>
-<pre class="code text"><a name="rest_code_3e450d0550db4ca79a9dfad1bce05f00-1"></a>$ source activate python3
+<pre class="code text"><a name="rest_code_1974c37a09f6452bb891a9e45ad2d708-1"></a>$ source activate python3
 </pre>
 </li>
 <li>
 <p class="first">Install prerequisite Python "Asset management application for Python web development"</p>
-<pre class="code text"><a name="rest_code_4795e03c060a4bafbb48aa9ae679c648-1"></a>(python3) $ pip install webassets
+<pre class="code text"><a name="rest_code_0e28a1ac5aab4f07a1e8e13d0a74746e-1"></a>(python3) $ pip install webassets
 </pre>
 </li>
 <li>
 <p class="first">Ensure that pip and setuptools are up-to-date</p>
-<pre class="code text"><a name="rest_code_ed8fa9505c03452ebe2c708f25da6b83-1"></a>(python3) $ pip install --upgrade setuptools pip --ignore-installed
+<pre class="code text"><a name="rest_code_16a8cca67b5846cf90aab74145bfdc11-1"></a>(python3) $ pip install --upgrade setuptools pip --ignore-installed
 </pre>
 </li>
 <li>
 <p class="first">Install Nikola</p>
-<pre class="code text"><a name="rest_code_ebfaf1988edd4fc7b0ae74823805b836-1"></a>(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
+<pre class="code text"><a name="rest_code_c3e83be8a2a044ab93b7eb96e57810a0-1"></a>(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
 </pre>
 </li>
 </ol>
 </div>
 <hr class="docutils">
 <div class="section" id="associating-your-site-source-code-with-a-github-repository">
-<h2>Associating your site source code with a GitHub Repository</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id5">Associating your site source code with a GitHub Repository</a></h2>
 <div class="section" id="if-you-are-starting-a-completely-new-site">
 <h3>If you are starting a completely new site</h3>
 <ol class="arabic">
@@ -263,8 +402,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </li>
 <li>
 <p class="first">Clone your new (empty) GitHub repository</p>
-<pre class="code text"><a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+<pre class="code text"><a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 </pre>
 </li>
 <li>
@@ -272,8 +411,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </li>
 <li>
 <p class="first">Initialize your site</p>
-<pre class="code text"><a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-2"></a>(python3) $ nikola init softdevtrain.com
+<pre class="code text"><a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-2"></a>(python3) $ nikola init softdevtrain.com
 </pre>
 <p>This should create the first version of your site in the <tt class="docutils literal">softdevtrain.com</tt> sub-directory.</p>
 </li>
@@ -284,8 +423,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 <ol class="arabic">
 <li>
 <p class="first">Clone the existing GitHub repository</p>
-<pre class="code text"><a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+<pre class="code text"><a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 </pre>
 </li>
 </ol>
@@ -293,39 +432,107 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </div>
 <hr class="docutils">
 <div class="section" id="building-and-viewing-your-site-locally">
-<h2>Building and viewing your site locally</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id6">Building and viewing your site locally</a></h2>
 <ol class="arabic">
 <li>
 <p class="first">Build your site</p>
-<pre class="code text"><a name="rest_code_f556436c038e46119978d4cddfbc97ca-1"></a>(python3) $ cd ~/projects/softdevtrain.com
-<a name="rest_code_f556436c038e46119978d4cddfbc97ca-2"></a>(python3) $ nikola build
+<pre class="code text"><a name="rest_code_7ede4cae2e2041c38635437d2c112b48-1"></a>(python3) $ cd ~/projects/softdevtrain.com
+<a name="rest_code_7ede4cae2e2041c38635437d2c112b48-2"></a>(python3) $ nikola build
 </pre>
 </li>
 <li>
 <p class="first">View your site</p>
-<pre class="code text"><a name="rest_code_a7c9a3e9d0934ee18791fc7c18a9389a-1"></a>(python3) $ gnome-open output/index.html
+<pre class="code text"><a name="rest_code_21cba02000be488d8a4fbe0262ded19d-1"></a>(python3) $ gnome-open output/index.html
 </pre>
 <p>or</p>
-<pre class="code text"><a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-1"></a>(python3) $ nikola serve -b
-<a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-2"></a>    Ctrl-C when done
+<pre class="code text"><a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-1"></a>(python3) $ nikola serve -b
+<a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-2"></a>    Ctrl-C when done
 </pre>
 </li>
 </ol>
 </div>
 <hr class="docutils">
 <div class="section" id="preparing-to-deploy-your-site-using-git-ftp">
-<h2>Preparing to deploy your site using git-ftp</h2>
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id7">Preparing to deploy your site using git-ftp</a></h2>
 <div class="section" id="install-git-ftp">
 <h3>Install git-ftp</h3>
-<pre class="code text"><a name="rest_code_58d2e6e203b34c4d93fad3ed7c64925b-1"></a>(python3) $ sudo apt-get install git-ftp
+<pre class="code text"><a name="rest_code_a98a259ba0574255bf7bc4221aee0849-1"></a>(python3) $ sudo apt-get install git-ftp
 </pre>
 </div>
 <div class="section" id="configure-git-ftp">
 <h3>Configure git-ftp</h3>
-<pre class="code text"><a name="rest_code_c8e4c06cb9b34ba7983c0e90c970c51e-1"></a>(python3) $ git config git-ftp.url "ftp://your-ftp-site/your-directory" (e.g. ftp://ftp.fastmail.com/*user-id*/files/*site-folder*)
+<pre class="code bash"><a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-1"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.url <span class="s2">"ftp://your-ftp-site/your-files-directory"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-2"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.user <span class="s2">"your-ftp-site-user-id"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-3"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.password <span class="s2">"your-ftp-site-password"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-4"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.syncroot output/ <span class="c1"># the output directory of a Nikola repository contains the built site to be deployed</span>
 </pre>
-<p>ipsum loram dotaa</p>
 </div>
+</div>
+<hr class="docutils">
+<div class="section" id="make-a-change-to-your-content-and-build-your-site-locally">
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id8">Make a change to your content and build your site locally</a></h2>
+<p>For example:</p>
+<pre class="code text"><a name="rest_code_fe818b2086c94fa1b300a8de4df668ba-1"></a>(python3) $ nikola new_post
+</pre>
+<p>or</p>
+<pre class="code bash"><a name="rest_code_f2ed1ebf55d4484c99fc7a92641a545d-1"></a><span class="o">(</span>python3<span class="o">)</span> $ nikola new_post -e <span class="c1"># make a new post and open up the editor specified in the EDITOR environment variable</span>
+</pre>
+<p>Edit your post or content.</p>
+<p>Then build the site with the following command:</p>
+<pre class="code text"><a name="rest_code_fa106d28fe9e4c93afdbe68be54be385-1"></a>(python3) $ nikola build
+</pre>
+</div>
+<hr class="docutils">
+<div class="section" id="deploy-your-site">
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id9">Deploy your site</a></h2>
+<div class="section" id="if-you-have-not-uploaded-any-files-to-the-ftp-site-and-you-want-to-completely-upload-all-files-to-your-site">
+<h3>If you have not uploaded any files to the ftp site and you want to completely upload all files to your site.</h3>
+<pre class="code text"><a name="rest_code_7c098a0f9b5c43ddb2612e46e5c6eff3-1"></a>(python3) $ git ftp init
+</pre>
+</div>
+<div class="section" id="if-you-have-previously-uploaded-files-to-your-ftp-site">
+<h3>If you have previously uploaded files to your ftp site.</h3>
+<pre class="code text"><a name="rest_code_bf2813d562cd4ac1b59a2ab831a8a3c5-1"></a>(python3) $ git ftp push
+</pre>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="notes">
+<h2><a class="toc-backref" href="posts/setting-up-nikola-git-and-git-ftp.html#id10">Notes</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Pushing to the ftp site does <em>not</em> cause the changes to be committed to your local repository or
+pushed to the origin remote repository.</p>
+<p>You will need to do <tt class="docutils literal">git commit <span class="pre">-m</span> "comment"</tt> to commit changes locally before they can be
+pushed to the ftp site.</p>
+<p>You will need to do <tt class="docutils literal">git push origin <span class="pre">--all</span></tt> (or a similar command) to push your changes to the
+git repository.</p>
+</li>
+<li>
+<p class="first">Your standard operating procedure after setup will usually be:</p>
+<p><em>Make or edit a post or page</em></p>
+<pre class="code text"><a name="rest_code_3088b3534e78441587644e9d12a40f94-1"></a>(python3) $ nikola new_post
+</pre>
+<p><em>Build the site locally to see how your changes look</em></p>
+<pre class="code text"><a name="rest_code_6c357b4bb54e470ea0009cef62400abc-1"></a>(python3) $ nikola build
+</pre>
+<p><em>See if it looks like what you like</em></p>
+<pre class="code text"><a name="rest_code_d0fa2a78b9b34eb3961c497fe0b976b1-1"></a>(python3) $ gnome-open output/index.html
+</pre>
+<p>or</p>
+<pre class="code text"><a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-1"></a>(python3) $ nikola serve -b
+<a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-2"></a>Ctrl-C when done
+</pre>
+<p><em>Commit changes to local repository and push them to remote (GitHub) repository</em></p>
+<pre class="code text"><a name="rest_code_aa527988a07b4cba9e061e263de4eb84-1"></a>(python3) $ git add *files*
+<a name="rest_code_aa527988a07b4cba9e061e263de4eb84-2"></a>(python3) $ git commit -m "commit comment"
+<a name="rest_code_aa527988a07b4cba9e061e263de4eb84-3"></a>(python3) $ git push origin --all
+</pre>
+<p><em>Push the changes to the ftp site so they actually show up on your web site</em></p>
+<pre class="code text"><a name="rest_code_a6b669c6210d45f6bd30e43e250403b9-1"></a>(python3) $ git ftp push
+</pre>
+</li>
+</ol>
 </div>
 </div>
         </div>

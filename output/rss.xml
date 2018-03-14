@@ -1,60 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link rel="self" href="http://www.SoftDevTrain.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 16:55:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a Release from a Feature Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="section" id="assumptions"&gt;
-&lt;h2&gt;Assumptions&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training, LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link rel="self" href="http://www.SoftDevTrain.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training, LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 14 Mar 2018 18:12:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Update Git</title><link>http://www.SoftDevTrain.com/posts/update-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#useful-links" id="id2"&gt;Useful Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/update-git.html#steps" id="id3"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You are using Git from Ubuntu/Debian Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="useful-links"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id2"&gt;Useful Links&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git"&gt;Stackoverflow question about saving credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://git-scm.com/docs/gitcredentials"&gt;Git Credentials Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/update-git.html#id3"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add the git-core Personal Package Archive (PPA) repository&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1e27ebfe03be48c288e5de5887b03f5b-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:git-core/ppa
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Download package lists for repositories and update them to get newest versions of packages&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0b2d7b90ce1c4b36905ed622740eb146-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install the latest version of git&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b711aa7954b34efa85509bb7ea1b6454-1"&gt;&lt;/a&gt;$ sudo apt-get install git
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/update-git.html</guid><pubDate>Wed, 14 Mar 2018 18:03:35 GMT</pubDate></item><item><title>How to save remote username and password for Git</title><link>http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#useful-links" id="id2"&gt;Useful Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#steps" id="id3"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;You are using Git version 2.16.2 or greater&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="useful-links"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id2"&gt;Useful Links&lt;/a&gt;&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git"&gt;Stackoverflow question about saving credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://git-scm.com/docs/gitcredentials"&gt;Git Credentials Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="steps"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html#id3"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Configure the &lt;em&gt;credential helper&lt;/em&gt; for the repository to be the &lt;em&gt;store&lt;/em&gt; helper&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;store&lt;/em&gt; helper stores the credentials in a user readable only file after the
+credentials are supplied once.&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_dd51b9fb89bc469c9d53174bfef997f6-1"&gt;&lt;/a&gt;$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-WUSTL'
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_6b09f9c579a648e4a5be5d00c8aced15-1"&gt;&lt;/a&gt;$ git config credential.helper 'store --file=/home/*my-account*/.git-credentials-PERSONAL'
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Issue a command that requires the credentials&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_63a8b5a8107d44d0977387bb672d2dc7-1"&gt;&lt;/a&gt;$ git push origin --all &lt;span class="c1"&gt;# supply username and password as prompted&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;The username and password will then be stored in the specified file. Next time they are needed,
+they will be retrieved from the &lt;em&gt;store&lt;/em&gt; (the file) and you will no longer need to supply them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;To reset them, you can delete the specified store file and issue a command that requires the
+credentials.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html</guid><pubDate>Wed, 14 Mar 2018 17:48:35 GMT</pubDate></item><item><title>Creating a Release from a Feature Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#steps" id="id2"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="assumptions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#id1"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;All changes to be included in the release have been made on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
 &lt;li&gt;We release from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch by merging &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;feature release&lt;/strong&gt; (e.g. X.Y.0) gets a branch of its own off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;hr class="docutils"&gt;
 &lt;div class="section" id="steps"&gt;
-&lt;h2&gt;Steps&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html#id2"&gt;Steps&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Commit all your changes on the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch into the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; and get all conflicts resolved.&lt;/p&gt;
 &lt;p&gt;This is in case any changes were made in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch since the point at which
 the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; was branched off from the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-1"&gt;&lt;/a&gt;$ git checkout feature-branch
-&lt;a name="rest_code_2e7e6bb96b2342d28e419dbe99bfa9bb-2"&gt;&lt;/a&gt;$ git merge master
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d201e9bc59fd4efc810a1537bbd298cc-1"&gt;&lt;/a&gt;$ git checkout feature-branch
+&lt;a name="rest_code_d201e9bc59fd4efc810a1537bbd298cc-2"&gt;&lt;/a&gt;$ git merge master
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Merge the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and squash the changes into one big change set.&lt;/p&gt;
 &lt;p&gt;This is to get the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; changes into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; for use in the release and
 to ensure that these changes are included in any subsequent feature change branches. (Since
 feature change branches should be branches off of the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;.) The squashing means that all the
 changes for the current feature will be under one commit comment.&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_0a23fb20e6d540d7b083d73334682a90-1"&gt;&lt;/a&gt;$ git checkout master
-&lt;a name="rest_code_0a23fb20e6d540d7b083d73334682a90-2"&gt;&lt;/a&gt;$ git merge --squash feature-branch
+&lt;pre class="code text"&gt;&lt;a name="rest_code_18d2937fe8ad4b68b849a6109ce9e07d-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_18d2937fe8ad4b68b849a6109ce9e07d-2"&gt;&lt;/a&gt;$ git merge --squash feature-branch
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Fix up the &lt;tt class="docutils literal"&gt;version.txt&lt;/tt&gt; file -- make it say &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-1"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
-&lt;a name="rest_code_a0de9f97a9a84d038b7abfa24284a8e8-2"&gt;&lt;/a&gt;$ get add version.txt
+&lt;pre class="code text"&gt;&lt;a name="rest_code_396e653c557c466abd458a503e050194-1"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_396e653c557c466abd458a503e050194-2"&gt;&lt;/a&gt;$ get add version.txt
 &lt;/pre&gt;&lt;p&gt;Note: &lt;tt class="docutils literal"&gt;git_current_branch&lt;/tt&gt; should be an alias defined as:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_6bc3b41f4f8448fdaeea4019f220c198-1"&gt;&lt;/a&gt;alias git_current_branch='git symbolic-ref -q HEAD --short'
+&lt;pre class="code text"&gt;&lt;a name="rest_code_3171364b1ebc475c9d2ff15d02af377a-1"&gt;&lt;/a&gt;alias git_current_branch='git symbolic-ref -q HEAD --short'
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Commit all changes to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch. This is the one commit for all of the
 feature-related changes&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_f322d0c9e6f24b04bcd5c7947ab859c7-1"&gt;&lt;/a&gt;$ git commit -m "Big description of feature branch changes"
+&lt;pre class="code text"&gt;&lt;a name="rest_code_8eba37d2d3834ca4a767510618bd2439-1"&gt;&lt;/a&gt;$ git commit -m "Big description of feature branch changes"
 &lt;/pre&gt;&lt;p&gt;Now all the changes you made in &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; are in the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Push everything to the origin (GitHub)&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_e6d6b24d7a1d4dbdb9f431d7b99ab398-1"&gt;&lt;/a&gt;$ git push origin --all
+&lt;pre class="code text"&gt;&lt;a name="rest_code_957dba1bf606440883429af4ebcf1a26-1"&gt;&lt;/a&gt;$ git push origin --all
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Remove the local &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; whose changes you've now merged and committed to the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_1d0ca537b90940bda022c72976706e95-1"&gt;&lt;/a&gt;$ git branch -D feature-branch
+&lt;pre class="code text"&gt;&lt;a name="rest_code_513a87d18d984189bea7254986567e12-1"&gt;&lt;/a&gt;$ git branch -D feature-branch
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Remove the remote &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;feature-branch&lt;/span&gt;&lt;/tt&gt; from the origin repository (GitHub)&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_99d72456c4a34062ab20c022c2f1d9cf-1"&gt;&lt;/a&gt;$ git push origin --delete feature-branch
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fcbc16a95eea4b129f1077ce56fd71cb-1"&gt;&lt;/a&gt;$ git push origin --delete feature-branch
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create a release version in a release branch&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-1"&gt;&lt;/a&gt;$ git checkout master
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-2"&gt;&lt;/a&gt;$ git branch release/v1.7.0  &lt;span class="c1"&gt;# substitute your intended release number&lt;/span&gt;
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-3"&gt;&lt;/a&gt;$ git checkout release/v1.7.0
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-4"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-5"&gt;&lt;/a&gt;$ git add version.txt
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-6"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Created v1.7.0"&lt;/span&gt;
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-7"&gt;&lt;/a&gt;$ git tag -a v1.7.0 -m &lt;span class="s2"&gt;"Tagging v1.7.0"&lt;/span&gt;
-&lt;a name="rest_code_93525035aef94cc2a73e76855c131801-8"&gt;&lt;/a&gt;$ git push --tags origin release/v1.7.0
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-2"&gt;&lt;/a&gt;$ git branch release/v1.7.0  &lt;span class="c1"&gt;# substitute your intended release number&lt;/span&gt;
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-3"&gt;&lt;/a&gt;$ git checkout release/v1.7.0
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-4"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-5"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-6"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Created v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-7"&gt;&lt;/a&gt;$ git tag -a v1.7.0 -m &lt;span class="s2"&gt;"Tagging v1.7.0"&lt;/span&gt;
+&lt;a name="rest_code_5a51a112b1384ba4b8f91aa9fbf059a4-8"&gt;&lt;/a&gt;$ git push --tags origin release/v1.7.0
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Go to &lt;a class="reference external" href="https://github.com"&gt;https://github.com&lt;/a&gt;, login in, and create a release from the tag&lt;/p&gt;
 &lt;p&gt;Releases --&amp;gt; Draft a new release --&amp;gt; Select tag&lt;/p&gt;
@@ -67,28 +156,46 @@ feature-related changes&lt;/p&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure you don't leave your local &lt;tt class="docutils literal"&gt;git&lt;/tt&gt; repository with the release branch checked out.&lt;/p&gt;
 &lt;p&gt;You do not want to make further changes to that branch. If you are making a bugfix release (a final point release,
 e.g. v1.7.1 or v1.7.2), you will create a feature/bugfix branch off o the release branch.&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_c429251b1427488bbdde1ae0b0dc76f2-1"&gt;&lt;/a&gt;$ git checkout master
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fa6802741e144bed99cdd9422781f07a-1"&gt;&lt;/a&gt;$ git checkout master
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure all the changes in the release branch are merged into the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch and the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt;
 branch is ready to use as a starting point for future changes.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-1"&gt;&lt;/a&gt;$ git merge release/v1.7.0 &lt;span class="c1"&gt;# substitute your release number&lt;/span&gt;
-&lt;a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-2"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
-&lt;a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-3"&gt;&lt;/a&gt;$ git add version.txt
-&lt;a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-4"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Updated version.txt"&lt;/span&gt;
-&lt;a name="rest_code_8c1ca7ed39424692bc6b0593ba5bfc56-5"&gt;&lt;/a&gt;$ git push origin --all
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_4e3616f4830b4430998cd75073043583-1"&gt;&lt;/a&gt;$ git merge release/v1.7.0 &lt;span class="c1"&gt;# substitute your release number&lt;/span&gt;
+&lt;a name="rest_code_4e3616f4830b4430998cd75073043583-2"&gt;&lt;/a&gt;$ git_current_branch &amp;gt; version.txt
+&lt;a name="rest_code_4e3616f4830b4430998cd75073043583-3"&gt;&lt;/a&gt;$ git add version.txt
+&lt;a name="rest_code_4e3616f4830b4430998cd75073043583-4"&gt;&lt;/a&gt;$ git commit -m &lt;span class="s2"&gt;"Updated version.txt"&lt;/span&gt;
+&lt;a name="rest_code_4e3616f4830b4430998cd75073043583-5"&gt;&lt;/a&gt;$ git push origin --all
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Further changes should be done in a new feature branch, not on the &lt;tt class="docutils literal"&gt;master&lt;/tt&gt; branch.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>git release</category><guid>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</guid><pubDate>Wed, 14 Mar 2018 16:35:00 GMT</pubDate></item><item><title>Setting up Nikola, Git, and git-ftp</title><link>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="section" id="important-links"&gt;
-&lt;h2&gt;Important Links&lt;/h2&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>git release</category><guid>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-feature-branch.html</guid><pubDate>Wed, 14 Mar 2018 16:35:00 GMT</pubDate></item><item><title>Setting up Nikola, Git, and git-ftp</title><link>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</link><dc:creator>Software Development Training, LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#useful-links" id="id1"&gt;Useful Links&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#assumptions" id="id2"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#substitutions-in-commands" id="id3"&gt;Substitutions in commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#installation-of-nikola" id="id4"&gt;Installation of Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository" id="id5"&gt;Associating your site source code with a GitHub Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally" id="id6"&gt;Building and viewing your site locally&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp" id="id7"&gt;Preparing to deploy your site using git-ftp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#make-a-change-to-your-content-and-build-your-site-locally" id="id8"&gt;Make a change to your content and build your site locally&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#deploy-your-site" id="id9"&gt;Deploy your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#notes" id="id10"&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="useful-links"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id1"&gt;Useful Links&lt;/a&gt;&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://getnikola.com/getting-started.html"&gt;Nikola Getting Started Guide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://getnikola.com/handbook.html"&gt;The Nikola Handbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://github.com/git-ftp/git-ftp"&gt;git-ftp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;hr class="docutils"&gt;
 &lt;div class="section" id="assumptions"&gt;
-&lt;h2&gt;Assumptions&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id2"&gt;Assumptions&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The following assumes:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;You already have a Python 3 environment set up using Anaconda.&lt;/li&gt;
@@ -96,17 +203,9 @@ branch is ready to use as a starting point for future changes.&lt;/p&gt;
 &lt;li&gt;You are working with your Python 3 and git tools at a &lt;tt class="docutils literal"&gt;bash&lt;/tt&gt; shell&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="links-to-sub-tasks-covered-within-this-page"&gt;
-&lt;h2&gt;Links to Sub-Tasks covered within this page&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#installation-of-nikola"&gt;Installation of Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository"&gt;Associating your site source code with a GitHub Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally"&gt;Building and viewing your site locally&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp"&gt;Preparing to deploy your site using git-ftp&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
+&lt;hr class="docutils"&gt;
 &lt;div class="section" id="substitutions-in-commands"&gt;
-&lt;h2&gt;Substitutions in commands&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id3"&gt;Substitutions in commands&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Make the following substitutions in the commands below:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Substitute your Python 3 environment name for &lt;tt class="docutils literal"&gt;python3&lt;/tt&gt;&lt;/li&gt;
@@ -118,25 +217,25 @@ use for the source code for your site for &lt;tt class="docutils literal"&gt;sof
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="installation-of-nikola"&gt;
-&lt;h2&gt;Installation of Nikola&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id4"&gt;Installation of Nikola&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Start your Python 3 environment&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_3e450d0550db4ca79a9dfad1bce05f00-1"&gt;&lt;/a&gt;$ source activate python3
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1974c37a09f6452bb891a9e45ad2d708-1"&gt;&lt;/a&gt;$ source activate python3
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install prerequisite Python "Asset management application for Python web development"&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_4795e03c060a4bafbb48aa9ae679c648-1"&gt;&lt;/a&gt;(python3) $ pip install webassets
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0e28a1ac5aab4f07a1e8e13d0a74746e-1"&gt;&lt;/a&gt;(python3) $ pip install webassets
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Ensure that pip and setuptools are up-to-date&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_ed8fa9505c03452ebe2c708f25da6b83-1"&gt;&lt;/a&gt;(python3) $ pip install --upgrade setuptools pip --ignore-installed
+&lt;pre class="code text"&gt;&lt;a name="rest_code_16a8cca67b5846cf90aab74145bfdc11-1"&gt;&lt;/a&gt;(python3) $ pip install --upgrade setuptools pip --ignore-installed
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install Nikola&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_ebfaf1988edd4fc7b0ae74823805b836-1"&gt;&lt;/a&gt;(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c3e83be8a2a044ab93b7eb96e57810a0-1"&gt;&lt;/a&gt;(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="associating-your-site-source-code-with-a-github-repository"&gt;
-&lt;h2&gt;Associating your site source code with a GitHub Repository&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id5"&gt;Associating your site source code with a GitHub Repository&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="if-you-are-starting-a-completely-new-site"&gt;
 &lt;h3&gt;If you are starting a completely new site&lt;/h3&gt;
 &lt;ol class="arabic"&gt;
@@ -149,14 +248,14 @@ use for the source code for your site for &lt;tt class="docutils literal"&gt;sof
 &lt;p&gt;You should see the GitHub URL for your new (empty) repository. (e.g. &lt;a class="reference external" href="https://github.com/your-user-id/softdevtrain.com.git"&gt;https://github.com/your-user-id/softdevtrain.com.git&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Clone your new (empty) GitHub repository&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
-&lt;a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-2"&gt;&lt;/a&gt;(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+&lt;pre class="code text"&gt;&lt;a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
+&lt;a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-2"&gt;&lt;/a&gt;(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Verify that the ~/projects/softdevtrain.com directory has been created&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Initialize your site&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
-&lt;a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-2"&gt;&lt;/a&gt;(python3) $ nikola init softdevtrain.com
+&lt;pre class="code text"&gt;&lt;a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
+&lt;a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-2"&gt;&lt;/a&gt;(python3) $ nikola init softdevtrain.com
 &lt;/pre&gt;&lt;p&gt;This should create the first version of your site in the &lt;tt class="docutils literal"&gt;softdevtrain.com&lt;/tt&gt; sub-directory.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -165,38 +264,93 @@ use for the source code for your site for &lt;tt class="docutils literal"&gt;sof
 &lt;h3&gt;If you are working with a site for which a GitHub repository has already been created&lt;/h3&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Clone the existing GitHub repository&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
-&lt;a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-2"&gt;&lt;/a&gt;(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects
+&lt;a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-2"&gt;&lt;/a&gt;(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="building-and-viewing-your-site-locally"&gt;
-&lt;h2&gt;Building and viewing your site locally&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id6"&gt;Building and viewing your site locally&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Build your site&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_f556436c038e46119978d4cddfbc97ca-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects/softdevtrain.com
-&lt;a name="rest_code_f556436c038e46119978d4cddfbc97ca-2"&gt;&lt;/a&gt;(python3) $ nikola build
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7ede4cae2e2041c38635437d2c112b48-1"&gt;&lt;/a&gt;(python3) $ cd ~/projects/softdevtrain.com
+&lt;a name="rest_code_7ede4cae2e2041c38635437d2c112b48-2"&gt;&lt;/a&gt;(python3) $ nikola build
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;View your site&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_a7c9a3e9d0934ee18791fc7c18a9389a-1"&gt;&lt;/a&gt;(python3) $ gnome-open output/index.html
+&lt;pre class="code text"&gt;&lt;a name="rest_code_21cba02000be488d8a4fbe0262ded19d-1"&gt;&lt;/a&gt;(python3) $ gnome-open output/index.html
 &lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-1"&gt;&lt;/a&gt;(python3) $ nikola serve -b
-&lt;a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-2"&gt;&lt;/a&gt;    Ctrl-C when done
+&lt;pre class="code text"&gt;&lt;a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-1"&gt;&lt;/a&gt;(python3) $ nikola serve -b
+&lt;a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-2"&gt;&lt;/a&gt;    Ctrl-C when done
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="preparing-to-deploy-your-site-using-git-ftp"&gt;
-&lt;h2&gt;Preparing to deploy your site using git-ftp&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id7"&gt;Preparing to deploy your site using git-ftp&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="install-git-ftp"&gt;
 &lt;h3&gt;Install git-ftp&lt;/h3&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_58d2e6e203b34c4d93fad3ed7c64925b-1"&gt;&lt;/a&gt;(python3) $ sudo apt-get install git-ftp
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a98a259ba0574255bf7bc4221aee0849-1"&gt;&lt;/a&gt;(python3) $ sudo apt-get install git-ftp
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="configure-git-ftp"&gt;
 &lt;h3&gt;Configure git-ftp&lt;/h3&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_c8e4c06cb9b34ba7983c0e90c970c51e-1"&gt;&lt;/a&gt;(python3) $ git config git-ftp.url "ftp://your-ftp-site/your-directory" (e.g. ftp://ftp.fastmail.com/*user-id*/files/*site-folder*)
-&lt;/pre&gt;&lt;p&gt;ipsum loram dotaa&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;python3&lt;span class="o"&gt;)&lt;/span&gt; $ git config git-ftp.url &lt;span class="s2"&gt;"ftp://your-ftp-site/your-files-directory"&lt;/span&gt;
+&lt;a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;python3&lt;span class="o"&gt;)&lt;/span&gt; $ git config git-ftp.user &lt;span class="s2"&gt;"your-ftp-site-user-id"&lt;/span&gt;
+&lt;a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;python3&lt;span class="o"&gt;)&lt;/span&gt; $ git config git-ftp.password &lt;span class="s2"&gt;"your-ftp-site-password"&lt;/span&gt;
+&lt;a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;python3&lt;span class="o"&gt;)&lt;/span&gt; $ git config git-ftp.syncroot output/ &lt;span class="c1"&gt;# the output directory of a Nikola repository contains the built site to be deployed&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="make-a-change-to-your-content-and-build-your-site-locally"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id8"&gt;Make a change to your content and build your site locally&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fe818b2086c94fa1b300a8de4df668ba-1"&gt;&lt;/a&gt;(python3) $ nikola new_post
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_f2ed1ebf55d4484c99fc7a92641a545d-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;python3&lt;span class="o"&gt;)&lt;/span&gt; $ nikola new_post -e &lt;span class="c1"&gt;# make a new post and open up the editor specified in the EDITOR environment variable&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;Edit your post or content.&lt;/p&gt;
+&lt;p&gt;Then build the site with the following command:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_fa106d28fe9e4c93afdbe68be54be385-1"&gt;&lt;/a&gt;(python3) $ nikola build
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="deploy-your-site"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id9"&gt;Deploy your site&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="if-you-have-not-uploaded-any-files-to-the-ftp-site-and-you-want-to-completely-upload-all-files-to-your-site"&gt;
+&lt;h3&gt;If you have not uploaded any files to the ftp site and you want to completely upload all files to your site.&lt;/h3&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7c098a0f9b5c43ddb2612e46e5c6eff3-1"&gt;&lt;/a&gt;(python3) $ git ftp init
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="section" id="if-you-have-previously-uploaded-files-to-your-ftp-site"&gt;
+&lt;h3&gt;If you have previously uploaded files to your ftp site.&lt;/h3&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_bf2813d562cd4ac1b59a2ab831a8a3c5-1"&gt;&lt;/a&gt;(python3) $ git ftp push
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="notes"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html#id10"&gt;Notes&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Pushing to the ftp site does &lt;em&gt;not&lt;/em&gt; cause the changes to be committed to your local repository or
+pushed to the origin remote repository.&lt;/p&gt;
+&lt;p&gt;You will need to do &lt;tt class="docutils literal"&gt;git commit &lt;span class="pre"&gt;-m&lt;/span&gt; "comment"&lt;/tt&gt; to commit changes locally before they can be
+pushed to the ftp site.&lt;/p&gt;
+&lt;p&gt;You will need to do &lt;tt class="docutils literal"&gt;git push origin &lt;span class="pre"&gt;--all&lt;/span&gt;&lt;/tt&gt; (or a similar command) to push your changes to the
+git repository.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Your standard operating procedure after setup will usually be:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Make or edit a post or page&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_3088b3534e78441587644e9d12a40f94-1"&gt;&lt;/a&gt;(python3) $ nikola new_post
+&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Build the site locally to see how your changes look&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_6c357b4bb54e470ea0009cef62400abc-1"&gt;&lt;/a&gt;(python3) $ nikola build
+&lt;/pre&gt;&lt;p&gt;&lt;em&gt;See if it looks like what you like&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d0fa2a78b9b34eb3961c497fe0b976b1-1"&gt;&lt;/a&gt;(python3) $ gnome-open output/index.html
+&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-1"&gt;&lt;/a&gt;(python3) $ nikola serve -b
+&lt;a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-2"&gt;&lt;/a&gt;Ctrl-C when done
+&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Commit changes to local repository and push them to remote (GitHub) repository&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_aa527988a07b4cba9e061e263de4eb84-1"&gt;&lt;/a&gt;(python3) $ git add *files*
+&lt;a name="rest_code_aa527988a07b4cba9e061e263de4eb84-2"&gt;&lt;/a&gt;(python3) $ git commit -m "commit comment"
+&lt;a name="rest_code_aa527988a07b4cba9e061e263de4eb84-3"&gt;&lt;/a&gt;(python3) $ git push origin --all
+&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Push the changes to the ftp site so they actually show up on your web site&lt;/em&gt;&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a6b669c6210d45f6bd30e43e250403b9-1"&gt;&lt;/a&gt;(python3) $ git ftp push
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>git</category><category>nikola</category><category>setup</category><guid>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</guid><pubDate>Tue, 13 Mar 2018 19:40:07 GMT</pubDate></item></channel></rss>

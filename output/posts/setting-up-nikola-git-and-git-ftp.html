@@ -76,15 +76,33 @@ article: http://ogp.me/ns/article#
         
         <hr></header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="section" id="important-links">
-<h2>Important Links</h2>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#useful-links" id="id1">Useful Links</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#assumptions" id="id2">Assumptions</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#substitutions-in-commands" id="id3">Substitutions in commands</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#installation-of-nikola" id="id4">Installation of Nikola</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository" id="id5">Associating your site source code with a GitHub Repository</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally" id="id6">Building and viewing your site locally</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp" id="id7">Preparing to deploy your site using git-ftp</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#make-a-change-to-your-content-and-build-your-site-locally" id="id8">Make a change to your content and build your site locally</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#deploy-your-site" id="id9">Deploy your site</a></li>
+<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#notes" id="id10">Notes</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="useful-links">
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id1">Useful Links</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://getnikola.com/getting-started.html">Nikola Getting Started Guide</a></li>
 <li><a class="reference external" href="https://getnikola.com/handbook.html">The Nikola Handbook</a></li>
+<li><a class="reference external" href="https://github.com/git-ftp/git-ftp">git-ftp</a></li>
 </ul>
 </div>
+<hr class="docutils">
 <div class="section" id="assumptions">
-<h2>Assumptions</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id2">Assumptions</a></h2>
 <p>The following assumes:</p>
 <ul class="simple">
 <li>You already have a Python 3 environment set up using Anaconda.</li>
@@ -92,17 +110,9 @@ article: http://ogp.me/ns/article#
 <li>You are working with your Python 3 and git tools at a <tt class="docutils literal">bash</tt> shell</li>
 </ul>
 </div>
-<div class="section" id="links-to-sub-tasks-covered-within-this-page">
-<h2>Links to Sub-Tasks covered within this page</h2>
-<ol class="arabic simple">
-<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#installation-of-nikola">Installation of Nikola</a></li>
-<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#associating-your-site-source-code-with-a-github-repository">Associating your site source code with a GitHub Repository</a></li>
-<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#building-and-viewing-your-site-locally">Building and viewing your site locally</a></li>
-<li><a class="reference internal" href="setting-up-nikola-git-and-git-ftp.html#preparing-to-deploy-your-site-using-git-ftp">Preparing to deploy your site using git-ftp</a></li>
-</ol>
-</div>
+<hr class="docutils">
 <div class="section" id="substitutions-in-commands">
-<h2>Substitutions in commands</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id3">Substitutions in commands</a></h2>
 <p>Make the following substitutions in the commands below:</p>
 <ul class="simple">
 <li>Substitute your Python 3 environment name for <tt class="docutils literal">python3</tt>
@@ -116,33 +126,33 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </div>
 <hr class="docutils">
 <div class="section" id="installation-of-nikola">
-<h2>Installation of Nikola</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id4">Installation of Nikola</a></h2>
 <ol class="arabic">
 <li>
 <p class="first">Start your Python 3 environment</p>
-<pre class="code text"><a name="rest_code_3e450d0550db4ca79a9dfad1bce05f00-1"></a>$ source activate python3
+<pre class="code text"><a name="rest_code_1974c37a09f6452bb891a9e45ad2d708-1"></a>$ source activate python3
 </pre>
 </li>
 <li>
 <p class="first">Install prerequisite Python "Asset management application for Python web development"</p>
-<pre class="code text"><a name="rest_code_4795e03c060a4bafbb48aa9ae679c648-1"></a>(python3) $ pip install webassets
+<pre class="code text"><a name="rest_code_0e28a1ac5aab4f07a1e8e13d0a74746e-1"></a>(python3) $ pip install webassets
 </pre>
 </li>
 <li>
 <p class="first">Ensure that pip and setuptools are up-to-date</p>
-<pre class="code text"><a name="rest_code_ed8fa9505c03452ebe2c708f25da6b83-1"></a>(python3) $ pip install --upgrade setuptools pip --ignore-installed
+<pre class="code text"><a name="rest_code_16a8cca67b5846cf90aab74145bfdc11-1"></a>(python3) $ pip install --upgrade setuptools pip --ignore-installed
 </pre>
 </li>
 <li>
 <p class="first">Install Nikola</p>
-<pre class="code text"><a name="rest_code_ebfaf1988edd4fc7b0ae74823805b836-1"></a>(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
+<pre class="code text"><a name="rest_code_c3e83be8a2a044ab93b7eb96e57810a0-1"></a>(python3) $ pip install --upgrade "Nikola[extras]" --ignore-installed
 </pre>
 </li>
 </ol>
 </div>
 <hr class="docutils">
 <div class="section" id="associating-your-site-source-code-with-a-github-repository">
-<h2>Associating your site source code with a GitHub Repository</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id5">Associating your site source code with a GitHub Repository</a></h2>
 <div class="section" id="if-you-are-starting-a-completely-new-site">
 <h3>If you are starting a completely new site</h3>
 <ol class="arabic">
@@ -157,8 +167,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </li>
 <li>
 <p class="first">Clone your new (empty) GitHub repository</p>
-<pre class="code text"><a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_8d26c14c0fb3405a8c8e9764b389fc32-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+<pre class="code text"><a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_40d216fad6cf47c3a15be12d3d3d6ccf-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 </pre>
 </li>
 <li>
@@ -166,8 +176,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </li>
 <li>
 <p class="first">Initialize your site</p>
-<pre class="code text"><a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_a4dab75a2bf4415e9242be29cbeb8191-2"></a>(python3) $ nikola init softdevtrain.com
+<pre class="code text"><a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_8b1d52cba41a4eae8ebc2996725d82d7-2"></a>(python3) $ nikola init softdevtrain.com
 </pre>
 <p>This should create the first version of your site in the <tt class="docutils literal">softdevtrain.com</tt> sub-directory.</p>
 </li>
@@ -178,8 +188,8 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 <ol class="arabic">
 <li>
 <p class="first">Clone the existing GitHub repository</p>
-<pre class="code text"><a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-1"></a>(python3) $ cd ~/projects
-<a name="rest_code_308e41ceb1824ea488316bfa9260a6a0-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
+<pre class="code text"><a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-1"></a>(python3) $ cd ~/projects
+<a name="rest_code_ed0bbb1a9ffe468ca45a9cbaf42f1930-2"></a>(python3) $ git clone https://github.com/your-user-id/softdevtrain.com.git
 </pre>
 </li>
 </ol>
@@ -187,39 +197,107 @@ use for the source code for your site for <tt class="docutils literal">softdevtr
 </div>
 <hr class="docutils">
 <div class="section" id="building-and-viewing-your-site-locally">
-<h2>Building and viewing your site locally</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id6">Building and viewing your site locally</a></h2>
 <ol class="arabic">
 <li>
 <p class="first">Build your site</p>
-<pre class="code text"><a name="rest_code_f556436c038e46119978d4cddfbc97ca-1"></a>(python3) $ cd ~/projects/softdevtrain.com
-<a name="rest_code_f556436c038e46119978d4cddfbc97ca-2"></a>(python3) $ nikola build
+<pre class="code text"><a name="rest_code_7ede4cae2e2041c38635437d2c112b48-1"></a>(python3) $ cd ~/projects/softdevtrain.com
+<a name="rest_code_7ede4cae2e2041c38635437d2c112b48-2"></a>(python3) $ nikola build
 </pre>
 </li>
 <li>
 <p class="first">View your site</p>
-<pre class="code text"><a name="rest_code_a7c9a3e9d0934ee18791fc7c18a9389a-1"></a>(python3) $ gnome-open output/index.html
+<pre class="code text"><a name="rest_code_21cba02000be488d8a4fbe0262ded19d-1"></a>(python3) $ gnome-open output/index.html
 </pre>
 <p>or</p>
-<pre class="code text"><a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-1"></a>(python3) $ nikola serve -b
-<a name="rest_code_4ad0a1c4aad94db59cb42ff7e5145b8f-2"></a>    Ctrl-C when done
+<pre class="code text"><a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-1"></a>(python3) $ nikola serve -b
+<a name="rest_code_32a68cc2ac40450180e61ab2c7dba2d3-2"></a>    Ctrl-C when done
 </pre>
 </li>
 </ol>
 </div>
 <hr class="docutils">
 <div class="section" id="preparing-to-deploy-your-site-using-git-ftp">
-<h2>Preparing to deploy your site using git-ftp</h2>
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id7">Preparing to deploy your site using git-ftp</a></h2>
 <div class="section" id="install-git-ftp">
 <h3>Install git-ftp</h3>
-<pre class="code text"><a name="rest_code_58d2e6e203b34c4d93fad3ed7c64925b-1"></a>(python3) $ sudo apt-get install git-ftp
+<pre class="code text"><a name="rest_code_a98a259ba0574255bf7bc4221aee0849-1"></a>(python3) $ sudo apt-get install git-ftp
 </pre>
 </div>
 <div class="section" id="configure-git-ftp">
 <h3>Configure git-ftp</h3>
-<pre class="code text"><a name="rest_code_c8e4c06cb9b34ba7983c0e90c970c51e-1"></a>(python3) $ git config git-ftp.url "ftp://your-ftp-site/your-directory" (e.g. ftp://ftp.fastmail.com/*user-id*/files/*site-folder*)
+<pre class="code bash"><a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-1"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.url <span class="s2">"ftp://your-ftp-site/your-files-directory"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-2"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.user <span class="s2">"your-ftp-site-user-id"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-3"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.password <span class="s2">"your-ftp-site-password"</span>
+<a name="rest_code_3cbfde18be4c4fad8dedf48112b39b3f-4"></a><span class="o">(</span>python3<span class="o">)</span> $ git config git-ftp.syncroot output/ <span class="c1"># the output directory of a Nikola repository contains the built site to be deployed</span>
 </pre>
-<p>ipsum loram dotaa</p>
 </div>
+</div>
+<hr class="docutils">
+<div class="section" id="make-a-change-to-your-content-and-build-your-site-locally">
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id8">Make a change to your content and build your site locally</a></h2>
+<p>For example:</p>
+<pre class="code text"><a name="rest_code_fe818b2086c94fa1b300a8de4df668ba-1"></a>(python3) $ nikola new_post
+</pre>
+<p>or</p>
+<pre class="code bash"><a name="rest_code_f2ed1ebf55d4484c99fc7a92641a545d-1"></a><span class="o">(</span>python3<span class="o">)</span> $ nikola new_post -e <span class="c1"># make a new post and open up the editor specified in the EDITOR environment variable</span>
+</pre>
+<p>Edit your post or content.</p>
+<p>Then build the site with the following command:</p>
+<pre class="code text"><a name="rest_code_fa106d28fe9e4c93afdbe68be54be385-1"></a>(python3) $ nikola build
+</pre>
+</div>
+<hr class="docutils">
+<div class="section" id="deploy-your-site">
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id9">Deploy your site</a></h2>
+<div class="section" id="if-you-have-not-uploaded-any-files-to-the-ftp-site-and-you-want-to-completely-upload-all-files-to-your-site">
+<h3>If you have not uploaded any files to the ftp site and you want to completely upload all files to your site.</h3>
+<pre class="code text"><a name="rest_code_7c098a0f9b5c43ddb2612e46e5c6eff3-1"></a>(python3) $ git ftp init
+</pre>
+</div>
+<div class="section" id="if-you-have-previously-uploaded-files-to-your-ftp-site">
+<h3>If you have previously uploaded files to your ftp site.</h3>
+<pre class="code text"><a name="rest_code_bf2813d562cd4ac1b59a2ab831a8a3c5-1"></a>(python3) $ git ftp push
+</pre>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="notes">
+<h2><a class="toc-backref" href="setting-up-nikola-git-and-git-ftp.html#id10">Notes</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Pushing to the ftp site does <em>not</em> cause the changes to be committed to your local repository or
+pushed to the origin remote repository.</p>
+<p>You will need to do <tt class="docutils literal">git commit <span class="pre">-m</span> "comment"</tt> to commit changes locally before they can be
+pushed to the ftp site.</p>
+<p>You will need to do <tt class="docutils literal">git push origin <span class="pre">--all</span></tt> (or a similar command) to push your changes to the
+git repository.</p>
+</li>
+<li>
+<p class="first">Your standard operating procedure after setup will usually be:</p>
+<p><em>Make or edit a post or page</em></p>
+<pre class="code text"><a name="rest_code_3088b3534e78441587644e9d12a40f94-1"></a>(python3) $ nikola new_post
+</pre>
+<p><em>Build the site locally to see how your changes look</em></p>
+<pre class="code text"><a name="rest_code_6c357b4bb54e470ea0009cef62400abc-1"></a>(python3) $ nikola build
+</pre>
+<p><em>See if it looks like what you like</em></p>
+<pre class="code text"><a name="rest_code_d0fa2a78b9b34eb3961c497fe0b976b1-1"></a>(python3) $ gnome-open output/index.html
+</pre>
+<p>or</p>
+<pre class="code text"><a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-1"></a>(python3) $ nikola serve -b
+<a name="rest_code_de2ebdafbdb044c09b1cf4988ee26d0c-2"></a>Ctrl-C when done
+</pre>
+<p><em>Commit changes to local repository and push them to remote (GitHub) repository</em></p>
+<pre class="code text"><a name="rest_code_aa527988a07b4cba9e061e263de4eb84-1"></a>(python3) $ git add *files*
+<a name="rest_code_aa527988a07b4cba9e061e263de4eb84-2"></a>(python3) $ git commit -m "commit comment"
+<a name="rest_code_aa527988a07b4cba9e061e263de4eb84-3"></a>(python3) $ git push origin --all
+</pre>
+<p><em>Push the changes to the ftp site so they actually show up on your web site</em></p>
+<pre class="code text"><a name="rest_code_a6b669c6210d45f6bd30e43e250403b9-1"></a>(python3) $ git ftp push
+</pre>
+</li>
+</ol>
 </div>
 </div>
     </div>
