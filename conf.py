@@ -139,6 +139,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/pages/software-engineering-quotes.html", "Software Engineering Quotes"),
+        ("/pages/helpful-links.html", "Helpful Links"),
         ("/archive.html", "Archive"),
         ("/categories/index.html", "Tags"),
         ("/rss.xml", "RSS feed"),
