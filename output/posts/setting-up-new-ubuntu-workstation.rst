@@ -27,6 +27,15 @@ Update and Upgrade After Initial Boot-up
 
 ----
 
+Remove Amazon Icon from Launcher
+================================
+
+#. Right click on Amazon Icon
+
+#. Select Unlock from Launcer in context menu
+
+----
+
 Install Dropbox
 ===============
 
@@ -201,7 +210,7 @@ Set Up Symbolic Links in ${HOME}
 	  $ cd ~/.local/share/applications
 	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 
-
+#. Log out and log back in
 	  
 ----
 
@@ -222,39 +231,61 @@ Set Up Terminal Preferences and Profiles
 #. Create CHPC1, CHPC2, hcpx-fs01, TimsPreferred profiles as follows
 
    * CHPC1 
+
 	 * General: Columns: 132, Rows: 42
 	 * Colors: Use colors from system theme
 
    * CHPC2
+
 	 * General: Columns: 132, Rows: 42
 	 * Colors: 
 	   * **uncheck** Use colors from system theme
 	   * Built-in schemes: Custom
 	   * Text color: #000000
 	   * Background color: #FCE9C0
+	   * **uncheck** Use transparency from system theme
 
    * hcpx-fs01
+
 	 * General: Columns: 132, Rows: 42
 	 * Colors:
 	   * **uncheck** Use colors from system theme
 	   * Built-in schemes: Black on light yellow
+	   * **uncheck** Use transparency from system theme
 
    * TimsPreferred
+
 	 * General: Columns: 132, Rows: 42
 	 * Colors:
 	   * **uncheck** Use colors from system them
 	   * Built-in schemes: Solarized light
+	   * **uncheck** Use transparency from system theme
 
+#. Set defaut to TimsPreferred
 
+#. Test open terminals on all platforms
 
-	  
 ----
 
+Change Desktop Background
+=========================
+
+#. System Settings --> Apperance
+
+#. Change from Wallpapers to Colors & Gradients
+
+#. Select Color Gradient with down indicator, "v"
+
+#. Select Left color and set to pre-prepared light blue color
+
+#. Right Color stays black
+
+----
 
 Install Emacs
 =============
 
-#. Issue the following commands
+#. Issue the following command
 
    .. code-block::
 
@@ -265,21 +296,68 @@ Install Emacs
 Install Geany
 =============
 
-ipsum
+#. Issue the following commands
+
+   .. code-block::
+
+	  $ sudo apt install geany
+	  $ sudo add-apt-repository ppa:geany-dev/ppa
+	  $ sudo apt-get update
+	  $ sudo apt-get install geany geany-plugins
+
+#. Run Geany from the Dash
+
+#. Lock the Geany icon in the Launcher
 
 ----
 
 Install Filezilla
 =================
 
-ipsum
+#. Issue the following commands
+
+   .. code-block::
+
+	  $ sudo apt-get update
+	  $ sudo apt-get install filezilla
+
+#. Add the following sites to the FileZilla Site Manager
+
+   * fastmail ftp
+	 * Host: ftp.fastmail.com
+	 * Protocol: FTP
+	 * Logon Type: Normal
+	 * User: Get from KeePass2
+	 * Password: Get from KeePass2
+
+   * hcpcourse machine as admin
+	 * Host: 128.252.155.182
+	 * Protocol: SFTP
+	 * Logon Type: Normal
+	 * User: Get from KeePass2
+	 * Password: Get from KeePass2
+
+   * hcpcourse machine as hcpcourse
+	 * Host: 128.252.155.182
+	 * Protocol: SFTP
+	 * Logon Type: Normal
+	 * User: Get from KeePass2
+	 * Password: Get from KeePass2
+
+#. Lock FileZilla to Launcher
 
 ----
 
-Install Anaconda Python 3 Environment
-=====================================
+Verify Anaconda Python 3 Environment
+====================================
 
-ipsum
+#. Issue the following commands:
+
+   .. code-block::
+
+	  $ source activate python3
+
+#. Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed
 
 ----
 
@@ -299,10 +377,32 @@ Install Gnome2 Tools
 Install gitg
 ============
 
-ipsum lorum
+#. Use the Ubuntu Software Center and search for gitg
 
+#. Install it
+
+#. Run it and make sure the icon is locked to the launcher
 
 ----
+
+Install Unity Tweak Tool
+========================
+
+#. Use the Ubuntu Software Center and search for Tweak
+
+#. Install the ``Unity Tweak Tool`` instead of the ``Tweak Tool``
+
+#. Unlock it from the launcher
+
+----
+
+Update Mouse Sensitivity
+========================
+
+#. See `Fix Mouse Sensitivity in Ubuntu 16.04 <http://www.pontikis.net/blog/fix-mouse-sensitivity-ubuntu>`_
+
+#. Try ``xset m 1/2 4`` in the ``~/.config/autostart/mouse.desktop`` file
+   
 
 Update Git
 ==========
@@ -323,4 +423,13 @@ Set Up Nikola
 
 Link to other post
 
+----
 
+Configure Date and Time Options
+===============================
+
+ipsum lorum
+
+
+mount
+Search tool
