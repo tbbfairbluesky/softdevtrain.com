@@ -407,7 +407,8 @@ Update Mouse Sensitivity
 Update Git
 ==========
 
-Link to other post
+See the post `here <link://slug/update-git>`__
+
 
 ----
 
