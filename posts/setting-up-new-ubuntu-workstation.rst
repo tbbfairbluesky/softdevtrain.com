@@ -422,11 +422,11 @@ See the post `How to save remote username and password for Git <link://slug/how-
 
 ----
 
-Set Up Nikola
-=============
+Set Up Git FTP
+==============
 
-See the post `
-Link to other post
+See the section Preparing to deploy your site using git-ftp in the post
+`Setting up Nikola, git, and git-ftp <link://slug/setting-up-nikola-git-and-git-ftp>`_
 
 ----
 

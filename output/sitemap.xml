@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.SoftDevTrain.com/2018/index.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/archive.html</loc>
@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_ubuntu.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/git-release.html</loc>
@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/linux.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/nikola.html</loc>
@@ -47,11 +47,11 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/setup.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/ubuntu.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/galleries/index.html</loc>
@@ -59,7 +59,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/index.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/listings/index.html</loc>
@@ -95,7 +95,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</loc>
-  <lastmod>2018-03-20T22:23:00Z</lastmod>
+  <lastmod>2018-03-20T22:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</loc>
