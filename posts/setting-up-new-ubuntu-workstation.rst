@@ -196,14 +196,58 @@ Set Up Symbolic Links in ${HOME}
 	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird # This one should be already done.
 	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/tools
 	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/workspace
+	  $ cd ~/.config
+	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.config/zim
+	  $ cd ~/.local/share/applications
+	  $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 
+
+	  
 ----
 
 Set Up Terminal Preferences and Profiles
 ========================================
 
-ipsum
+#. Start a Terminal window
 
+#. Use the Terminal's menus to navigate to ``Terminal --> Preferences --> General``
+	  
+#. Make sure ``Show menubar by default in new terminals`` and ``Enable the menu accelerator key (F10 by default)`` are
+   checked
+
+#. Go to the ``Profiles`` tab
+
+#. Rename the ``Unamed`` profile to SystemDefault.
+
+#. Create CHPC1, CHPC2, hcpx-fs01, TimsPreferred profiles as follows
+
+   * CHPC1 
+	 * General: Columns: 132, Rows: 42
+	 * Colors: Use colors from system theme
+
+   * CHPC2
+	 * General: Columns: 132, Rows: 42
+	 * Colors: 
+	   * **uncheck** Use colors from system theme
+	   * Built-in schemes: Custom
+	   * Text color: #000000
+	   * Background color: #FCE9C0
+
+   * hcpx-fs01
+	 * General: Columns: 132, Rows: 42
+	 * Colors:
+	   * **uncheck** Use colors from system theme
+	   * Built-in schemes: Black on light yellow
+
+   * TimsPreferred
+	 * General: Columns: 132, Rows: 42
+	 * Colors:
+	   * **uncheck** Use colors from system them
+	   * Built-in schemes: Solarized light
+
+
+
+	  
 ----
 
 
@@ -249,6 +293,14 @@ Install Gnome2 Tools
 	  $ sudo apt install libgnome2-bin
 
    This will give you access to commands line ``gnome-open``
+
+----
+
+Install gitg
+============
+
+ipsum lorum
+
 
 ----
 
