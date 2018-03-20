@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Software Development Training LLC (Posts about ubuntu)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link href="http://www.SoftDevTrain.com/categories/ubuntu.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Tue, 20 Mar 2018 21:58:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training LLC (Posts about ubuntu)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link href="http://www.SoftDevTrain.com/categories/ubuntu.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Tue, 20 Mar 2018 22:23:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-and-upgrade-after-initial-boot-up" id="id2"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#remove-amazon-icon-from-launcher" id="id3"&gt;Remove Amazon Icon from Launcher&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-dropbox" id="id4"&gt;Install Dropbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-zimwiki" id="id5"&gt;Install Zimwiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-ubuntu-application-menu-location" id="id6"&gt;Change Ubuntu Application Menu Location&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-run-and-check-thunderbird" id="id7"&gt;Configure, Run, and Check Thunderbird&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-keepass2" id="id8"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-chrome" id="id9"&gt;Install Chrome&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-symbolic-links-in-home" id="id10"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-terminal-preferences-and-profiles" id="id11"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-desktop-background" id="id12"&gt;Change Desktop Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-emacs" id="id13"&gt;Install Emacs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-geany" id="id14"&gt;Install Geany&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-filezilla" id="id15"&gt;Install Filezilla&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#verify-anaconda-python-3-environment" id="id16"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id17"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gitg" id="id18"&gt;Install gitg&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-unity-tweak-tool" id="id19"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-mouse-sensitivity" id="id20"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-git" id="id21"&gt;Update Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id22"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-nikola" id="id23"&gt;Set Up Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id24"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-and-upgrade-after-initial-boot-up" id="id3"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#remove-amazon-icon-from-launcher" id="id4"&gt;Remove Amazon Icon from Launcher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-dropbox" id="id5"&gt;Install Dropbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-zimwiki" id="id6"&gt;Install Zimwiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-ubuntu-application-menu-location" id="id7"&gt;Change Ubuntu Application Menu Location&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-run-and-check-thunderbird" id="id8"&gt;Configure, Run, and Check Thunderbird&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-keepass2" id="id9"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-chrome" id="id10"&gt;Install Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-symbolic-links-in-home" id="id11"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-terminal-preferences-and-profiles" id="id12"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-desktop-background" id="id13"&gt;Change Desktop Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-emacs" id="id14"&gt;Install Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-geany" id="id15"&gt;Install Geany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-filezilla" id="id16"&gt;Install Filezilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#verify-anaconda-python-3-environment" id="id17"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id18"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gitg" id="id19"&gt;Install gitg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-unity-tweak-tool" id="id20"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-mouse-sensitivity" id="id21"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-git" id="id22"&gt;Update Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id23"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-nikola" id="id24"&gt;Set Up Nikola&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id25"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="update-and-upgrade-after-initial-boot-up"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id2"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id3"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Start a terminal window (Ctrl - Alt - T)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_739def2f9d494de6bf7eb3c11fc75b39-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_739def2f9d494de6bf7eb3c11fc75b39-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
-&lt;a name="rest_code_739def2f9d494de6bf7eb3c11fc75b39-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ae41df9893c54818b10088711a40f0da-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_ae41df9893c54818b10088711a40f0da-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
+&lt;a name="rest_code_ae41df9893c54818b10088711a40f0da-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="remove-amazon-icon-from-launcher"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id3"&gt;Remove Amazon Icon from Launcher&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id4"&gt;Remove Amazon Icon from Launcher&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Right click on Amazon Icon&lt;/li&gt;
 &lt;li&gt;Select Unlock from Launcer in context menu&lt;/li&gt;
@@ -50,7 +50,7 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-dropbox"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id4"&gt;Install Dropbox&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id5"&gt;Install Dropbox&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Visit &lt;a class="reference external" href="https://www.dropbox.com/install-linux"&gt;Install Dropbox&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -117,14 +117,14 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-zimwiki"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id5"&gt;Install Zimwiki&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id6"&gt;Install Zimwiki&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;In a terminal window, issue the following commands:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_dbd0c92556c74ff49f2456776c17233d-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;a name="rest_code_dbd0c92556c74ff49f2456776c17233d-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-&lt;a name="rest_code_dbd0c92556c74ff49f2456776c17233d-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ec3975654dbb43fbb192296c1984571d-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;a name="rest_code_ec3975654dbb43fbb192296c1984571d-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+&lt;a name="rest_code_ec3975654dbb43fbb192296c1984571d-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open Zim and Open the Following 3 Notebooks&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -141,7 +141,7 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="change-ubuntu-application-menu-location"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id6"&gt;Change Ubuntu Application Menu Location&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id7"&gt;Change Ubuntu Application Menu Location&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;From the &lt;em&gt;Dash&lt;/em&gt; (Ubuntu icon in upper left) enter "settings" and launch the System Settings app.
 (or use the &lt;em&gt;System Settings&lt;/em&gt; icon in the launcher (looks like a gear with a wrench in front of it)&lt;/li&gt;
@@ -151,13 +151,13 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-run-and-check-thunderbird"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id7"&gt;Configure, Run, and Check Thunderbird&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id8"&gt;Configure, Run, and Check Thunderbird&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Thunderbird should already be installed as it is a default application for Ubuntu&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Before&lt;/strong&gt; running Thunderbird for the first time&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_dfbadf02df9049df88f4361745abddc8-1"&gt;&lt;/a&gt;$ cd
-&lt;a name="rest_code_dfbadf02df9049df88f4361745abddc8-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+&lt;pre class="code text"&gt;&lt;a name="rest_code_49c6d344d6fa48189c4f00af89342203-1"&gt;&lt;/a&gt;$ cd
+&lt;a name="rest_code_49c6d344d6fa48189c4f00af89342203-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Thunderbird and check accounts, folders, sending mail, etc.&lt;/p&gt;
 &lt;/li&gt;
@@ -167,12 +167,12 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-and-configure-keepass2"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id8"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id9"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands to install KeePass2&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_cc5c044a5fb443e6b8efc9d63dca0098-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
-&lt;a name="rest_code_cc5c044a5fb443e6b8efc9d63dca0098-2"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_cc5c044a5fb443e6b8efc9d63dca0098-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ddd50b9539e14c89bb878ffcfb50d7c0-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
+&lt;a name="rest_code_ddd50b9539e14c89bb878ffcfb50d7c0-2"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_ddd50b9539e14c89bb878ffcfb50d7c0-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run KeePass2 from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -184,7 +184,7 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-chrome"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id9"&gt;Install Chrome&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id10"&gt;Install Chrome&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Visit &lt;a class="reference external" href="https:://www.google.com/chrome"&gt;https:://www.google.com/chrome&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Select the &lt;tt class="docutils literal"&gt;Download Chrome&lt;/tt&gt; button&lt;/li&gt;
@@ -193,27 +193,27 @@
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="set-up-symbolic-links-in-home"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id10"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id11"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
-&lt;a name="rest_code_5a17f24f5f7a4d6792b5b1d805b72520-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
+&lt;a name="rest_code_4107a69694da4047b9857045c05f1d95-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Log out and log back in&lt;/p&gt;
 &lt;/li&gt;
@@ -221,7 +221,7 @@
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-terminal-preferences-and-profiles"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id11"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id12"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Start a Terminal window&lt;/p&gt;
 &lt;/li&gt;
@@ -289,7 +289,7 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="change-desktop-background"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id12"&gt;Change Desktop Background&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id13"&gt;Change Desktop Background&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;System Settings --&amp;gt; Apperance&lt;/li&gt;
 &lt;li&gt;Change from Wallpapers to Colors &amp;amp; Gradients&lt;/li&gt;
@@ -300,22 +300,22 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-emacs"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id13"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following command&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_ea8db8caf1734305a51646639e11f558-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a8f4c3c7c8a14947a51ef34b4297a05a-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-geany"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_cae187b7d36a4d27a251cebac82a8c35-1"&gt;&lt;/a&gt;$ sudo apt install geany
-&lt;a name="rest_code_cae187b7d36a4d27a251cebac82a8c35-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
-&lt;a name="rest_code_cae187b7d36a4d27a251cebac82a8c35-3"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_cae187b7d36a4d27a251cebac82a8c35-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f886a842ff7d45b9acbaa8f9556aed45-1"&gt;&lt;/a&gt;$ sudo apt install geany
+&lt;a name="rest_code_f886a842ff7d45b9acbaa8f9556aed45-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
+&lt;a name="rest_code_f886a842ff7d45b9acbaa8f9556aed45-3"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_f886a842ff7d45b9acbaa8f9556aed45-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Geany from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -325,11 +325,11 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-filezilla"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_b3f4ee5ec9e74ac5b92745e172d763a2-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_b3f4ee5ec9e74ac5b92745e172d763a2-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
+&lt;pre class="code text"&gt;&lt;a name="rest_code_910ceb988c6d4d5fbe86f8178e693b3b-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_910ceb988c6d4d5fbe86f8178e693b3b-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Add the following sites to the FileZilla Site Manager&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -377,28 +377,29 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="verify-anaconda-python-3-environment"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_d5b2268389d244f385d027f8c92b2eea-1"&gt;&lt;/a&gt;$ source activate python3
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d140801e019d4c07834c8a392aec1174-1"&gt;&lt;/a&gt;$ source activate python3
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed&lt;/p&gt;
-&lt;/li&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_10276916057d48baa724cd2c487923e5-1"&gt;&lt;/a&gt;$ nikola --version
+&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-gnome2-tools"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_7d0fe26107e44ea1bff0f99b159e895d-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a141f43c7d7d49d2886e507d9e341e10-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
 &lt;/pre&gt;&lt;p&gt;This will give you access to commands line &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gnome-open&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-gitg"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Install gitg&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id19"&gt;Install gitg&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Use the Ubuntu Software Center and search for gitg&lt;/li&gt;
 &lt;li&gt;Install it&lt;/li&gt;
@@ -407,7 +408,7 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-unity-tweak-tool"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id19"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id20"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Use the Ubuntu Software Center and search for Tweak&lt;/li&gt;
 &lt;li&gt;Install the &lt;tt class="docutils literal"&gt;Unity Tweak Tool&lt;/tt&gt; instead of the &lt;tt class="docutils literal"&gt;Tweak Tool&lt;/tt&gt;&lt;/li&gt;
@@ -416,29 +417,30 @@ checked&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="update-mouse-sensitivity"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id20"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id21"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;See &lt;a class="reference external" href="http://www.pontikis.net/blog/fix-mouse-sensitivity-ubuntu"&gt;Fix Mouse Sensitivity in Ubuntu 16.04&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Try &lt;tt class="docutils literal"&gt;xset m 1/2 4&lt;/tt&gt; in the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.config/autostart/mouse.desktop&lt;/span&gt;&lt;/tt&gt; file&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="update-git"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id21"&gt;Update Git&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;See the post &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/update-git.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id22"&gt;Update Git&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See the post &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/update-git.html"&gt;Update Git&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-to-save-remote-git-username-and-passwords"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id22"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Link to other post&lt;/p&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id23"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See the post &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html"&gt;How to save remote username and password for Git&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-nikola"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id23"&gt;Set Up Nikola&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Link to other post&lt;/p&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id24"&gt;Set Up Nikola&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See the post `
+Link to other post&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-date-and-time-options"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id24"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;ipsum lorum&lt;/p&gt;
 &lt;p&gt;mount
 Search tool&lt;/p&gt;

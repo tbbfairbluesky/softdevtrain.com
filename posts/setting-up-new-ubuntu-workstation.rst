@@ -359,6 +359,10 @@ Verify Anaconda Python 3 Environment
 
 #. Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed
 
+   .. code-block::
+
+	  $ nikola --version
+
 ----
 
 Install Gnome2 Tools
@@ -407,20 +411,21 @@ Update Mouse Sensitivity
 Update Git
 ==========
 
-See the post `here <link://slug/update-git>`_
+See the post `Update Git <link://slug/update-git>`_
 
 ----
 
 Set Up to Save Remote Git Username and Passwords
 ================================================
 
-See the post `here <link://slug/how-to-save-remote-username-and-password-for-git>`_
+See the post `How to save remote username and password for Git <link://slug/how-to-save-remote-username-and-password-for-git>`_
 
 ----
 
 Set Up Nikola
 =============
 
+See the post `
 Link to other post
 
 ----
