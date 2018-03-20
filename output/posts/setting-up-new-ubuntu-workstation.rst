@@ -250,3 +250,25 @@ Install Gnome2 Tools
 
    This will give you access to commands line ``gnome-open``
 
+----
+
+Update Git
+==========
+
+Link to other post
+
+----
+
+Set Up to Save Remote Git Username and Passwords
+================================================
+
+Link to other post
+
+----
+
+Set Up Nikola
+=============
+
+Link to other post
+
+

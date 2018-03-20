@@ -95,6 +95,9 @@ article: http://ogp.me/ns/article#
 <li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-filezilla" id="id13">Install Filezilla</a></li>
 <li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-anaconda-python-3-environment" id="id14">Install Anaconda Python 3 Environment</a></li>
 <li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id15">Install Gnome2 Tools</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#update-git" id="id16">Update Git</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id17">Set Up to Save Remote Git Username and Passwords</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#set-up-nikola" id="id18">Set Up Nikola</a></li>
 </ul>
 </div>
 <hr class="docutils">
@@ -106,9 +109,9 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first">Enter the following commands</p>
-<pre class="code text"><a name="rest_code_143f1ffc0f7c49188333656304b78a95-1"></a>$ sudo apt-get update
-<a name="rest_code_143f1ffc0f7c49188333656304b78a95-2"></a>$ sudo apt-get upgrade
-<a name="rest_code_143f1ffc0f7c49188333656304b78a95-3"></a>$ sudo apt-get install -f
+<pre class="code text"><a name="rest_code_a0afc53f120948888e9c8e9713f972b8-1"></a>$ sudo apt-get update
+<a name="rest_code_a0afc53f120948888e9c8e9713f972b8-2"></a>$ sudo apt-get upgrade
+<a name="rest_code_a0afc53f120948888e9c8e9713f972b8-3"></a>$ sudo apt-get install -f
 </pre>
 </li>
 </ol>
@@ -195,9 +198,9 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first">Enter the following commands</p>
-<pre class="code text"><a name="rest_code_f49695293466443ebaf9cd238034ed59-1"></a>$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
-<a name="rest_code_f49695293466443ebaf9cd238034ed59-2"></a>$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-<a name="rest_code_f49695293466443ebaf9cd238034ed59-3"></a>$ sudo apt-get install zim
+<pre class="code text"><a name="rest_code_073b1effd943432c8197251df721a085-1"></a>$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
+<a name="rest_code_073b1effd943432c8197251df721a085-2"></a>$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+<a name="rest_code_073b1effd943432c8197251df721a085-3"></a>$ sudo apt-get install zim
 </pre>
 </li>
 <li>
@@ -242,8 +245,8 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first"><strong>Before</strong> running Thunderbird for the first time</p>
-<pre class="code text"><a name="rest_code_dfcb890f265d480190943920b0d364ab-1"></a>$ cd
-<a name="rest_code_dfcb890f265d480190943920b0d364ab-2"></a>$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+<pre class="code text"><a name="rest_code_d20a97263abc4f17b574ca75034ebdc2-1"></a>$ cd
+<a name="rest_code_d20a97263abc4f17b574ca75034ebdc2-2"></a>$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 </pre>
 </li>
 <li>
@@ -260,9 +263,9 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands to install KeePass2</p>
-<pre class="code text"><a name="rest_code_4d0cdc7b688444709abcc7982353abe3-1"></a>$ sudo add-apt-repository ppa:jtaylor/keepass
-<a name="rest_code_4d0cdc7b688444709abcc7982353abe3-2"></a>$ sudo apt-get update
-<a name="rest_code_4d0cdc7b688444709abcc7982353abe3-3"></a>$ sudo apt-get install keepass2
+<pre class="code text"><a name="rest_code_bf87a3ad86384092a7796c28db9ff941-1"></a>$ sudo add-apt-repository ppa:jtaylor/keepass
+<a name="rest_code_bf87a3ad86384092a7796c28db9ff941-2"></a>$ sudo apt-get update
+<a name="rest_code_bf87a3ad86384092a7796c28db9ff941-3"></a>$ sudo apt-get install keepass2
 </pre>
 </li>
 <li>
@@ -294,20 +297,20 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code bash"><a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-1"></a>$ <span class="nb">cd</span>
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-2"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/anaconda3
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-3"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/awstest
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-4"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_aliases
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-5"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_logout
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-6"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bashrc
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-7"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/bin
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-8"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-9"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs.d
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-10"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/projects
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-11"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.ssh
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-12"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.thunderbird <span class="c1"># This one should be already done.</span>
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-13"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/tools
-<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-14"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/workspace
+<pre class="code bash"><a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-1"></a>$ <span class="nb">cd</span>
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-2"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/anaconda3
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-3"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/awstest
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-4"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_aliases
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-5"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_logout
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-6"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bashrc
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-7"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/bin
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-8"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-9"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs.d
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-10"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/projects
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-11"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.ssh
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-12"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.thunderbird <span class="c1"># This one should be already done.</span>
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-13"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/tools
+<a name="rest_code_79ea5f324baa45cd8a416418190bd7e2-14"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/workspace
 </pre>
 </li>
 </ol>
@@ -323,7 +326,7 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code text"><a name="rest_code_ea1842517463466cbe9f19e17ee54dde-1"></a>$ sudo apt install emacs24-nox
+<pre class="code text"><a name="rest_code_100fa47cbf6c4a54a7af35922b9b9a37-1"></a>$ sudo apt install emacs24-nox
 </pre>
 </li>
 </ol>
@@ -349,11 +352,26 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code text"><a name="rest_code_642bf4bb011448c3bfe2b29908b00b67-1"></a>$ sudo apt install libgnome2-bin
+<pre class="code text"><a name="rest_code_0813006da41a4afbb5d82b88551fd15e-1"></a>$ sudo apt install libgnome2-bin
 </pre>
 <p>This will give you access to commands line <tt class="docutils literal"><span class="pre">gnome-open</span></tt></p>
 </li>
 </ol>
+</div>
+<hr class="docutils">
+<div class="section" id="update-git">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id16">Update Git</a></h2>
+<p>Link to other post</p>
+</div>
+<hr class="docutils">
+<div class="section" id="set-up-to-save-remote-git-username-and-passwords">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id17">Set Up to Save Remote Git Username and Passwords</a></h2>
+<p>Link to other post</p>
+</div>
+<hr class="docutils">
+<div class="section" id="set-up-nikola">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id18">Set Up Nikola</a></h2>
+<p>Link to other post</p>
 </div>
 </div>
     </div>
