@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Notes on setting up an Ubuntu Linux Workstation">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setting up new Ubuntu Workstation | Software Development Training LLC</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html">
+<!--[if lt IE 9]>
+            <script src="../assets/js/html5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
+        <![endif]--><meta name="description" itemprop="description" content="Notes on setting up an Ubuntu Linux Workstation">
+<meta name="author" content="Software Development Training LLC">
+<link rel="prev" href="creating-a-release-from-a-bugfix-branch.html" title="Creating a Release from a Bugfix Branch" type="text/html">
+<meta property="og:site_name" content="Software Development Training LLC">
+<meta property="og:title" content="Setting up new Ubuntu Workstation">
+<meta property="og:url" content="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html">
+<meta property="og:description" content="Notes on setting up an Ubuntu Linux Workstation">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-03-20T11:32:25-05:00">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="setup">
+<meta property="article:tag" content="ubuntu">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar  header-panel shadow-z-3" role="navigation"><div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3">
+            <h1 class="title-blog">
+                <a href="http://www.SoftDevTrain.com/">
+                        <span id="blog-title">Software Development Training LLC</span>
+                    </a>
+            </h1>
+          </div>
+          <div class="col-xs-9">
+            <a id="hamburger" class="btn btn-raised" href="javascript:void(0);" onclick="menuToggle();">☰</a>
+          </div>
+        </div>
+      </div>
+<!-- /.container-fluid -->
+</nav><div class="container-fluid main" id="content" role="main">
+        <div class="row">
+            <nav class="col-xs-12 col-sm-3 menu"><ul>
+<li class="withripple"><a href="../pages/software-engineering-quotes.html">Software Engineering Quotes</a></li>
+                <li class="withripple"><a href="../pages/helpful-links.html">Helpful Links</a></li>
+                <li class="withripple"><a href="../archive.html">Archive</a></li>
+                <li class="withripple"><a href="../categories/index.html">Tags</a></li>
+                <li class="withripple"><a href="../rss.xml">RSS feed</a></li>
+
+                    
+                </ul>
+<ul></ul></nav><div class="posts-material col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-md-11 content-material">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Setting up new Ubuntu Workstation</a></h1>
+<hr>
+<div class="metadata">
+            <span class="byline author vcard">
+                <a href="#">
+                        <i class="mdi-action-face-unlock"></i>
+                    Software Development Training LLC
+                </a>
+            </span>
+            <span class="dateline">
+                <a href="#" rel="bookmark"><i class="mdi-device-access-time"></i>
+                    <time class="published dt-published" datetime="2018-03-20T11:32:25-05:00" itemprop="datePublished" title="2018-03-20 11:32">2018-03-20 11:32</time></a>
+            </span>
+                <meta name="description" itemprop="description" content="Notes on setting up an Ubuntu Linux Workstation">
+</div>
+        
+        <hr></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#update-and-upgrade-after-initial-boot-up" id="id2">Update and Upgrade After Initial Boot-up</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-dropbox" id="id3">Install Dropbox</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-zimwiki" id="id4">Install Zimwiki</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#change-ubuntu-application-menu-location" id="id5">Change Ubuntu Application Menu Location</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#configure-run-and-check-thunderbird" id="id6">Configure, Run, and Check Thunderbird</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-and-configure-keepass2" id="id7">Install and Configure KeePass2</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-chrome" id="id8">Install Chrome</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#set-up-symbolic-links-in-home" id="id9">Set Up Symbolic Links in ${HOME}</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#set-up-terminal-preferences-and-profiles" id="id10">Set Up Terminal Preferences and Profiles</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-emacs" id="id11">Install Emacs</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-geany" id="id12">Install Geany</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-filezilla" id="id13">Install Filezilla</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-anaconda-python-3-environment" id="id14">Install Anaconda Python 3 Environment</a></li>
+<li><a class="reference internal" href="setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id15">Install Gnome2 Tools</a></li>
+</ul>
+</div>
+<hr class="docutils">
+<div class="section" id="update-and-upgrade-after-initial-boot-up">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id2">Update and Upgrade After Initial Boot-up</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Start a terminal window (Ctrl - Alt - T)</p>
+</li>
+<li>
+<p class="first">Enter the following commands</p>
+<pre class="code text"><a name="rest_code_143f1ffc0f7c49188333656304b78a95-1"></a>$ sudo apt-get update
+<a name="rest_code_143f1ffc0f7c49188333656304b78a95-2"></a>$ sudo apt-get upgrade
+<a name="rest_code_143f1ffc0f7c49188333656304b78a95-3"></a>$ sudo apt-get install -f
+</pre>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-dropbox">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id3">Install Dropbox</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Visit <a class="reference external" href="https://www.dropbox.com/install-linux">Install Dropbox</a></p>
+</li>
+<li>
+<p class="first">Download Ubuntu (.deb) 64-bit</p>
+</li>
+<li>
+<p class="first">Open the .deb with Ubuntu Software Center</p>
+</li>
+<li>
+<p class="first">Once Dropbox is installed, run Dropbox and configure it</p>
+<p>Select the Dropbox icon in the upper right and choose Preferences...</p>
+<p>Set the following preferences</p>
+</li>
+</ol>
+<div class="section" id="general">
+<h3>General</h3>
+<ul class="simple">
+<li>Check the <tt class="docutils literal">Start Dropbox on system startup</tt> box</li>
+</ul>
+</div>
+<div class="section" id="account">
+<h3>Account</h3>
+<ul class="simple">
+<li>Link the computer to your Dropbox account</li>
+</ul>
+</div>
+<div class="section" id="bandwidth">
+<h3>Bandwidth</h3>
+<ul class="simple">
+<li>No changes from defaults</li>
+</ul>
+</div>
+<div class="section" id="proxies">
+<h3>Proxies</h3>
+<ul class="simple">
+<li>No changes from defaults</li>
+</ul>
+</div>
+<div class="section" id="notifications">
+<h3>Notifications</h3>
+<ul class="simple">
+<li>Uncheck Notify me about
+* New files synced
+* Edits to files</li>
+</ul>
+</div>
+<div class="section" id="sync">
+<h3>Sync</h3>
+<ul>
+<li>
+<p class="first">Move Dropbox folder to <tt class="docutils literal"><span class="pre">${HOME}/Documents</span></tt></p>
+<p>This should end up placing the files in <tt class="docutils literal"><span class="pre">${HOME}/Documents/Dropbox</span></tt></p>
+</li>
+<li>
+<p class="first">Choose <em>Selective Sync...</em> and only sync</p>
+<ul class="simple">
+<li>Apps</li>
+<li>KeePass2</li>
+<li>MATLAB</li>
+<li>Notebooks</li>
+<li>ubuntu</li>
+<li>WUSTL</li>
+</ul>
+</li>
+</ul>
+<p><strong>It may take a couple days before Dropbox folders and files are fully synced.</strong></p>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="install-zimwiki">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id4">Install Zimwiki</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">In a terminal window, issue the following commands:</p>
+</li>
+<li>
+<p class="first">Enter the following commands</p>
+<pre class="code text"><a name="rest_code_f49695293466443ebaf9cd238034ed59-1"></a>$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
+<a name="rest_code_f49695293466443ebaf9cd238034ed59-2"></a>$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+<a name="rest_code_f49695293466443ebaf9cd238034ed59-3"></a>$ sudo apt-get install zim
+</pre>
+</li>
+<li>
+<p class="first">Open Zim and Open the Following 3 Notebooks</p>
+<ul class="simple">
+<li>
+<tt class="docutils literal">WUSTL</tt> at <tt class="docutils literal"><span class="pre">${HOME}/Documents/Dropbox/Notebooks/WUSTL</span></tt>
+</li>
+<li>
+<tt class="docutils literal">Personal</tt> at <tt class="docutils literal"><span class="pre">${HOME}/Documents/Dropbox/Notebooks/Personal</span></tt>
+</li>
+<li>
+<tt class="docutils literal">Training</tt> at <tt class="docutils literal"><span class="pre">${HOME}/Documents/Dropbox/Notebooks/Training</span></tt>
+</li>
+</ul>
+</li>
+<li>
+<p class="first">Set default notebook to WUSTL</p>
+</li>
+<li>
+<p class="first">Lock the Zim Desktop Icon to the Launcher and move it up to the top, just below the Dash</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="change-ubuntu-application-menu-location">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id5">Change Ubuntu Application Menu Location</a></h2>
+<ol class="arabic simple">
+<li>From the <em>Dash</em> (Ubuntu icon in upper left) enter "settings" and launch the System Settings app.
+(or use the <em>System Settings</em> icon in the launcher (looks like a gear with a wrench in front of it)</li>
+<li>Navigate to Appearance --&gt; Behavior</li>
+<li>Under <strong>Show the menus for a window</strong> choose <em>In the window's title bar</em>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="configure-run-and-check-thunderbird">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id6">Configure, Run, and Check Thunderbird</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Thunderbird should already be installed as it is a default application for Ubuntu</p>
+</li>
+<li>
+<p class="first"><strong>Before</strong> running Thunderbird for the first time</p>
+<pre class="code text"><a name="rest_code_dfcb890f265d480190943920b0d364ab-1"></a>$ cd
+<a name="rest_code_dfcb890f265d480190943920b0d364ab-2"></a>$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+</pre>
+</li>
+<li>
+<p class="first">Run Thunderbird and check accounts, folders, sending mail, etc.</p>
+</li>
+<li>
+<p class="first">Lock the Thunderbird Mail icon to the Launcher and move it up to just below the Zim Desktop Wiki icon</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-and-configure-keepass2">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id7">Install and Configure KeePass2</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Issue the following commands to install KeePass2</p>
+<pre class="code text"><a name="rest_code_4d0cdc7b688444709abcc7982353abe3-1"></a>$ sudo add-apt-repository ppa:jtaylor/keepass
+<a name="rest_code_4d0cdc7b688444709abcc7982353abe3-2"></a>$ sudo apt-get update
+<a name="rest_code_4d0cdc7b688444709abcc7982353abe3-3"></a>$ sudo apt-get install keepass2
+</pre>
+</li>
+<li>
+<p class="first">Run KeePass2 from the Dash</p>
+</li>
+<li>
+<p class="first">Open KeePass2 database file - in synced Dropbox</p>
+</li>
+<li>
+<p class="first">Lock the KeePass2 icon to the Launcher</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-chrome">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id8">Install Chrome</a></h2>
+<ol class="arabic simple">
+<li>Visit <a class="reference external" href="https:://www.google.com/chrome">https:://www.google.com/chrome</a>
+</li>
+<li>Select the <tt class="docutils literal">Download Chrome</tt> button</li>
+<li>Select <tt class="docutils literal">64 bit .deb (For Debian/Ubuntu)</tt>
+</li>
+<li>Select <tt class="docutils literal">Accept and Install</tt>
+</li>
+</ol>
+</div>
+<div class="section" id="set-up-symbolic-links-in-home">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id9">Set Up Symbolic Links in ${HOME}</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Issue the following commands</p>
+<pre class="code bash"><a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-1"></a>$ <span class="nb">cd</span>
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-2"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/anaconda3
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-3"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/awstest
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-4"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_aliases
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-5"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_logout
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-6"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bashrc
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-7"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/bin
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-8"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-9"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs.d
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-10"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/projects
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-11"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.ssh
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-12"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.thunderbird <span class="c1"># This one should be already done.</span>
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-13"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/tools
+<a name="rest_code_239ae1f70d5c4d2bbd1327884e6c1f33-14"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/workspace
+</pre>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="set-up-terminal-preferences-and-profiles">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id10">Set Up Terminal Preferences and Profiles</a></h2>
+<p>ipsum</p>
+</div>
+<hr class="docutils">
+<div class="section" id="install-emacs">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id11">Install Emacs</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Issue the following commands</p>
+<pre class="code text"><a name="rest_code_ea1842517463466cbe9f19e17ee54dde-1"></a>$ sudo apt install emacs24-nox
+</pre>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-geany">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id12">Install Geany</a></h2>
+<p>ipsum</p>
+</div>
+<hr class="docutils">
+<div class="section" id="install-filezilla">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id13">Install Filezilla</a></h2>
+<p>ipsum</p>
+</div>
+<hr class="docutils">
+<div class="section" id="install-anaconda-python-3-environment">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id14">Install Anaconda Python 3 Environment</a></h2>
+<p>ipsum</p>
+</div>
+<hr class="docutils">
+<div class="section" id="install-gnome2-tools">
+<h2><a class="toc-backref" href="setting-up-new-ubuntu-workstation.html#id15">Install Gnome2 Tools</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Issue the following commands</p>
+<pre class="code text"><a name="rest_code_642bf4bb011448c3bfe2b29908b00b67-1"></a>$ sudo apt install libgnome2-bin
+</pre>
+<p>This will give you access to commands line <tt class="docutils literal"><span class="pre">gnome-open</span></tt></p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><div itemprop="keywords" class="tags">
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/linux.html" rel="tag">linux</a>
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/setup.html" rel="tag">setup</a>
+            <a class="tag p-category btn btn-success btn-raised btn-sm" href="../categories/ubuntu.html" rel="tag">ubuntu</a>
+        </div>
+
+            <ul class="pager">
+<li class="previous">
+                <a href="creating-a-release-from-a-bugfix-branch.html" rel="prev" title="Creating a Release from a Bugfix Branch">Previous post</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+            </div>
+        </div>
+        <button class="btn btn-fab btn-raised btn-material-green btn-footer" data-toggle="modal" data-target="#footer-dialog">
+            <i class="mdi-communication-message"></i>
+        </button>
+        <div id="footer-dialog" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Software Development Training LLC credits</h4>
+              </div>
+              <div class="modal-body">
+                    Contents © 2018         <a href="mailto:tbb@SoftDevTrain.com">Software Development Training LLC</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="source-button">
+        </div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script>
+
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+
+            $(window).on("resize", function() {
+                if($(window).width() > 767) {
+                  $("html, body").height($(window).height());
+                  $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight() - 76 );
+                  $(".posts-material").height($(window).height());
+                } else {
+                  $("html, body").css('height', '');
+                  $(".main, .menu").css('height', '');
+                  $(".posts-material").css('height', '');
+                }
+            }).trigger("resize");
+
+            function menuToggle() {
+                $("nav.menu, ul").toggleClass('responsive', '');
+            }
+        </script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
