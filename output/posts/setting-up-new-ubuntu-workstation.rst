@@ -1,6 +1,6 @@
 .. title: Setting up new Ubuntu Workstation
 .. slug: setting-up-new-ubuntu-workstation
-.. date: 2018-03-20 11:32:25 UTC-05:00
+.. date: 2018-03-20 17:32:25 UTC-05:00
 .. tags: ubuntu, setup, linux 
 .. category: Ubuntu
 .. link: 
@@ -425,7 +425,7 @@ See the post `How to save remote username and password for Git <link://slug/how-
 Set Up Git FTP
 ==============
 
-See the section Preparing to deploy your site using git-ftp in the post
+See the section **Preparing to deploy your site using git-ftp** in the post
 `Setting up Nikola, git, and git-ftp <link://slug/setting-up-nikola-git-and-git-ftp>`_
 
 ----
@@ -436,5 +436,6 @@ Configure Date and Time Options
 ipsum lorum
 
 
-mount
-Search tool
+mount chpc and fs01 file systems
+
+Install Search tool

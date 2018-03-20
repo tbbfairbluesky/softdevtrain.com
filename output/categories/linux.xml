@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training LLC (Posts about linux)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link href="http://www.SoftDevTrain.com/categories/linux.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Tue, 20 Mar 2018 22:28:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Software Development Training LLC (Posts about linux)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link href="http://www.SoftDevTrain.com/categories/linux.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Tue, 20 Mar 2018 22:32:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-and-upgrade-after-initial-boot-up" id="id3"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/li&gt;
@@ -34,9 +34,9 @@
 &lt;li&gt;&lt;p class="first"&gt;Start a terminal window (Ctrl - Alt - T)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_83fbf122de56454b8ad2ae98790f211d-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_83fbf122de56454b8ad2ae98790f211d-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
-&lt;a name="rest_code_83fbf122de56454b8ad2ae98790f211d-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
+&lt;pre class="code text"&gt;&lt;a name="rest_code_9c5bb2ded3564f54b2e4285f4155c671-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_9c5bb2ded3564f54b2e4285f4155c671-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
+&lt;a name="rest_code_9c5bb2ded3564f54b2e4285f4155c671-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -122,9 +122,9 @@
 &lt;li&gt;&lt;p class="first"&gt;In a terminal window, issue the following commands:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_326eac2d2b2b475db9520ad60022ec21-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;a name="rest_code_326eac2d2b2b475db9520ad60022ec21-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-&lt;a name="rest_code_326eac2d2b2b475db9520ad60022ec21-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
+&lt;pre class="code text"&gt;&lt;a name="rest_code_6126ad63d0ef453b97908367612b7e62-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;a name="rest_code_6126ad63d0ef453b97908367612b7e62-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+&lt;a name="rest_code_6126ad63d0ef453b97908367612b7e62-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open Zim and Open the Following 3 Notebooks&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -156,8 +156,8 @@
 &lt;li&gt;&lt;p class="first"&gt;Thunderbird should already be installed as it is a default application for Ubuntu&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Before&lt;/strong&gt; running Thunderbird for the first time&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_c3edc72e9a094fdd8babfd71492a06f8-1"&gt;&lt;/a&gt;$ cd
-&lt;a name="rest_code_c3edc72e9a094fdd8babfd71492a06f8-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+&lt;pre class="code text"&gt;&lt;a name="rest_code_987243505b97466abe1204260fe4622b-1"&gt;&lt;/a&gt;$ cd
+&lt;a name="rest_code_987243505b97466abe1204260fe4622b-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Thunderbird and check accounts, folders, sending mail, etc.&lt;/p&gt;
 &lt;/li&gt;
@@ -170,9 +170,9 @@
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id9"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands to install KeePass2&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_1fb58048185947bf85861a4e49fc9843-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
-&lt;a name="rest_code_1fb58048185947bf85861a4e49fc9843-2"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_1fb58048185947bf85861a4e49fc9843-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
+&lt;pre class="code text"&gt;&lt;a name="rest_code_5182e1b8647d4f0e8ed143a40d57abaf-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
+&lt;a name="rest_code_5182e1b8647d4f0e8ed143a40d57abaf-2"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_5182e1b8647d4f0e8ed143a40d57abaf-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run KeePass2 from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -196,24 +196,24 @@
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id11"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
-&lt;a name="rest_code_e4c52483043f475b91f0c2f8405789d7-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
+&lt;a name="rest_code_5616edfa1224428fb364eb8a6a59ce3f-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Log out and log back in&lt;/p&gt;
 &lt;/li&gt;
@@ -303,7 +303,7 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following command&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_19bab0b3f64b4f909606d95864dfcfa3-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7edf61a00e334844873368ecb65fa954-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -312,10 +312,10 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_79a9b85f973c4267ae8680df2075c110-1"&gt;&lt;/a&gt;$ sudo apt install geany
-&lt;a name="rest_code_79a9b85f973c4267ae8680df2075c110-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
-&lt;a name="rest_code_79a9b85f973c4267ae8680df2075c110-3"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_79a9b85f973c4267ae8680df2075c110-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
+&lt;pre class="code text"&gt;&lt;a name="rest_code_adc1567290f14752ada24e0d7d58ec7a-1"&gt;&lt;/a&gt;$ sudo apt install geany
+&lt;a name="rest_code_adc1567290f14752ada24e0d7d58ec7a-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
+&lt;a name="rest_code_adc1567290f14752ada24e0d7d58ec7a-3"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_adc1567290f14752ada24e0d7d58ec7a-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Geany from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -328,8 +328,8 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_e22194cdc2944e1e9ce55dc84fdae184-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_e22194cdc2944e1e9ce55dc84fdae184-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f4a880f3b35d4f2da791449c68434904-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_f4a880f3b35d4f2da791449c68434904-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Add the following sites to the FileZilla Site Manager&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -380,10 +380,10 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_38d1826797a148729066ada88bcd2a3c-1"&gt;&lt;/a&gt;$ source activate python3
+&lt;pre class="code text"&gt;&lt;a name="rest_code_668611f377ad41faa676b710eb6a7cf9-1"&gt;&lt;/a&gt;$ source activate python3
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_148d37da6a6e41cca7a6e4d350b23705-1"&gt;&lt;/a&gt;$ nikola --version
+&lt;pre class="code text"&gt;&lt;a name="rest_code_e9bcfcd1d1014074a364182c17c84c21-1"&gt;&lt;/a&gt;$ nikola --version
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -392,7 +392,7 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_539b9f42fbab4b939b5b429e362bac64-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
+&lt;pre class="code text"&gt;&lt;a name="rest_code_71cc836e20a143888f62cc6b23f94501-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
 &lt;/pre&gt;&lt;p&gt;This will give you access to commands line &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gnome-open&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -435,13 +435,13 @@ checked&lt;/p&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-git-ftp"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id24"&gt;Set Up Git FTP&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;See the section Preparing to deploy your site using git-ftp in the post
+&lt;p&gt;See the section &lt;strong&gt;Preparing to deploy your site using git-ftp&lt;/strong&gt; in the post
 &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html"&gt;Setting up Nikola, git, and git-ftp&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-date-and-time-options"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;ipsum lorum&lt;/p&gt;
-&lt;p&gt;mount
-Search tool&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>linux</category><category>setup</category><category>ubuntu</category><guid>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</guid><pubDate>Tue, 20 Mar 2018 16:32:25 GMT</pubDate></item></channel></rss>
+&lt;p&gt;mount chpc and fs01 file systems&lt;/p&gt;
+&lt;p&gt;Install Search tool&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>linux</category><category>setup</category><category>ubuntu</category><guid>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</guid><pubDate>Tue, 20 Mar 2018 22:32:25 GMT</pubDate></item></channel></rss>
