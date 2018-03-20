@@ -407,15 +407,14 @@ Update Mouse Sensitivity
 Update Git
 ==========
 
-See the post `here <link://slug/update-git>`__
-
+See the post `here <link://slug/update-git>`_
 
 ----
 
 Set Up to Save Remote Git Username and Passwords
 ================================================
 
-Link to other post
+See the post `here <link://slug/how-to-save-remote-username-and-password-for-git>`_
 
 ----
 
