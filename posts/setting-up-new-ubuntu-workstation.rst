@@ -430,21 +430,176 @@ See the section **Preparing to deploy your site using git-ftp** in the post
 
 ----
 
+Install Tkinter for Python
+==========================
+
+.. code-block::
+
+   $ sudo apt-get update
+   $ sudo apt-get install python-tk
+   $ sudo apt-get install python3-tk
+
+----
+
+Configure Nautilus
+==================
+
+#. See `How to Easily Add Custom Right-Click Options to Ubuntu's File Manager <https://www.howtogeek.com/116807/how-to-easily-add-custom-right-click-options-to-ubuntus-file-manager/>`_
+
+#. Install nautilus-actions
+
+   .. code-block::
+
+	  $ sudo apt-get install nautilus-actions
+
+#. Log out and log back in in order to restart the Nautilus file manager.
+
+#. Run nautilus-actions from the Dash
+
+#. Add PrependModDate action - replace ${HOME} with actual path to home directory
+
+   * Action
+	 * Check *Display item in selection context menu*
+	 * Check *Display item in location context menu*
+	 * Context Label: ``PrependModDate``
+
+   * Command
+	 * Path: ``${HOME}/bin/PrependModDate``
+	 * Parameters: ``%B``
+	 * Working Directory: ``%d``
+
+   * Execution
+	 * Execution Mode: Normal
+
+#. Add RemoveNumbers action
+
+   * Action
+	 * Check *Display item in selection context menu*
+	 * Check *Display item in location context menu*
+	 * Context Label: ``RemoveNumbers``
+
+   * Command
+	 * Path: ``${HOME}/bin/remove_numbers``
+	 * Parameters: *empty*
+	 * Working Directory: ``%d``
+
+   * Execution
+	 * Execution Mode: Normal
+
+#. Set up Nautilus Preferences
+
+   * In Nautilus: Edit --> Preferences
+
+	 * Views
+	   * View new folders using: *List View*
+	   * Arrange Items: *By Name*
+	   * Check: *Sort folders before files*
+	   * Check: *Show hidden and backup files*
+
+	 * Behavior
+	   * Double click to open items
+	   * View executable text files when they are opened
+	   * Ask before emptying the Trash or deleting files
+		 
+	 * List Columns
+	   * Name, Size, Type, Modified
+
+	 * Preview
+
+	   * Files
+		 * Show thumbnails: *Never*
+
+	   * Folders
+		 * Count number of items: *Local Files Only*
+
+----
+
 Configure Date and Time Options
 ===============================
 
-ipsum lorum
+#. Find the *Time & Date* settings in the System Settings App
 
+#. Select the *Clock* tab
 
-mount chpc and fs01 file systems
+#. Check the following options
+   
+   * In the clock, show Weekday
+   * In the clock, show Date and month
+   * 24-hour time
 
-Install Search tool
+----
 
-add nautilus actions
+Set Up for Mounting Remote File Systems
+=======================================
 
-configure nautilus
+#. Install sshfs
 
-setup queue system on new workstation?
+   .. code-block::
 
+	  $ sudo apt update
+	  $ sudo apt install sshfs
 
+#. Create remote mount directory
 
+   .. code-block::
+
+	  $ cd ~
+	  $ mkdir -p mnt/chpc2
+	  $ mkdir -p mnt/fs01
+	  
+#. Test mount CHPC2 file system
+
+   .. code-block::
+
+	  $ mount_chpc2
+	  $ cd ~/mnt/chpc2
+	  $ ls
+	  
+#. Test mount fs01 file system
+
+   .. code-block::
+
+	  $ mount_fs01
+	  $ cd ~/mnt/fs01
+	  $ ls
+
+----
+
+Install Search for Files Tool
+=============================
+
+#. Install recoll
+   
+   .. code-block::
+
+	  $ sudo apt-get install recoll
+
+#. Install catfish
+
+   .. code-block::
+
+	  $ sudo apt-get install catfish
+
+#. Run each to make sure recoll is indexing and to lock catfish icon to Launcher
+
+----
+
+Update to Latest Version of LibreOffice
+=======================================
+
+#. Issue the following commands:
+
+   .. code-block::
+
+	  $ sudo add-apt-repository ppa:libreoffice/ppa
+	  $ sudo apt update
+	  $ sudo apt install libreoffice
+
+----
+
+Install Torque/PBS Job Scheduler on the Workstation
+===================================================
+
+https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/
+
+FQDN: leopardws01.wucon.wustl.edu

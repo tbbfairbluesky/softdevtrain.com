@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Software Development Training LLC (Posts about setup)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link href="http://www.SoftDevTrain.com/categories/setup.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 21 Mar 2018 15:58:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Software Development Training LLC (Posts about setup)</title><link>http://www.SoftDevTrain.com/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://www.SoftDevTrain.com/categories/setup.xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Wed, 21 Mar 2018 18:53:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-and-upgrade-after-initial-boot-up" id="id3"&gt;Update and Upgrade After Initial Boot-up&lt;/a&gt;&lt;/li&gt;
@@ -24,7 +24,13 @@
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-git" id="id22"&gt;Update Git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id23"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-git-ftp" id="id24"&gt;Set Up Git FTP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id25"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-tkinter-for-python" id="id25"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-nautilus" id="id26"&gt;Configure Nautilus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id27"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-for-mounting-remote-file-systems" id="id28"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-search-for-files-tool" id="id29"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-to-latest-version-of-libreoffice" id="id30"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-torque-pbs-job-scheduler-on-the-workstation" id="id31"&gt;Install Torque/PBS Job Scheduler on the Workstation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
@@ -34,9 +40,9 @@
 &lt;li&gt;&lt;p class="first"&gt;Start a terminal window (Ctrl - Alt - T)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_34f597bc4ff14e9ab134335779e8c232-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_34f597bc4ff14e9ab134335779e8c232-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
-&lt;a name="rest_code_34f597bc4ff14e9ab134335779e8c232-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
+&lt;a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -122,9 +128,9 @@
 &lt;li&gt;&lt;p class="first"&gt;In a terminal window, issue the following commands:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-&lt;a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+&lt;a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open Zim and Open the Following 3 Notebooks&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -156,8 +162,8 @@
 &lt;li&gt;&lt;p class="first"&gt;Thunderbird should already be installed as it is a default application for Ubuntu&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Before&lt;/strong&gt; running Thunderbird for the first time&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_babcc222d25549a38971d1c6e47b08ad-1"&gt;&lt;/a&gt;$ cd
-&lt;a name="rest_code_babcc222d25549a38971d1c6e47b08ad-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+&lt;pre class="code text"&gt;&lt;a name="rest_code_4de6c39085044d20a1d8947e6d816a21-1"&gt;&lt;/a&gt;$ cd
+&lt;a name="rest_code_4de6c39085044d20a1d8947e6d816a21-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Thunderbird and check accounts, folders, sending mail, etc.&lt;/p&gt;
 &lt;/li&gt;
@@ -170,9 +176,9 @@
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id9"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands to install KeePass2&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_36505b21e33746698eec44c3393249d4-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
-&lt;a name="rest_code_36505b21e33746698eec44c3393249d4-2"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_36505b21e33746698eec44c3393249d4-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
+&lt;pre class="code text"&gt;&lt;a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
+&lt;a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-2"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run KeePass2 from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -196,24 +202,24 @@
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id11"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
-&lt;a name="rest_code_4e87a15c35d14187893dd0456c657383-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-5"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-15"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-17"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
+&lt;a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-18"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Log out and log back in&lt;/p&gt;
 &lt;/li&gt;
@@ -303,7 +309,7 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following command&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_8814661b56a64467b15c1fcd9c56bfb8-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
+&lt;pre class="code text"&gt;&lt;a name="rest_code_120bfba76be94c5c8e486bb783f63615-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -312,10 +318,10 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-1"&gt;&lt;/a&gt;$ sudo apt install geany
-&lt;a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
-&lt;a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-3"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-1"&gt;&lt;/a&gt;$ sudo apt install geany
+&lt;a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
+&lt;a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-3"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Geany from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -328,8 +334,8 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_134a94c465d146f7958691e697f033a9-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_134a94c465d146f7958691e697f033a9-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
+&lt;pre class="code text"&gt;&lt;a name="rest_code_112611873b9e4481b5d394c2530b2695-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_112611873b9e4481b5d394c2530b2695-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Add the following sites to the FileZilla Site Manager&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -380,10 +386,10 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_56a38b94f1e3485eae0545ca86a06bd7-1"&gt;&lt;/a&gt;$ source activate python3
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a1c3f2139bc74977895979b4664dba11-1"&gt;&lt;/a&gt;$ source activate python3
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_7e378d8e0e2f48b1b5e3a483a4d0299c-1"&gt;&lt;/a&gt;$ nikola --version
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b9975dbaf17c47c4a5755017b0ba3077-1"&gt;&lt;/a&gt;$ nikola --version
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -392,7 +398,7 @@ checked&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_05270a2b070b4179833c8fb8323f1035-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
+&lt;pre class="code text"&gt;&lt;a name="rest_code_5578dc26c95645ad8662c8e41edd9d49-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
 &lt;/pre&gt;&lt;p&gt;This will give you access to commands line &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gnome-open&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -439,13 +445,200 @@ checked&lt;/p&gt;
 &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html"&gt;Setting up Nikola, git, and git-ftp&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
+&lt;div class="section" id="install-tkinter-for-python"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_8c894afe3df84d7b9ba1641837768e73-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_8c894afe3df84d7b9ba1641837768e73-2"&gt;&lt;/a&gt;$ sudo apt-get install python-tk
+&lt;a name="rest_code_8c894afe3df84d7b9ba1641837768e73-3"&gt;&lt;/a&gt;$ sudo apt-get install python3-tk
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="configure-nautilus"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id26"&gt;Configure Nautilus&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;See &lt;a class="reference external" href="https://www.howtogeek.com/116807/how-to-easily-add-custom-right-click-options-to-ubuntus-file-manager/"&gt;How to Easily Add Custom Right-Click Options to Ubuntu's File Manager&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install nautilus-actions&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d9c2c1dcd2aa4213bd141609a813eb48-1"&gt;&lt;/a&gt;$ sudo apt-get install nautilus-actions
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Log out and log back in in order to restart the Nautilus file manager.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Run nautilus-actions from the Dash&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add PrependModDate action - replace ${HOME} with actual path to home directory&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Action&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Check &lt;em&gt;Display item in selection context menu&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Check &lt;em&gt;Display item in location context menu&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Context Label: &lt;tt class="docutils literal"&gt;PrependModDate&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Command&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Path: &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;${HOME}/bin/PrependModDate&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;Parameters: &lt;tt class="docutils literal"&gt;%B&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;Working Directory: &lt;tt class="docutils literal"&gt;%d&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Execution&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Execution Mode: Normal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add RemoveNumbers action&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Action&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Check &lt;em&gt;Display item in selection context menu&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Check &lt;em&gt;Display item in location context menu&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Context Label: &lt;tt class="docutils literal"&gt;RemoveNumbers&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Command&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Path: &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;${HOME}/bin/remove_numbers&lt;/span&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;Parameters: &lt;em&gt;empty&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Working Directory: &lt;tt class="docutils literal"&gt;%d&lt;/tt&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Execution&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Execution Mode: Normal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Set up Nautilus Preferences&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;In Nautilus: Edit --&amp;gt; Preferences&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Views
+* View new folders using: &lt;em&gt;List View&lt;/em&gt;
+* Arrange Items: &lt;em&gt;By Name&lt;/em&gt;
+* Check: &lt;em&gt;Sort folders before files&lt;/em&gt;
+* Check: &lt;em&gt;Show hidden and backup files&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Behavior
+* Double click to open items
+* View executable text files when they are opened
+* Ask before emptying the Trash or deleting files&lt;/li&gt;
+&lt;li&gt;List Columns
+* Name, Size, Type, Modified&lt;/li&gt;
+&lt;li&gt;Preview&lt;ul&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Files&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Show thumbnails: &lt;em&gt;Never&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;Folders&lt;/dt&gt;
+&lt;dd&gt;&lt;ul class="first last"&gt;
+&lt;li&gt;Count number of items: &lt;em&gt;Local Files Only&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-date-and-time-options"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;ipsum lorum&lt;/p&gt;
-&lt;p&gt;mount chpc and fs01 file systems&lt;/p&gt;
-&lt;p&gt;Install Search tool&lt;/p&gt;
-&lt;p&gt;add nautilus actions&lt;/p&gt;
-&lt;p&gt;configure nautilus&lt;/p&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id27"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Find the &lt;em&gt;Time &amp;amp; Date&lt;/em&gt; settings in the System Settings App&lt;/li&gt;
+&lt;li&gt;Select the &lt;em&gt;Clock&lt;/em&gt; tab&lt;/li&gt;
+&lt;li&gt;Check the following options&lt;ul&gt;
+&lt;li&gt;In the clock, show Weekday&lt;/li&gt;
+&lt;li&gt;In the clock, show Date and month&lt;/li&gt;
+&lt;li&gt;24-hour time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="set-up-for-mounting-remote-file-systems"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id28"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install sshfs&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b417e892f66949418b9a2f2f86742eca-1"&gt;&lt;/a&gt;$ sudo apt update
+&lt;a name="rest_code_b417e892f66949418b9a2f2f86742eca-2"&gt;&lt;/a&gt;$ sudo apt install sshfs
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create remote mount directory&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-1"&gt;&lt;/a&gt;$ cd ~
+&lt;a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-2"&gt;&lt;/a&gt;$ mkdir -p mnt/chpc2
+&lt;a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-3"&gt;&lt;/a&gt;$ mkdir -p mnt/fs01
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Test mount CHPC2 file system&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b21ddbb900da46b8ade546b2f5250419-1"&gt;&lt;/a&gt;$ mount_chpc2
+&lt;a name="rest_code_b21ddbb900da46b8ade546b2f5250419-2"&gt;&lt;/a&gt;$ cd ~/mnt/chpc2
+&lt;a name="rest_code_b21ddbb900da46b8ade546b2f5250419-3"&gt;&lt;/a&gt;$ ls
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Test mount fs01 file system&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-1"&gt;&lt;/a&gt;$ mount_fs01
+&lt;a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-2"&gt;&lt;/a&gt;$ cd ~/mnt/fs01
+&lt;a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-3"&gt;&lt;/a&gt;$ ls
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="install-search-for-files-tool"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id29"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install recoll&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0aa701ead66541f2bc1691b3ad5b335e-1"&gt;&lt;/a&gt;$ sudo apt-get install recoll
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install catfish&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_bd79bf416c1345f49edd54ed02fdd99c-1"&gt;&lt;/a&gt;$ sudo apt-get install catfish
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Run each to make sure recoll is indexing and to lock catfish icon to Launcher&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="update-to-latest-version-of-libreoffice"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id30"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:libreoffice/ppa
+&lt;a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-2"&gt;&lt;/a&gt;$ sudo apt update
+&lt;a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-3"&gt;&lt;/a&gt;$ sudo apt install libreoffice
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="install-torque-pbs-job-scheduler-on-the-workstation"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id31"&gt;Install Torque/PBS Job Scheduler on the Workstation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/"&gt;https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FQDN: leopardws01.wucon.wustl.edu&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>linux</category><category>setup</category><category>ubuntu</category><guid>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</guid><pubDate>Tue, 20 Mar 2018 22:32:25 GMT</pubDate></item><item><title>Setting up Nikola, Git, and git-ftp</title><link>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;

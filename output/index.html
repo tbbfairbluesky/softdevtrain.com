@@ -88,7 +88,13 @@ article: http://ogp.me/ns/article#
 <li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#update-git" id="id22">Update Git</a></li>
 <li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id23">Set Up to Save Remote Git Username and Passwords</a></li>
 <li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#set-up-git-ftp" id="id24">Set Up Git FTP</a></li>
-<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id25">Configure Date and Time Options</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#install-tkinter-for-python" id="id25">Install Tkinter for Python</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#configure-nautilus" id="id26">Configure Nautilus</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id27">Configure Date and Time Options</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#set-up-for-mounting-remote-file-systems" id="id28">Set Up for Mounting Remote File Systems</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#install-search-for-files-tool" id="id29">Install Search for Files Tool</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#update-to-latest-version-of-libreoffice" id="id30">Update to Latest Version of LibreOffice</a></li>
+<li><a class="reference internal" href="posts/setting-up-new-ubuntu-workstation.html#install-torque-pbs-job-scheduler-on-the-workstation" id="id31">Install Torque/PBS Job Scheduler on the Workstation</a></li>
 </ul>
 </div>
 <hr class="docutils">
@@ -100,9 +106,9 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first">Enter the following commands</p>
-<pre class="code text"><a name="rest_code_34f597bc4ff14e9ab134335779e8c232-1"></a>$ sudo apt-get update
-<a name="rest_code_34f597bc4ff14e9ab134335779e8c232-2"></a>$ sudo apt-get upgrade
-<a name="rest_code_34f597bc4ff14e9ab134335779e8c232-3"></a>$ sudo apt-get install -f
+<pre class="code text"><a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-1"></a>$ sudo apt-get update
+<a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-2"></a>$ sudo apt-get upgrade
+<a name="rest_code_a7aa100844c74d538e3c50e4e6ae643e-3"></a>$ sudo apt-get install -f
 </pre>
 </li>
 </ol>
@@ -197,9 +203,9 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first">Enter the following commands</p>
-<pre class="code text"><a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-1"></a>$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
-<a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-2"></a>$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-<a name="rest_code_a5b140f12fd143a0add880bc5124b6d9-3"></a>$ sudo apt-get install zim
+<pre class="code text"><a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-1"></a>$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
+<a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-2"></a>$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+<a name="rest_code_0179b211746c4eb7970f66d6f1f54a60-3"></a>$ sudo apt-get install zim
 </pre>
 </li>
 <li>
@@ -244,8 +250,8 @@ article: http://ogp.me/ns/article#
 </li>
 <li>
 <p class="first"><strong>Before</strong> running Thunderbird for the first time</p>
-<pre class="code text"><a name="rest_code_babcc222d25549a38971d1c6e47b08ad-1"></a>$ cd
-<a name="rest_code_babcc222d25549a38971d1c6e47b08ad-2"></a>$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+<pre class="code text"><a name="rest_code_4de6c39085044d20a1d8947e6d816a21-1"></a>$ cd
+<a name="rest_code_4de6c39085044d20a1d8947e6d816a21-2"></a>$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 </pre>
 </li>
 <li>
@@ -262,9 +268,9 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands to install KeePass2</p>
-<pre class="code text"><a name="rest_code_36505b21e33746698eec44c3393249d4-1"></a>$ sudo add-apt-repository ppa:jtaylor/keepass
-<a name="rest_code_36505b21e33746698eec44c3393249d4-2"></a>$ sudo apt-get update
-<a name="rest_code_36505b21e33746698eec44c3393249d4-3"></a>$ sudo apt-get install keepass2
+<pre class="code text"><a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-1"></a>$ sudo add-apt-repository ppa:jtaylor/keepass
+<a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-2"></a>$ sudo apt-get update
+<a name="rest_code_f8ed1e6cd75d4819872ba4be2f80f01c-3"></a>$ sudo apt-get install keepass2
 </pre>
 </li>
 <li>
@@ -296,24 +302,24 @@ article: http://ogp.me/ns/article#
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code bash"><a name="rest_code_4e87a15c35d14187893dd0456c657383-1"></a>$ <span class="nb">cd</span>
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-2"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/anaconda3
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-3"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/awstest
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-4"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_aliases
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-5"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_logout
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-6"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bashrc
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-7"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/bin
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-8"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-9"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs.d
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-10"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/projects
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-11"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.ssh
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-12"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.thunderbird <span class="c1"># This one should be already done.</span>
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-13"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/tools
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-14"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/workspace
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-15"></a>$ <span class="nb">cd</span> ~/.config
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-16"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.config/zim
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-17"></a>$ <span class="nb">cd</span> ~/.local/share/applications
-<a name="rest_code_4e87a15c35d14187893dd0456c657383-18"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+<pre class="code bash"><a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-1"></a>$ <span class="nb">cd</span>
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-2"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/anaconda3
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-3"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/awstest
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-4"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_aliases
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-5"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bash_logout
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-6"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.bashrc
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-7"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/bin
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-8"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-9"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.emacs.d
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-10"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/projects
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-11"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.ssh
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-12"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.thunderbird <span class="c1"># This one should be already done.</span>
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-13"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/tools
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-14"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/workspace
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-15"></a>$ <span class="nb">cd</span> ~/.config
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-16"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.config/zim
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-17"></a>$ <span class="nb">cd</span> ~/.local/share/applications
+<a name="rest_code_d1c398f94d4846a8b6a9dc5c86a11ae6-18"></a>$ ln -s <span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 </pre>
 </li>
 <li>
@@ -418,7 +424,7 @@ checked</p>
 <ol class="arabic">
 <li>
 <p class="first">Issue the following command</p>
-<pre class="code text"><a name="rest_code_8814661b56a64467b15c1fcd9c56bfb8-1"></a>$ sudo apt install emacs24-nox
+<pre class="code text"><a name="rest_code_120bfba76be94c5c8e486bb783f63615-1"></a>$ sudo apt install emacs24-nox
 </pre>
 </li>
 </ol>
@@ -429,10 +435,10 @@ checked</p>
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code text"><a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-1"></a>$ sudo apt install geany
-<a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-2"></a>$ sudo add-apt-repository ppa:geany-dev/ppa
-<a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-3"></a>$ sudo apt-get update
-<a name="rest_code_14a30cbfa51442edbc3c1adf6407f762-4"></a>$ sudo apt-get install geany geany-plugins
+<pre class="code text"><a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-1"></a>$ sudo apt install geany
+<a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-2"></a>$ sudo add-apt-repository ppa:geany-dev/ppa
+<a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-3"></a>$ sudo apt-get update
+<a name="rest_code_7aeb44ec49a747c3b507e9962ec36164-4"></a>$ sudo apt-get install geany geany-plugins
 </pre>
 </li>
 <li>
@@ -449,8 +455,8 @@ checked</p>
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code text"><a name="rest_code_134a94c465d146f7958691e697f033a9-1"></a>$ sudo apt-get update
-<a name="rest_code_134a94c465d146f7958691e697f033a9-2"></a>$ sudo apt-get install filezilla
+<pre class="code text"><a name="rest_code_112611873b9e4481b5d394c2530b2695-1"></a>$ sudo apt-get update
+<a name="rest_code_112611873b9e4481b5d394c2530b2695-2"></a>$ sudo apt-get install filezilla
 </pre>
 </li>
 <li>
@@ -499,12 +505,12 @@ checked</p>
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands:</p>
-<pre class="code text"><a name="rest_code_56a38b94f1e3485eae0545ca86a06bd7-1"></a>$ source activate python3
+<pre class="code text"><a name="rest_code_a1c3f2139bc74977895979b4664dba11-1"></a>$ source activate python3
 </pre>
 </li>
 <li>
 <p class="first">Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed</p>
-<pre class="code text"><a name="rest_code_7e378d8e0e2f48b1b5e3a483a4d0299c-1"></a>$ nikola --version
+<pre class="code text"><a name="rest_code_b9975dbaf17c47c4a5755017b0ba3077-1"></a>$ nikola --version
 </pre>
 </li>
 </ol>
@@ -515,7 +521,7 @@ checked</p>
 <ol class="arabic">
 <li>
 <p class="first">Issue the following commands</p>
-<pre class="code text"><a name="rest_code_05270a2b070b4179833c8fb8323f1035-1"></a>$ sudo apt install libgnome2-bin
+<pre class="code text"><a name="rest_code_5578dc26c95645ad8662c8e41edd9d49-1"></a>$ sudo apt install libgnome2-bin
 </pre>
 <p>This will give you access to commands line <tt class="docutils literal"><span class="pre">gnome-open</span></tt></p>
 </li>
@@ -565,13 +571,224 @@ checked</p>
 <a class="reference external" href="posts/setting-up-nikola-git-and-git-ftp.html">Setting up Nikola, git, and git-ftp</a></p>
 </div>
 <hr class="docutils">
+<div class="section" id="install-tkinter-for-python">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id25">Install Tkinter for Python</a></h2>
+<pre class="code text"><a name="rest_code_8c894afe3df84d7b9ba1641837768e73-1"></a>$ sudo apt-get update
+<a name="rest_code_8c894afe3df84d7b9ba1641837768e73-2"></a>$ sudo apt-get install python-tk
+<a name="rest_code_8c894afe3df84d7b9ba1641837768e73-3"></a>$ sudo apt-get install python3-tk
+</pre>
+</div>
+<hr class="docutils">
+<div class="section" id="configure-nautilus">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id26">Configure Nautilus</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">See <a class="reference external" href="https://www.howtogeek.com/116807/how-to-easily-add-custom-right-click-options-to-ubuntus-file-manager/">How to Easily Add Custom Right-Click Options to Ubuntu's File Manager</a></p>
+</li>
+<li>
+<p class="first">Install nautilus-actions</p>
+<pre class="code text"><a name="rest_code_d9c2c1dcd2aa4213bd141609a813eb48-1"></a>$ sudo apt-get install nautilus-actions
+</pre>
+</li>
+<li>
+<p class="first">Log out and log back in in order to restart the Nautilus file manager.</p>
+</li>
+<li>
+<p class="first">Run nautilus-actions from the Dash</p>
+</li>
+<li>
+<p class="first">Add PrependModDate action - replace ${HOME} with actual path to home directory</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Action</dt>
+<dd><ul class="first last">
+<li>Check <em>Display item in selection context menu</em>
+</li>
+<li>Check <em>Display item in location context menu</em>
+</li>
+<li>Context Label: <tt class="docutils literal">PrependModDate</tt>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Command</dt>
+<dd><ul class="first last">
+<li>Path: <tt class="docutils literal"><span class="pre">${HOME}/bin/PrependModDate</span></tt>
+</li>
+<li>Parameters: <tt class="docutils literal">%B</tt>
+</li>
+<li>Working Directory: <tt class="docutils literal">%d</tt>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Execution</dt>
+<dd><ul class="first last">
+<li>Execution Mode: Normal</li>
+</ul></dd>
+</dl></li>
+</ul>
+</li>
+<li>
+<p class="first">Add RemoveNumbers action</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Action</dt>
+<dd><ul class="first last">
+<li>Check <em>Display item in selection context menu</em>
+</li>
+<li>Check <em>Display item in location context menu</em>
+</li>
+<li>Context Label: <tt class="docutils literal">RemoveNumbers</tt>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Command</dt>
+<dd><ul class="first last">
+<li>Path: <tt class="docutils literal"><span class="pre">${HOME}/bin/remove_numbers</span></tt>
+</li>
+<li>Parameters: <em>empty</em>
+</li>
+<li>Working Directory: <tt class="docutils literal">%d</tt>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Execution</dt>
+<dd><ul class="first last">
+<li>Execution Mode: Normal</li>
+</ul></dd>
+</dl></li>
+</ul>
+</li>
+<li>
+<p class="first">Set up Nautilus Preferences</p>
+<ul>
+<li>
+<p class="first">In Nautilus: Edit --&gt; Preferences</p>
+<blockquote>
+<ul class="simple">
+<li>Views
+* View new folders using: <em>List View</em>
+* Arrange Items: <em>By Name</em>
+* Check: <em>Sort folders before files</em>
+* Check: <em>Show hidden and backup files</em>
+</li>
+<li>Behavior
+* Double click to open items
+* View executable text files when they are opened
+* Ask before emptying the Trash or deleting files</li>
+<li>List Columns
+* Name, Size, Type, Modified</li>
+<li>Preview<ul>
+<li><dl class="first docutils">
+<dt>Files</dt>
+<dd><ul class="first last">
+<li>Show thumbnails: <em>Never</em>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Folders</dt>
+<dd><ul class="first last">
+<li>Count number of items: <em>Local Files Only</em>
+</li>
+</ul></dd>
+</dl></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<hr class="docutils">
 <div class="section" id="configure-date-and-time-options">
-<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id25">Configure Date and Time Options</a></h2>
-<p>ipsum lorum</p>
-<p>mount chpc and fs01 file systems</p>
-<p>Install Search tool</p>
-<p>add nautilus actions</p>
-<p>configure nautilus</p>
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id27">Configure Date and Time Options</a></h2>
+<ol class="arabic simple">
+<li>Find the <em>Time &amp; Date</em> settings in the System Settings App</li>
+<li>Select the <em>Clock</em> tab</li>
+<li>Check the following options<ul>
+<li>In the clock, show Weekday</li>
+<li>In the clock, show Date and month</li>
+<li>24-hour time</li>
+</ul>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="set-up-for-mounting-remote-file-systems">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id28">Set Up for Mounting Remote File Systems</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Install sshfs</p>
+<pre class="code text"><a name="rest_code_b417e892f66949418b9a2f2f86742eca-1"></a>$ sudo apt update
+<a name="rest_code_b417e892f66949418b9a2f2f86742eca-2"></a>$ sudo apt install sshfs
+</pre>
+</li>
+<li>
+<p class="first">Create remote mount directory</p>
+<pre class="code text"><a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-1"></a>$ cd ~
+<a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-2"></a>$ mkdir -p mnt/chpc2
+<a name="rest_code_60f666f84f384835afd9c23e3eaef7ed-3"></a>$ mkdir -p mnt/fs01
+</pre>
+</li>
+<li>
+<p class="first">Test mount CHPC2 file system</p>
+<pre class="code text"><a name="rest_code_b21ddbb900da46b8ade546b2f5250419-1"></a>$ mount_chpc2
+<a name="rest_code_b21ddbb900da46b8ade546b2f5250419-2"></a>$ cd ~/mnt/chpc2
+<a name="rest_code_b21ddbb900da46b8ade546b2f5250419-3"></a>$ ls
+</pre>
+</li>
+<li>
+<p class="first">Test mount fs01 file system</p>
+<pre class="code text"><a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-1"></a>$ mount_fs01
+<a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-2"></a>$ cd ~/mnt/fs01
+<a name="rest_code_91bd0f526b864c40b6d796e0f84cefb7-3"></a>$ ls
+</pre>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-search-for-files-tool">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id29">Install Search for Files Tool</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Install recoll</p>
+<pre class="code text"><a name="rest_code_0aa701ead66541f2bc1691b3ad5b335e-1"></a>$ sudo apt-get install recoll
+</pre>
+</li>
+<li>
+<p class="first">Install catfish</p>
+<pre class="code text"><a name="rest_code_bd79bf416c1345f49edd54ed02fdd99c-1"></a>$ sudo apt-get install catfish
+</pre>
+</li>
+<li>
+<p class="first">Run each to make sure recoll is indexing and to lock catfish icon to Launcher</p>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="update-to-latest-version-of-libreoffice">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id30">Update to Latest Version of LibreOffice</a></h2>
+<ol class="arabic">
+<li>
+<p class="first">Issue the following commands:</p>
+<pre class="code text"><a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-1"></a>$ sudo add-apt-repository ppa:libreoffice/ppa
+<a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-2"></a>$ sudo apt update
+<a name="rest_code_7172393ae84e4c4696cdabbbaba46c2e-3"></a>$ sudo apt install libreoffice
+</pre>
+</li>
+</ol>
+</div>
+<hr class="docutils">
+<div class="section" id="install-torque-pbs-job-scheduler-on-the-workstation">
+<h2><a class="toc-backref" href="posts/setting-up-new-ubuntu-workstation.html#id31">Install Torque/PBS Job Scheduler on the Workstation</a></h2>
+<p><a class="reference external" href="https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/">https://jabriffa.wordpress.com/2015/02/11/installing-torquepbs-job-scheduler-on-ubuntu-14-04-lts/</a></p>
+<p>FQDN: leopardws01.wucon.wustl.edu</p>
 </div>
 </div>
         </div>
