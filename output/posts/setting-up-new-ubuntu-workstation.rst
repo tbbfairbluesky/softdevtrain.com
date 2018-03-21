@@ -439,3 +439,10 @@ ipsum lorum
 mount chpc and fs01 file systems
 
 Install Search tool
+
+add nautilus actions
+
+configure nautilus
+
+
+
