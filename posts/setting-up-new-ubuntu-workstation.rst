@@ -925,7 +925,7 @@ Steps
 
 ----
 
-Install Torque/PBS Job Scheduler on the Workstation
+Install PBS/Torque Job Scheduler on the Workstation
 ===================================================
 
 References
@@ -958,6 +958,15 @@ References
     * The ``pbs_sched`` communicates with the ``pbs_mom`` on execution/compute nodes to actually cause jobs to start running.
 
     * This is just a guess at the basic architecture.
+
+* `User Commands PBS/Torque Slurm ... <https://slurm.schedmd.com/rosetta.pdf>`_
+
+* `Some frequently used PBS commands <https://www.nccs.nasa.gov/images/useful_q_command.docx>`_
+
+* Other useful commands
+
+  * ``pgrep -l pbs``
+  * ``pbsnodes -a``
 
 Information
 -----------
