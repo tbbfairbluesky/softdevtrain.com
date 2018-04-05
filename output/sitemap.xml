@@ -7,11 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.SoftDevTrain.com/2018/index.html</loc>
-  <lastmod>2018-03-27T16:46:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/archive.html</loc>
-  <lastmod>2018-03-20T16:45:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.SoftDevTrain.com/categories/cat_git-overview.html</loc>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/cat_git-standard-usage.html</loc>
@@ -31,11 +35,11 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/git.html</loc>
-  <lastmod>2018-03-16T17:18:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/index.html</loc>
-  <lastmod>2018-03-20T16:45:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/categories/linux.html</loc>
@@ -59,7 +63,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/index.html</loc>
-  <lastmod>2018-03-27T16:46:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/listings/index.html</loc>
@@ -72,6 +76,10 @@
  <url>
   <loc>http://www.SoftDevTrain.com/pages/software-engineering-quotes.html</loc>
   <lastmod>2018-03-16T17:18:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html</loc>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/comparing-versions-of-a-file-between-2-git-branches.html</loc>
@@ -95,7 +103,7 @@
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</loc>
-  <lastmod>2018-03-27T16:46:00Z</lastmod>
+  <lastmod>2018-04-05T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html</loc>
