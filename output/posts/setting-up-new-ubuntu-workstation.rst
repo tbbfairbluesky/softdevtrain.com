@@ -1,6 +1,6 @@
 .. title: Setting up new Ubuntu Workstation
 .. slug: setting-up-new-ubuntu-workstation
-.. date: 2018-03-23 14:33:25 UTC-05:00
+.. date: 2018-04-09 09:50:25 UTC-05:00
 .. tags: ubuntu, setup, linux 
 .. category: Ubuntu
 .. link: 
@@ -109,7 +109,7 @@ Sync
 * Choose *Selective Sync...* and only sync 
 
   * Apps
-  * KeePass2
+  * KeePass2 
   * MATLAB
   * Notebooks
   * ubuntu
@@ -137,7 +137,7 @@ Install Zimwiki
 
 #. Enter the following commands
 
-   .. code-block::
+   .. code-block:: bash
 
       $ sudo apt-get update && sudo apt-get upgrade
       $ sudo add-apt-repository ppa:jaap.karssenberg/zim
@@ -188,6 +188,8 @@ Configure, Run, and Check Thunderbird
 Install and Configure KeePass2
 ==============================
 
+**Note** KeePass2 may not need to be installed as I've found the Enpass is better
+
 #. Issue the following commands to install KeePass2
 
    .. code-block::
@@ -206,10 +208,26 @@ Install and Configure KeePass2
 
 ----
 
+Install and Configure Enpass
+============================
+
+#. Visit https://www.enpass.io/kb/how-to-install-on-linux/ and follow instructions there
+
+#. Run Enpass 
+
+   * Choose to "Restore my existing data"
+   * From Dropbox
+   * Login to Dropbox
+   * Allow Enpass to access its own folder, Apps > Enpass inside Dropbox
+   * Provide master password
+   * Press the "Start using Enpass" button
+
+----
+
 Install Chrome Browser
 ======================
 
-#. Visit https:://www.google.com/chrome
+#. Visit https://www.google.com/chrome
 
 #. Select the ``Download Chrome`` button
 
@@ -226,26 +244,38 @@ Set Up Symbolic Links in ${HOME}
    .. code-block:: bash
 
       $ cd
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/anaconda3
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/awstest
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.bash_aliases
+      $ ln -s Documents/Dropbox/ubuntu/anaconda3
+      $ ln -s Documents/Dropbox/ubuntu/.aws
+      $ ln -s Documents/Dropbox/ubuntu/awstest
+      $ ln -s Documents/Dropbox/ubuntu/.bash_aliases
       $ rm .bash_logout
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.bash_logout
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.bash_profile
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.bashrc
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/bin
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.emacs
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.emacs.d
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/projects
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.ssh
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird # This one should be already done.
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/tools
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/workspace
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.gitconfig
+      $ ln -s Documents/Dropbox/ubuntu/.bash_logout
+      $ rm .bash_profile
+      $ ln -s Documents/Dropbox/ubuntu/.bash_profile
+      $ ln -s Documents/Dropbox/ubuntu/.bashrc
+      $ ln -s Documents/Dropbox/ubuntu/bin
+      $ ln -s Documents/Dropbox/ubuntu/.credentials
+      $ ln -s Documents/Dropbox/ubuntu/.deployproject
+      $ ln -s Documents/Dropbox/ubuntu/.emacs
+      $ ln -s Documents/Dropbox/ubuntu/.emacs.d
+      $ ln -s Documents/Dropbox/ubuntu/.gitconfig
+      $ ln -s Documents/Dropbox/ubuntu/.git-credentials-PERSONAL 
+      $ ln -s Documents/Dropbox/ubuntu/.git-credentials-WUSTL 
+      $ ln -s Documents/Dropbox/ubuntu/.passwd-s3fs
+      $ ln -s Documents/Dropbox/ubuntu/projects
+      $ ln -s Documents/Dropbox/ubuntu/.remmina
+      $ ln -s Documents/Dropbox/ubuntu/.ssh
+      $ ln -s Documents/Dropbox/ubuntu/.thunderbird # This one should be already done.
+      $ ln -s Documents/Dropbox/ubuntu/tools
+      $ ln -s Documents/Dropbox/ubuntu/workspace
+
       $ cd ~/.config
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.config/zim
+      $ rm -rf zim
+      $ ln -s ../Documents/Dropbox/ubuntu/.config/zim
+
       $ cd ~/.local/share/applications
-      $ ln -s ${HOME}/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+      $ ln -s ../../../Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+
 
 #. Log out and log back in
 
@@ -481,6 +511,24 @@ Set Up Git FTP
 
 See the section **Preparing to deploy your site using git-ftp** in the post
 `Setting up Nikola, git, and git-ftp <link://slug/setting-up-nikola-git-and-git-ftp>`_
+
+----
+
+Install git-flow
+================
+
+See: 
+
+* `git-flow cheatsheet <https://danielkummer.github.io/git-flow-cheatsheet/>`_
+* `A successful Git branching model <http://nvie.com/posts/a-successful-git-branching-model/>`_
+* `Change gitflow settings in sourcetree <https://www.crisi.ch/change-git-flow-settings-in-sourcetree/>`_
+* `Gitflow Workflow <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>`_
+* `Introducing GitFlow <https://datasift.github.io/gitflow/IntroducingGitFlow.html>`_
+* `Gitflow <https://blog.axosoft.com/gitflow/>`_
+
+.. code-block::
+
+   $ sudo apt-get install git-flow
 
 ----
 

@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link type="application/rss+xml" rel="self" href="http://www.SoftDevTrain.com/rss.xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Thu, 05 Apr 2018 16:35:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A very good stackoverflow overview of git branches, forks, merges, and clones</title><link>http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html#an-excellent-post-that-should-be-read-and-periodically-reviewed" id="id1"&gt;An excellent post that should be read and periodically reviewed&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;hr class="docutils"&gt;
-&lt;div class="section" id="an-excellent-post-that-should-be-read-and-periodically-reviewed"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html#id1"&gt;An excellent post that should be read and periodically reviewed&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;stackoverflow user Michael Durrant provides an excellent overview of Git repositories,
-branches, merging, forks, and Github usage
-&lt;a class="reference external" href="https://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences/"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html</guid><pubDate>Thu, 05 Apr 2018 16:28:19 GMT</pubDate></item><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software Development Training LLC</title><link>http://www.SoftDevTrain.com/</link><description>Thoughts and information on Software Development</description><atom:link href="http://www.SoftDevTrain.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:tbb@SoftDevTrain.com"&gt;Software Development Training LLC&lt;/a&gt; </copyright><lastBuildDate>Thu, 16 Aug 2018 17:04:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Notes on Singularity</title><link>http://www.SoftDevTrain.com/posts/notes-on-singularity.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>http://www.SoftDevTrain.com/posts/notes-on-singularity.html</guid><pubDate>Tue, 31 Jul 2018 21:05:08 GMT</pubDate></item><item><title>Setting up new Ubuntu Workstation</title><link>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#who-is-this-post-for" id="id5"&gt;Who is this post for?&lt;/a&gt;&lt;/li&gt;
@@ -23,40 +11,42 @@ branches, merging, forks, and Github usage
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-ubuntu-application-menu-location" id="id11"&gt;Change Ubuntu Application Menu Location&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-run-and-check-thunderbird" id="id12"&gt;Configure, Run, and Check Thunderbird&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-keepass2" id="id13"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-chrome-browser" id="id14"&gt;Install Chrome Browser&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-symbolic-links-in-home" id="id15"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-terminal-preferences-and-profiles" id="id16"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-desktop-background" id="id17"&gt;Change Desktop Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-emacs" id="id18"&gt;Install Emacs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-geany" id="id19"&gt;Install Geany&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-filezilla" id="id20"&gt;Install Filezilla&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#verify-anaconda-python-3-environment" id="id21"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id22"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gitg" id="id23"&gt;Install gitg&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-unity-tweak-tool" id="id24"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-mouse-sensitivity" id="id25"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-git" id="id26"&gt;Update Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id27"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-git-ftp" id="id28"&gt;Set Up Git FTP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-tkinter-for-python" id="id29"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-nautilus" id="id30"&gt;Configure Nautilus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id31"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-for-mounting-remote-file-systems" id="id32"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-search-for-files-tool" id="id33"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-to-latest-version-of-libreoffice" id="id34"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#add-screenshot-application-to-launcher" id="id35"&gt;Add Screenshot Application to Launcher&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#make-directories-for-mount-points" id="id36"&gt;Make Directories for Mount Points&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-workspace-switcher" id="id37"&gt;Set up Workspace Switcher&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-set-up-anaconda-python-distribution" id="id38"&gt;Install/Set Up Anaconda Python Distribution&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-vlc-media-player" id="id39"&gt;Install and Configure VLC Media Player&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-terminal-keep-alive" id="id40"&gt;Configure Terminal Keep Alive&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-miscellaneous-software-using-ubuntu-software-center" id="id41"&gt;Install Miscellaneous Software Using Ubuntu Software Center&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-java-jdk" id="id42"&gt;Install Java JDK&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-dragondisk" id="id43"&gt;Install DragonDisk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#installing-r-and-r-studio" id="id44"&gt;Installing R and R Studio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-several-versions-of-matlab" id="id45"&gt;Install Several Versions of MATLAB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-enable-ssh-server" id="id46"&gt;Install/Enable SSH Server&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-pbs-torque-job-scheduler-on-the-workstation" id="id47"&gt;Install PBS/Torque Job Scheduler on the Workstation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-enpass" id="id14"&gt;Install and Configure Enpass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-chrome-browser" id="id15"&gt;Install Chrome Browser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-symbolic-links-in-home" id="id16"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-terminal-preferences-and-profiles" id="id17"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#change-desktop-background" id="id18"&gt;Change Desktop Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-emacs" id="id19"&gt;Install Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-geany" id="id20"&gt;Install Geany&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-filezilla" id="id21"&gt;Install Filezilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#verify-anaconda-python-3-environment" id="id22"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gnome2-tools" id="id23"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-gitg" id="id24"&gt;Install gitg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-unity-tweak-tool" id="id25"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-mouse-sensitivity" id="id26"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-git" id="id27"&gt;Update Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-to-save-remote-git-username-and-passwords" id="id28"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-git-ftp" id="id29"&gt;Set Up Git FTP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-git-flow" id="id30"&gt;Install git-flow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-tkinter-for-python" id="id31"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-nautilus" id="id32"&gt;Configure Nautilus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-date-and-time-options" id="id33"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-for-mounting-remote-file-systems" id="id34"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-search-for-files-tool" id="id35"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#update-to-latest-version-of-libreoffice" id="id36"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#add-screenshot-application-to-launcher" id="id37"&gt;Add Screenshot Application to Launcher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#make-directories-for-mount-points" id="id38"&gt;Make Directories for Mount Points&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#set-up-workspace-switcher" id="id39"&gt;Set up Workspace Switcher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-set-up-anaconda-python-distribution" id="id40"&gt;Install/Set Up Anaconda Python Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-and-configure-vlc-media-player" id="id41"&gt;Install and Configure VLC Media Player&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#configure-terminal-keep-alive" id="id42"&gt;Configure Terminal Keep Alive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-miscellaneous-software-using-ubuntu-software-center" id="id43"&gt;Install Miscellaneous Software Using Ubuntu Software Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-java-jdk" id="id44"&gt;Install Java JDK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-dragondisk" id="id45"&gt;Install DragonDisk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#installing-r-and-r-studio" id="id46"&gt;Installing R and R Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-several-versions-of-matlab" id="id47"&gt;Install Several Versions of MATLAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-enable-ssh-server" id="id48"&gt;Install/Enable SSH Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#install-pbs-torque-job-scheduler-on-the-workstation" id="id49"&gt;Install PBS/Torque Job Scheduler on the Workstation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
@@ -83,9 +73,9 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;li&gt;&lt;p class="first"&gt;Start a terminal window (Ctrl - Alt - T)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_d07daa102b6d4e90978d6ae01eb29f7e-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_d07daa102b6d4e90978d6ae01eb29f7e-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
-&lt;a name="rest_code_d07daa102b6d4e90978d6ae01eb29f7e-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
+&lt;pre class="code text"&gt;&lt;a name="rest_code_38a975e380d447fdbec9f2d01328cc58-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_38a975e380d447fdbec9f2d01328cc58-2"&gt;&lt;/a&gt;$ sudo apt-get upgrade
+&lt;a name="rest_code_38a975e380d447fdbec9f2d01328cc58-3"&gt;&lt;/a&gt;$ sudo apt-get install -f
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -180,9 +170,9 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;li&gt;&lt;p class="first"&gt;In a terminal window, issue the following commands:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Enter the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_bdbc4665e3b749a19ebff167b2019321-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;a name="rest_code_bdbc4665e3b749a19ebff167b2019321-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
-&lt;a name="rest_code_bdbc4665e3b749a19ebff167b2019321-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_22eb5efff4e74f3ea3233e9f88396243-1"&gt;&lt;/a&gt;$ sudo apt-get update &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get upgrade
+&lt;a name="rest_code_22eb5efff4e74f3ea3233e9f88396243-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jaap.karssenberg/zim
+&lt;a name="rest_code_22eb5efff4e74f3ea3233e9f88396243-3"&gt;&lt;/a&gt;$ sudo apt-get install zim
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open Zim and Open the Following 3 Notebooks&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -214,8 +204,8 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;li&gt;&lt;p class="first"&gt;Thunderbird should already be installed as it is a default application for Ubuntu&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Before&lt;/strong&gt; running Thunderbird for the first time&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_8ba2d5c3dd9244119d1bc4f03902a4aa-1"&gt;&lt;/a&gt;$ cd
-&lt;a name="rest_code_8ba2d5c3dd9244119d1bc4f03902a4aa-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
+&lt;pre class="code text"&gt;&lt;a name="rest_code_de4e1c4e194041edaa7c35db0ae1dccf-1"&gt;&lt;/a&gt;$ cd
+&lt;a name="rest_code_de4e1c4e194041edaa7c35db0ae1dccf-2"&gt;&lt;/a&gt;$ ln -s ${HOME}/Documents/Dropbox/ubuntu/.thunderbird
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Thunderbird and check accounts, folders, sending mail, etc.&lt;/p&gt;
 &lt;/li&gt;
@@ -226,11 +216,12 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-and-configure-keepass2"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id13"&gt;Install and Configure KeePass2&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; KeePass2 may not need to be installed as I've found the Enpass is better&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands to install KeePass2&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_9e3244b4cbeb4b3bbafb0fc99428bdd1-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
-&lt;a name="rest_code_9e3244b4cbeb4b3bbafb0fc99428bdd1-2"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_9e3244b4cbeb4b3bbafb0fc99428bdd1-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a979be6dc0cc4f7297a8b82674d8a26b-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:jtaylor/keepass
+&lt;a name="rest_code_a979be6dc0cc4f7297a8b82674d8a26b-2"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_a979be6dc0cc4f7297a8b82674d8a26b-3"&gt;&lt;/a&gt;$ sudo apt-get install keepass2
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run KeePass2 from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -243,40 +234,67 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
-&lt;div class="section" id="install-chrome-browser"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install Chrome Browser&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="install-and-configure-enpass"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id14"&gt;Install and Configure Enpass&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;Visit &lt;a class="reference external" href="https:://www.google.com/chrome"&gt;https:://www.google.com/chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Visit &lt;a class="reference external" href="https://www.enpass.io/kb/how-to-install-on-linux/"&gt;https://www.enpass.io/kb/how-to-install-on-linux/&lt;/a&gt; and follow instructions there&lt;/li&gt;
+&lt;li&gt;Run Enpass&lt;ul&gt;
+&lt;li&gt;Choose to "Restore my existing data"&lt;/li&gt;
+&lt;li&gt;From Dropbox&lt;/li&gt;
+&lt;li&gt;Login to Dropbox&lt;/li&gt;
+&lt;li&gt;Allow Enpass to access its own folder, Apps &amp;gt; Enpass inside Dropbox&lt;/li&gt;
+&lt;li&gt;Provide master password&lt;/li&gt;
+&lt;li&gt;Press the "Start using Enpass" button&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="install-chrome-browser"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Install Chrome Browser&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Visit &lt;a class="reference external" href="https://www.google.com/chrome"&gt;https://www.google.com/chrome&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Select the &lt;tt class="docutils literal"&gt;Download Chrome&lt;/tt&gt; button&lt;/li&gt;
 &lt;li&gt;Select &lt;tt class="docutils literal"&gt;64 bit .deb (For Debian/Ubuntu)&lt;/tt&gt;&lt;/li&gt;
 &lt;li&gt;Select &lt;tt class="docutils literal"&gt;Accept and Install&lt;/tt&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="set-up-symbolic-links-in-home"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id15"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Set Up Symbolic Links in ${HOME}&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-2"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/anaconda3
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-3"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/awstest
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-4"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_aliases
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-5"&gt;&lt;/a&gt;$ rm .bash_logout
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-6"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_logout
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-7"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bash_profile
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-8"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.bashrc
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-9"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/bin
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-10"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-11"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.emacs.d
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-12"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/projects
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-13"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.ssh
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-14"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-15"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/tools
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-16"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/workspace
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-17"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.gitconfig
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-18"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-19"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.config/zim
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-20"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
-&lt;a name="rest_code_3510b93e201b4014b924a5caf9a567ff-21"&gt;&lt;/a&gt;$ ln -s &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-1"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt;
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-2"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/anaconda3
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-3"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.aws
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-4"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/awstest
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-5"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.bash_aliases
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-6"&gt;&lt;/a&gt;$ rm .bash_logout
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-7"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.bash_logout
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-8"&gt;&lt;/a&gt;$ rm .bash_profile
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-9"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.bash_profile
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-10"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.bashrc
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-11"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/bin
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-12"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.credentials
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-13"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.deployproject
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-14"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.emacs
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-15"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.emacs.d
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-16"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.gitconfig
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-17"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.git-credentials-PERSONAL
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-18"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.git-credentials-WUSTL
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-19"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.passwd-s3fs
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-20"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/projects
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-21"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.remmina
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-22"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.ssh
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-23"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/.thunderbird &lt;span class="c1"&gt;# This one should be already done.&lt;/span&gt;
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-24"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/tools
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-25"&gt;&lt;/a&gt;$ ln -s Documents/Dropbox/ubuntu/workspace
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-26"&gt;&lt;/a&gt;
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-27"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.config
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-28"&gt;&lt;/a&gt;$ rm -rf zim
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-29"&gt;&lt;/a&gt;$ ln -s ../Documents/Dropbox/ubuntu/.config/zim
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-30"&gt;&lt;/a&gt;
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-31"&gt;&lt;/a&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/share/applications
+&lt;a name="rest_code_1ccf632604114503b3d974140e4f752d-32"&gt;&lt;/a&gt;$ ln -s ../../../Documents/Dropbox/ubuntu/.local/share/applications/gnome-terminal.desktop
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Log out and log back in&lt;/p&gt;
 &lt;/li&gt;
@@ -284,7 +302,7 @@ Ubuntu 16.04 LTS workstation configured for use.&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-terminal-preferences-and-profiles"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id16"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Set Up Terminal Preferences and Profiles&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Start a Terminal window&lt;/li&gt;
 &lt;li&gt;Use the Terminal's menus to navigate to &lt;tt class="docutils literal"&gt;Terminal &lt;span class="pre"&gt;--&amp;gt;&lt;/span&gt; Preferences &lt;span class="pre"&gt;--&amp;gt;&lt;/span&gt; General&lt;/tt&gt;&lt;/li&gt;
@@ -332,7 +350,7 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="change-desktop-background"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id17"&gt;Change Desktop Background&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Change Desktop Background&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;System Settings --&amp;gt; Apperance&lt;/li&gt;
 &lt;li&gt;Change from Wallpapers to Colors &amp;amp; Gradients&lt;/li&gt;
@@ -343,22 +361,22 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-emacs"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id18"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id19"&gt;Install Emacs&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following command&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_9a3b7978473d49c2b10e96976cd05fe7-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
+&lt;pre class="code text"&gt;&lt;a name="rest_code_810f928c9aa0477f8822ef3553bd1468-1"&gt;&lt;/a&gt;$ sudo apt install emacs24-nox
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-geany"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id19"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id20"&gt;Install Geany&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_09d7f7bac04d4228ad3c353d18d437b6-1"&gt;&lt;/a&gt;$ sudo apt install geany
-&lt;a name="rest_code_09d7f7bac04d4228ad3c353d18d437b6-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
-&lt;a name="rest_code_09d7f7bac04d4228ad3c353d18d437b6-3"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_09d7f7bac04d4228ad3c353d18d437b6-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
+&lt;pre class="code text"&gt;&lt;a name="rest_code_b3004dbe47dd4af8aba7df6e7f647662-1"&gt;&lt;/a&gt;$ sudo apt install geany
+&lt;a name="rest_code_b3004dbe47dd4af8aba7df6e7f647662-2"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:geany-dev/ppa
+&lt;a name="rest_code_b3004dbe47dd4af8aba7df6e7f647662-3"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_b3004dbe47dd4af8aba7df6e7f647662-4"&gt;&lt;/a&gt;$ sudo apt-get install geany geany-plugins
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run Geany from the Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -386,11 +404,11 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-filezilla"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id20"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id21"&gt;Install Filezilla&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_33ac1942a04246a09d1c446a4ca12af9-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_33ac1942a04246a09d1c446a4ca12af9-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c999b9f0a6534facb15b00910af38c17-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_c999b9f0a6534facb15b00910af38c17-2"&gt;&lt;/a&gt;$ sudo apt-get install filezilla
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Add the following sites to the FileZilla Site Manager&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -420,29 +438,29 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="verify-anaconda-python-3-environment"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id21"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id22"&gt;Verify Anaconda Python 3 Environment&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_cb4559efb9204cfab7ad642fa548ef0f-1"&gt;&lt;/a&gt;$ source activate python3
+&lt;pre class="code text"&gt;&lt;a name="rest_code_12d7b79865eb48b49e9e1a45872c611e-1"&gt;&lt;/a&gt;$ source activate python3
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Make sure this gets you the Anaconda Python 3 environment with Nikola version v7.8.12 or higher installed&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_b03cf0eae2c84ad08ccaeaa3bc0eb05a-1"&gt;&lt;/a&gt;$ nikola --version
+&lt;pre class="code text"&gt;&lt;a name="rest_code_da7d0cff040d45bb94882a6729e4136b-1"&gt;&lt;/a&gt;$ nikola --version
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-gnome2-tools"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id22"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id23"&gt;Install Gnome2 Tools&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_3df75f3dcebf4bc582e875388339600e-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
+&lt;pre class="code text"&gt;&lt;a name="rest_code_8ca0620b4c31486da46d5df7a44af8a0-1"&gt;&lt;/a&gt;$ sudo apt install libgnome2-bin
 &lt;/pre&gt;&lt;p&gt;This will give you access to commands line &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gnome-open&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-gitg"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id23"&gt;Install gitg&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id24"&gt;Install gitg&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Use the Ubuntu Software Center and search for gitg&lt;/li&gt;
 &lt;li&gt;Install it&lt;/li&gt;
@@ -451,7 +469,7 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-unity-tweak-tool"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id24"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Install Unity Tweak Tool&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Use the Ubuntu Software Center and search for Tweak&lt;/li&gt;
 &lt;li&gt;Install the &lt;tt class="docutils literal"&gt;Unity Tweak Tool&lt;/tt&gt; instead of the &lt;tt class="docutils literal"&gt;Tweak Tool&lt;/tt&gt;&lt;/li&gt;
@@ -460,42 +478,56 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="update-mouse-sensitivity"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id25"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id26"&gt;Update Mouse Sensitivity&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;See &lt;a class="reference external" href="http://www.pontikis.net/blog/fix-mouse-sensitivity-ubuntu"&gt;Fix Mouse Sensitivity in Ubuntu 16.04&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Try &lt;tt class="docutils literal"&gt;xset m 1/2 4&lt;/tt&gt; in the &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.config/autostart/mouse.desktop&lt;/span&gt;&lt;/tt&gt; file&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="update-git"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id26"&gt;Update Git&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id27"&gt;Update Git&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;See the post &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/update-git.html"&gt;Update Git&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-to-save-remote-git-username-and-passwords"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id27"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id28"&gt;Set Up to Save Remote Git Username and Passwords&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;See the post &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/how-to-save-remote-username-and-password-for-git.html"&gt;How to save remote username and password for Git&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-git-ftp"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id28"&gt;Set Up Git FTP&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id29"&gt;Set Up Git FTP&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;See the section &lt;strong&gt;Preparing to deploy your site using git-ftp&lt;/strong&gt; in the post
 &lt;a class="reference external" href="http://www.SoftDevTrain.com/posts/setting-up-nikola-git-and-git-ftp.html"&gt;Setting up Nikola, git, and git-ftp&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
+&lt;div class="section" id="install-git-flow"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id30"&gt;Install git-flow&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://danielkummer.github.io/git-flow-cheatsheet/"&gt;git-flow cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/"&gt;A successful Git branching model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.crisi.ch/change-git-flow-settings-in-sourcetree/"&gt;Change gitflow settings in sourcetree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"&gt;Gitflow Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://datasift.github.io/gitflow/IntroducingGitFlow.html"&gt;Introducing GitFlow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://blog.axosoft.com/gitflow/"&gt;Gitflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_e8c2d1dc17f14642b4f74d9cec24efb0-1"&gt;&lt;/a&gt;$ sudo apt-get install git-flow
+&lt;/pre&gt;&lt;/div&gt;
+&lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-tkinter-for-python"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id29"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/h2&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_c821fd220096487ba103734607a93e44-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_c821fd220096487ba103734607a93e44-2"&gt;&lt;/a&gt;$ sudo apt-get install python-tk
-&lt;a name="rest_code_c821fd220096487ba103734607a93e44-3"&gt;&lt;/a&gt;$ sudo apt-get install python3-tk
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id31"&gt;Install Tkinter for Python&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code text"&gt;&lt;a name="rest_code_ef6031c6f71b40a6b5483d1a73aa8854-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_ef6031c6f71b40a6b5483d1a73aa8854-2"&gt;&lt;/a&gt;$ sudo apt-get install python-tk
+&lt;a name="rest_code_ef6031c6f71b40a6b5483d1a73aa8854-3"&gt;&lt;/a&gt;$ sudo apt-get install python3-tk
 &lt;/pre&gt;&lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-nautilus"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id30"&gt;Configure Nautilus&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id32"&gt;Configure Nautilus&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;See &lt;a class="reference external" href="https://www.howtogeek.com/116807/how-to-easily-add-custom-right-click-options-to-ubuntus-file-manager/"&gt;How to Easily Add Custom Right-Click Options to Ubuntu's File Manager&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install nautilus-actions&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_efe173f1f2414ff38aae54c4fafd13bb-1"&gt;&lt;/a&gt;$ sudo apt-get install nautilus-actions
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0cd5c45353114fe084743c1dcb56ed9a-1"&gt;&lt;/a&gt;$ sudo apt-get install nautilus-actions
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Log out and log back in in order to restart the Nautilus file manager.&lt;/p&gt;
 &lt;/li&gt;
@@ -558,7 +590,7 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-date-and-time-options"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id31"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id33"&gt;Configure Date and Time Options&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Find the &lt;em&gt;Time &amp;amp; Date&lt;/em&gt; settings in the System Settings App&lt;/li&gt;
 &lt;li&gt;Select the &lt;em&gt;Clock&lt;/em&gt; tab&lt;/li&gt;
@@ -572,39 +604,39 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-for-mounting-remote-file-systems"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id32"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id34"&gt;Set Up for Mounting Remote File Systems&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install sshfs&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_b9c0310ae742460aaec5f5820778bee0-1"&gt;&lt;/a&gt;$ sudo apt update
-&lt;a name="rest_code_b9c0310ae742460aaec5f5820778bee0-2"&gt;&lt;/a&gt;$ sudo apt install sshfs
+&lt;pre class="code text"&gt;&lt;a name="rest_code_bcc5c536ba6f474da8a674f1ed01a2da-1"&gt;&lt;/a&gt;$ sudo apt update
+&lt;a name="rest_code_bcc5c536ba6f474da8a674f1ed01a2da-2"&gt;&lt;/a&gt;$ sudo apt install sshfs
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create remote mount directory&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_edbc5abba64a4cf18d43188398a52627-1"&gt;&lt;/a&gt;$ sudo su - root
-&lt;a name="rest_code_edbc5abba64a4cf18d43188398a52627-2"&gt;&lt;/a&gt;# cd /mnt
-&lt;a name="rest_code_edbc5abba64a4cf18d43188398a52627-3"&gt;&lt;/a&gt;$ mkdir chpc2
-&lt;a name="rest_code_edbc5abba64a4cf18d43188398a52627-4"&gt;&lt;/a&gt;$ mkdir fs01
+&lt;pre class="code text"&gt;&lt;a name="rest_code_347a85f8744b46369f8f788761aba607-1"&gt;&lt;/a&gt;$ sudo su - root
+&lt;a name="rest_code_347a85f8744b46369f8f788761aba607-2"&gt;&lt;/a&gt;# cd /mnt
+&lt;a name="rest_code_347a85f8744b46369f8f788761aba607-3"&gt;&lt;/a&gt;$ mkdir chpc2
+&lt;a name="rest_code_347a85f8744b46369f8f788761aba607-4"&gt;&lt;/a&gt;$ mkdir fs01
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Test mount CHPC2 file system&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_0dd1461277014bc9a0685c4858bed0f1-1"&gt;&lt;/a&gt;$ mount_chpc2
-&lt;a name="rest_code_0dd1461277014bc9a0685c4858bed0f1-2"&gt;&lt;/a&gt;$ cd /mnt/chpc2
-&lt;a name="rest_code_0dd1461277014bc9a0685c4858bed0f1-3"&gt;&lt;/a&gt;$ ls
+&lt;pre class="code text"&gt;&lt;a name="rest_code_deb1bbd3f6774e908098a5946b4f21e6-1"&gt;&lt;/a&gt;$ mount_chpc2
+&lt;a name="rest_code_deb1bbd3f6774e908098a5946b4f21e6-2"&gt;&lt;/a&gt;$ cd /mnt/chpc2
+&lt;a name="rest_code_deb1bbd3f6774e908098a5946b4f21e6-3"&gt;&lt;/a&gt;$ ls
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Test mount fs01 file system&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_01c67b139b73465ebf8192302c61aa3c-1"&gt;&lt;/a&gt;$ mount_fs01
-&lt;a name="rest_code_01c67b139b73465ebf8192302c61aa3c-2"&gt;&lt;/a&gt;$ cd /mnt/fs01
-&lt;a name="rest_code_01c67b139b73465ebf8192302c61aa3c-3"&gt;&lt;/a&gt;$ ls
+&lt;pre class="code text"&gt;&lt;a name="rest_code_788a00ab5769462b86af43b4894f2e89-1"&gt;&lt;/a&gt;$ mount_fs01
+&lt;a name="rest_code_788a00ab5769462b86af43b4894f2e89-2"&gt;&lt;/a&gt;$ cd /mnt/fs01
+&lt;a name="rest_code_788a00ab5769462b86af43b4894f2e89-3"&gt;&lt;/a&gt;$ ls
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-search-for-files-tool"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id33"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id35"&gt;Install Search for Files Tool&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install recoll&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_baf71122fc114f91917e49d5a52725a9-1"&gt;&lt;/a&gt;$ sudo apt-get install recoll
+&lt;pre class="code text"&gt;&lt;a name="rest_code_238bd0c01cc5495f9ebc67324fa82f21-1"&gt;&lt;/a&gt;$ sudo apt-get install recoll
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install catfish&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_ac56307f3c4c4c29ac795112d7bae8a9-1"&gt;&lt;/a&gt;$ sudo apt-get install catfish
+&lt;pre class="code text"&gt;&lt;a name="rest_code_608cf1f42e6e4860ac1315e9ec1fe897-1"&gt;&lt;/a&gt;$ sudo apt-get install catfish
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run each to make sure recoll is indexing and to lock catfish icon to Launcher&lt;/p&gt;
 &lt;/li&gt;
@@ -612,44 +644,44 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="update-to-latest-version-of-libreoffice"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id34"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id36"&gt;Update to Latest Version of LibreOffice&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Remove the LibreOffice Icons from the Launcher&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_7949750d5a4046eabe8568e6303351e7-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:libreoffice/ppa
-&lt;a name="rest_code_7949750d5a4046eabe8568e6303351e7-2"&gt;&lt;/a&gt;$ sudo apt update
-&lt;a name="rest_code_7949750d5a4046eabe8568e6303351e7-3"&gt;&lt;/a&gt;$ sudo apt install libreoffice
+&lt;pre class="code text"&gt;&lt;a name="rest_code_43bcfba0e4f04fa4a8095ccc7f2ca51a-1"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:libreoffice/ppa
+&lt;a name="rest_code_43bcfba0e4f04fa4a8095ccc7f2ca51a-2"&gt;&lt;/a&gt;$ sudo apt update
+&lt;a name="rest_code_43bcfba0e4f04fa4a8095ccc7f2ca51a-3"&gt;&lt;/a&gt;$ sudo apt install libreoffice
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="add-screenshot-application-to-launcher"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id35"&gt;Add Screenshot Application to Launcher&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id37"&gt;Add Screenshot Application to Launcher&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Search for the Screenshot application in the Dash&lt;/li&gt;
 &lt;li&gt;Run it and lock the icon to the launcher&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;div class="section" id="make-directories-for-mount-points"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id36"&gt;Make Directories for Mount Points&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id38"&gt;Make Directories for Mount Points&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-1"&gt;&lt;/a&gt;$ sudo su - root
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-2"&gt;&lt;/a&gt;# cd /mnt
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-3"&gt;&lt;/a&gt;# mkdir chpc2
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-4"&gt;&lt;/a&gt;# chmod 777 chpc2
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-5"&gt;&lt;/a&gt;# mkdir fs01
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-6"&gt;&lt;/a&gt;# chmod 777 fs01
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-7"&gt;&lt;/a&gt;# mkdir ifs01
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-8"&gt;&lt;/a&gt;# chmod 777 ifs01
-&lt;a name="rest_code_0682185f61f7495998c563e87604cdc2-9"&gt;&lt;/a&gt;# exit
+&lt;pre class="code text"&gt;&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-1"&gt;&lt;/a&gt;$ sudo su - root
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-2"&gt;&lt;/a&gt;# cd /mnt
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-3"&gt;&lt;/a&gt;# mkdir chpc2
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-4"&gt;&lt;/a&gt;# chmod 777 chpc2
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-5"&gt;&lt;/a&gt;# mkdir fs01
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-6"&gt;&lt;/a&gt;# chmod 777 fs01
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-7"&gt;&lt;/a&gt;# mkdir ifs01
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-8"&gt;&lt;/a&gt;# chmod 777 ifs01
+&lt;a name="rest_code_33fa68d1b0bf4f1f8d99c35977c77b1e-9"&gt;&lt;/a&gt;# exit
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="set-up-workspace-switcher"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id37"&gt;Set up Workspace Switcher&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id39"&gt;Set up Workspace Switcher&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open &lt;tt class="docutils literal"&gt;Appearance&lt;/tt&gt; from Dash&lt;/p&gt;
 &lt;/li&gt;
@@ -664,7 +696,7 @@ checked&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Selecte &lt;tt class="docutils literal"&gt;Horizontal workspaces: 4&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;Vertical workspaces: 1&lt;/tt&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install compiz&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_5af25e3aefd6456ca4a907cbc114fbae-1"&gt;&lt;/a&gt;$ sudo apt-get install compiz compizconfig-settings-manager compiz-plugins
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a3b2ad8ca62a472c9dfa48f2098645b6-1"&gt;&lt;/a&gt;$ sudo apt-get install compiz compizconfig-settings-manager compiz-plugins
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run CompizConfig Settings Manager&lt;/p&gt;
 &lt;/li&gt;
@@ -678,7 +710,7 @@ checked&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-set-up-anaconda-python-distribution"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id38"&gt;Install/Set Up Anaconda Python Distribution&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id40"&gt;Install/Set Up Anaconda Python Distribution&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;This should not be necessary&lt;/p&gt;
@@ -695,16 +727,16 @@ and setup should already be done.&lt;/p&gt;
 &lt;li&gt;&lt;p class="first"&gt;Run the installer script: $ bash Anaconda3-4.1.1-Linux-x86_64.sh&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create and activate a Python 3 environment&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_b39ef9ede29c45469631f702ed6bf6ac-1"&gt;&lt;/a&gt;$ conda create --name python3 python=3
-&lt;a name="rest_code_b39ef9ede29c45469631f702ed6bf6ac-2"&gt;&lt;/a&gt;$ source activate python3
-&lt;a name="rest_code_b39ef9ede29c45469631f702ed6bf6ac-3"&gt;&lt;/a&gt;$ conda install requests
-&lt;a name="rest_code_b39ef9ede29c45469631f702ed6bf6ac-4"&gt;&lt;/a&gt;$ conda list
+&lt;pre class="code text"&gt;&lt;a name="rest_code_4242005f8dcb4d1e94f10e4ab933b26a-1"&gt;&lt;/a&gt;$ conda create --name python3 python=3
+&lt;a name="rest_code_4242005f8dcb4d1e94f10e4ab933b26a-2"&gt;&lt;/a&gt;$ source activate python3
+&lt;a name="rest_code_4242005f8dcb4d1e94f10e4ab933b26a-3"&gt;&lt;/a&gt;$ conda install requests
+&lt;a name="rest_code_4242005f8dcb4d1e94f10e4ab933b26a-4"&gt;&lt;/a&gt;$ conda list
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-and-configure-vlc-media-player"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id39"&gt;Install and Configure VLC Media Player&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id41"&gt;Install and Configure VLC Media Player&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Visit: &lt;a class="reference external" href="http://www.videolan.org/vlc/download-ubuntu.html"&gt;http://www.videolan.org/vlc/download-ubuntu.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Download and install&lt;/li&gt;
@@ -720,7 +752,7 @@ and setup should already be done.&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="configure-terminal-keep-alive"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id40"&gt;Configure Terminal Keep Alive&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id42"&gt;Configure Terminal Keep Alive&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;See &lt;a class="reference external" href="http://askubuntu.com/questions/127369/how-to-prevent-write-failed-broken-pipe-on-ssh-connection"&gt;http://askubuntu.com/questions/127369/how-to-prevent-write-failed-broken-pipe-on-ssh-connection&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Edit /etc/ssh/ssh_config&lt;/li&gt;
@@ -729,7 +761,7 @@ and setup should already be done.&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-miscellaneous-software-using-ubuntu-software-center"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id41"&gt;Install Miscellaneous Software Using Ubuntu Software Center&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id43"&gt;Install Miscellaneous Software Using Ubuntu Software Center&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The following can all be install from the Ubuntu Software Center and then remove their icons from the launcher&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Alternatives Configurator&lt;/li&gt;
@@ -740,22 +772,22 @@ and setup should already be done.&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-java-jdk"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id42"&gt;Install Java JDK&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id44"&gt;Install Java JDK&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;See: &lt;a class="reference external" href="https://thishosting.rocks/install-java-ubuntu/"&gt;https://thishosting.rocks/install-java-ubuntu/&lt;/a&gt;&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install the Default JDK&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_3df8ad49e6b6453fae81d4a7ac211bad-1"&gt;&lt;/a&gt;$ sudo apt install default-jdk default-jdk-doc
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a5004c8d31494b34a514164840a39c94-1"&gt;&lt;/a&gt;$ sudo apt install default-jdk default-jdk-doc
 &lt;/pre&gt;&lt;p&gt;This should get you Java 8&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install Oracle's Java 9 JDK&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_b90c8f5b7c6e43ddba62b1da8646342b-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-&lt;a name="rest_code_b90c8f5b7c6e43ddba62b1da8646342b-2"&gt;&lt;/a&gt;$ sudo apt-get install software-properties-common
-&lt;a name="rest_code_b90c8f5b7c6e43ddba62b1da8646342b-3"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:webupd8team/java
-&lt;a name="rest_code_b90c8f5b7c6e43ddba62b1da8646342b-4"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_b90c8f5b7c6e43ddba62b1da8646342b-5"&gt;&lt;/a&gt;$ sudo apt-get install oracle-java9-installer
+&lt;pre class="code text"&gt;&lt;a name="rest_code_1f3076666b5f47b99c35b73f73ac4f15-1"&gt;&lt;/a&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
+&lt;a name="rest_code_1f3076666b5f47b99c35b73f73ac4f15-2"&gt;&lt;/a&gt;$ sudo apt-get install software-properties-common
+&lt;a name="rest_code_1f3076666b5f47b99c35b73f73ac4f15-3"&gt;&lt;/a&gt;$ sudo add-apt-repository ppa:webupd8team/java
+&lt;a name="rest_code_1f3076666b5f47b99c35b73f73ac4f15-4"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_1f3076666b5f47b99c35b73f73ac4f15-5"&gt;&lt;/a&gt;$ sudo apt-get install oracle-java9-installer
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Configure default&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_d78d2a7ce72c4c9ea3d930dcc1284a65-1"&gt;&lt;/a&gt;$ sudo update-alternatives --config java
+&lt;pre class="code text"&gt;&lt;a name="rest_code_c045c91b34544ef3bb54c1e0dc97859f-1"&gt;&lt;/a&gt;$ sudo update-alternatives --config java
 &lt;/pre&gt;&lt;p&gt;Select the Java you want to be your default and check/set your JAVA_HOME environment
 variable in your &lt;tt class="docutils literal"&gt;.bashrc&lt;/tt&gt; file as necessary.  The &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;update-alternatives&lt;/span&gt;&lt;/tt&gt; program sets
 up symbolic links such that:&lt;/p&gt;
@@ -767,7 +799,7 @@ up symbolic links such that:&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-dragondisk"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id43"&gt;Install DragonDisk&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id45"&gt;Install DragonDisk&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Visit &lt;a class="reference external" href="http://www.s3-client.com/download-s3-compatible-cloud-client.html"&gt;http://www.s3-client.com/download-s3-compatible-cloud-client.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Download &lt;tt class="docutils literal"&gt;.deb&lt;/tt&gt; file for amd64&lt;/li&gt;
@@ -777,11 +809,11 @@ up symbolic links such that:&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="installing-r-and-r-studio"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id44"&gt;Installing R and R Studio&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id46"&gt;Installing R and R Studio&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install R itself&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_bf00365bfa014d19aa9fbdf37def41c8-1"&gt;&lt;/a&gt;$ sudo apt-get update
-&lt;a name="rest_code_bf00365bfa014d19aa9fbdf37def41c8-2"&gt;&lt;/a&gt;$ sudo apt-get install r-base
+&lt;pre class="code text"&gt;&lt;a name="rest_code_d942ee73f34a49caaa29eb7630bd1d08-1"&gt;&lt;/a&gt;$ sudo apt-get update
+&lt;a name="rest_code_d942ee73f34a49caaa29eb7630bd1d08-2"&gt;&lt;/a&gt;$ sudo apt-get install r-base
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install RStudio&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -798,7 +830,7 @@ installer&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-several-versions-of-matlab"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id45"&gt;Install Several Versions of MATLAB&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id47"&gt;Install Several Versions of MATLAB&lt;/a&gt;&lt;/h2&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Visit &lt;a class="reference external" href="https://www.mathworks.com"&gt;https://www.mathworks.com&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -825,7 +857,7 @@ installer&lt;/li&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-enable-ssh-server"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id46"&gt;Install/Enable SSH Server&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id48"&gt;Install/Enable SSH Server&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="references"&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;ul class="simple"&gt;
@@ -836,23 +868,23 @@ installer&lt;/li&gt;
 &lt;h3&gt;Steps&lt;/h3&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following commands to install the ssh server:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_0a347bbfa30d4c068ed63c2b19e6c701-1"&gt;&lt;/a&gt;$ sudo apt-get install openssh-server
+&lt;pre class="code text"&gt;&lt;a name="rest_code_a94dbc560b124b9cbd0f105f851a8b47-1"&gt;&lt;/a&gt;$ sudo apt-get install openssh-server
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Issue the following command to copy your ssh key (id_rsa.pub) to the machines you want to
 be able to easily ssh to.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_0146c880db424caea3f17fa70395975a-1"&gt;&lt;/a&gt;$ &lt;span class="c1"&gt;# The following is so you can ssh right back to the current workstation (leopardws01.wucon.wustl.edu)&lt;/span&gt;
-&lt;a name="rest_code_0146c880db424caea3f17fa70395975a-2"&gt;&lt;/a&gt;$ &lt;span class="c1"&gt;# This is necessary for the Torque job scheduler&lt;/span&gt;
-&lt;a name="rest_code_0146c880db424caea3f17fa70395975a-3"&gt;&lt;/a&gt;$ ssh-copy-id &amp;lt;your-login-id&amp;gt;@leopardws01.wucon.wustl.edu
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_19a10a5ebd274acca62d7fb4d62c3794-1"&gt;&lt;/a&gt;$ &lt;span class="c1"&gt;# The following is so you can ssh right back to the current workstation (leopardws01.wucon.wustl.edu)&lt;/span&gt;
+&lt;a name="rest_code_19a10a5ebd274acca62d7fb4d62c3794-2"&gt;&lt;/a&gt;$ &lt;span class="c1"&gt;# This is necessary for the Torque job scheduler&lt;/span&gt;
+&lt;a name="rest_code_19a10a5ebd274acca62d7fb4d62c3794-3"&gt;&lt;/a&gt;$ ssh-copy-id &amp;lt;your-login-id&amp;gt;@leopardws01.wucon.wustl.edu
 &lt;/pre&gt;&lt;p&gt;You should then be able to:&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_d961c7636ca74b9b86dff215e021e9bb-1"&gt;&lt;/a&gt;$ ssh leopardws01
-&lt;a name="rest_code_d961c7636ca74b9b86dff215e021e9bb-2"&gt;&lt;/a&gt;$ ssh &amp;lt;your-login-id&amp;gt;@leopardws01.wucon.wustl.edu
+&lt;pre class="code text"&gt;&lt;a name="rest_code_087bbf0e055340f0a990346924d00bfe-1"&gt;&lt;/a&gt;$ ssh leopardws01
+&lt;a name="rest_code_087bbf0e055340f0a990346924d00bfe-2"&gt;&lt;/a&gt;$ ssh &amp;lt;your-login-id&amp;gt;@leopardws01.wucon.wustl.edu
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr class="docutils"&gt;
 &lt;div class="section" id="install-pbs-torque-job-scheduler-on-the-workstation"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id47"&gt;Install PBS/Torque Job Scheduler on the Workstation&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html#id49"&gt;Install PBS/Torque Job Scheduler on the Workstation&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="id3"&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;ul class="simple"&gt;
@@ -895,66 +927,66 @@ be able to easily ssh to.&lt;/p&gt;
 &lt;p&gt;Credit to Installing Torque/PBS blog entry linked above. Steps copied here so as not to be dependent upon a blog whose author might decide to no longer maintain.&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install the necessary software&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_3bd0ec6d00e040c5b2d9d21a27e7ef36-1"&gt;&lt;/a&gt;$ apt-get install torque-server torque-client torque-mom torque-pam
+&lt;pre class="code text"&gt;&lt;a name="rest_code_3921243d583447d79e8f69e85b86511b-1"&gt;&lt;/a&gt;$ apt-get install torque-server torque-client torque-mom torque-pam
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Stop all torque services and create a clean setup&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_16e8401b95e2438997c545dd463ce7d6-1"&gt;&lt;/a&gt;$ /etc/init.d/torque-mom stop
-&lt;a name="rest_code_16e8401b95e2438997c545dd463ce7d6-2"&gt;&lt;/a&gt;$ /etc/init.d/torque-scheduler stop
-&lt;a name="rest_code_16e8401b95e2438997c545dd463ce7d6-3"&gt;&lt;/a&gt;$ /etc/init.d/torque-server stop
-&lt;a name="rest_code_16e8401b95e2438997c545dd463ce7d6-4"&gt;&lt;/a&gt;$ pbs_server -t create
+&lt;pre class="code text"&gt;&lt;a name="rest_code_bf592129428340abb08a9134a439e57c-1"&gt;&lt;/a&gt;$ /etc/init.d/torque-mom stop
+&lt;a name="rest_code_bf592129428340abb08a9134a439e57c-2"&gt;&lt;/a&gt;$ /etc/init.d/torque-scheduler stop
+&lt;a name="rest_code_bf592129428340abb08a9134a439e57c-3"&gt;&lt;/a&gt;$ /etc/init.d/torque-server stop
+&lt;a name="rest_code_bf592129428340abb08a9134a439e57c-4"&gt;&lt;/a&gt;$ pbs_server -t create
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Kill the just-started server&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_2278ebbcef964f1884c7bed1833fc6fd-1"&gt;&lt;/a&gt;$ killall pbs_server
+&lt;pre class="code text"&gt;&lt;a name="rest_code_4abba8d291d74ff9990c7978355af3bf-1"&gt;&lt;/a&gt;$ killall pbs_server
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Configure server process&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_98474a3ff5bf443e8fa42dd64b72c42b-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /etc/torque/server_name
-&lt;a name="rest_code_98474a3ff5bf443e8fa42dd64b72c42b-2"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/acl_hosts
-&lt;a name="rest_code_98474a3ff5bf443e8fa42dd64b72c42b-3"&gt;&lt;/a&gt;$ echo root@leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/operators
-&lt;a name="rest_code_98474a3ff5bf443e8fa42dd64b72c42b-4"&gt;&lt;/a&gt;$ echo root@leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/managers
+&lt;pre class="code text"&gt;&lt;a name="rest_code_75b3ceaadfd6464ba7f35ef93d794933-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /etc/torque/server_name
+&lt;a name="rest_code_75b3ceaadfd6464ba7f35ef93d794933-2"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/acl_hosts
+&lt;a name="rest_code_75b3ceaadfd6464ba7f35ef93d794933-3"&gt;&lt;/a&gt;$ echo root@leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/operators
+&lt;a name="rest_code_75b3ceaadfd6464ba7f35ef93d794933-4"&gt;&lt;/a&gt;$ echo root@leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/server_priv/acl_svr/managers
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Tell the server that this box itself is a compute node&lt;/p&gt;
 &lt;p&gt;Specify 4 cores - which you can change&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_3d96e7bf6e9442c284ca9d15dd3f6a9a-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu np=4 &amp;gt; /var/spool/torque/server_priv/nodes
+&lt;pre class="code text"&gt;&lt;a name="rest_code_5139b629fc1040d4a8772d0d78a3de9a-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu np=4 &amp;gt; /var/spool/torque/server_priv/nodes
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Tell the MOM process which server to contact for work&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_215fff234d5d4ce5845fbea4f1bc4b0d-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/mom_priv/config
+&lt;pre class="code text"&gt;&lt;a name="rest_code_14ea537b4bbf4abfb43721582742387a-1"&gt;&lt;/a&gt;$ echo leopardws01.wucon.wustl.edu &amp;gt; /var/spool/torque/mom_priv/config
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Restart all the processes&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_996432e0e50445849e8795539023ba7a-1"&gt;&lt;/a&gt;$ /etc/init.d/torque-server start
-&lt;a name="rest_code_996432e0e50445849e8795539023ba7a-2"&gt;&lt;/a&gt;$ /etc/init.d/torque-scheduler start
-&lt;a name="rest_code_996432e0e50445849e8795539023ba7a-3"&gt;&lt;/a&gt;$ /etc/init.d/torque-mom start
+&lt;pre class="code text"&gt;&lt;a name="rest_code_de56c071c39f42f899f8d3e0c8d72b84-1"&gt;&lt;/a&gt;$ /etc/init.d/torque-server start
+&lt;a name="rest_code_de56c071c39f42f899f8d3e0c8d72b84-2"&gt;&lt;/a&gt;$ /etc/init.d/torque-scheduler start
+&lt;a name="rest_code_de56c071c39f42f899f8d3e0c8d72b84-3"&gt;&lt;/a&gt;$ /etc/init.d/torque-mom start
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Start the scheduler&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_6a2571736cb54d7681616f3b5eb0b38b-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# set scheduling properties&lt;/span&gt;
-&lt;a name="rest_code_6a2571736cb54d7681616f3b5eb0b38b-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server scheduling = true'&lt;/span&gt;
-&lt;a name="rest_code_6a2571736cb54d7681616f3b5eb0b38b-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server keep_completed = 300'&lt;/span&gt;
-&lt;a name="rest_code_6a2571736cb54d7681616f3b5eb0b38b-4"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server mom_job_sync = true'&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_af75c1d2405e4d8481fb37c459e36aba-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# set scheduling properties&lt;/span&gt;
+&lt;a name="rest_code_af75c1d2405e4d8481fb37c459e36aba-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server scheduling = true'&lt;/span&gt;
+&lt;a name="rest_code_af75c1d2405e4d8481fb37c459e36aba-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server keep_completed = 300'&lt;/span&gt;
+&lt;a name="rest_code_af75c1d2405e4d8481fb37c459e36aba-4"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server mom_job_sync = true'&lt;/span&gt;
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create a default queue (named 'batch', but you can change this)&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# create default queue&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'create queue batch'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch queue_type = execution'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-4"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch started = true'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-5"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch enabled = true'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-6"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch resources_default.walltime = 1:00:00'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-7"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch resources_default.nodes = 1'&lt;/span&gt;
-&lt;a name="rest_code_096bdb65f4c44518b92fc6fed57399a5-8"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server default_queue = batch'&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# create default queue&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'create queue batch'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch queue_type = execution'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-4"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch started = true'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-5"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch enabled = true'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-6"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch resources_default.walltime = 1:00:00'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-7"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set queue batch resources_default.nodes = 1'&lt;/span&gt;
+&lt;a name="rest_code_027aa30e812d4742be8c363d97944ad5-8"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server default_queue = batch'&lt;/span&gt;
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Configure the server to allow submissions from itself&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_28817540bd8946d888995f1a5eb73d77-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# configure submission pool&lt;/span&gt;
-&lt;a name="rest_code_28817540bd8946d888995f1a5eb73d77-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server submit_host = leopardws01'&lt;/span&gt;
-&lt;a name="rest_code_28817540bd8946d888995f1a5eb73d77-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server allow_node_submit = true'&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_49553c44e436411cb0502ac909f6b582-1"&gt;&lt;/a&gt;&lt;span class="c1"&gt;# configure submission pool&lt;/span&gt;
+&lt;a name="rest_code_49553c44e436411cb0502ac909f6b582-2"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server submit_host = leopardws01'&lt;/span&gt;
+&lt;a name="rest_code_49553c44e436411cb0502ac909f6b582-3"&gt;&lt;/a&gt;$ qmgr -c &lt;span class="s1"&gt;'set server allow_node_submit = true'&lt;/span&gt;
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Test by "submitting" an interactive job&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_b37d99ecb6d4463bbebeac57f8142e8d-1"&gt;&lt;/a&gt;$ qsub -I
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_23744e708a2d429cb8cd7cea4e3e93e0-1"&gt;&lt;/a&gt;$ qsub -I
 &lt;/pre&gt;&lt;p&gt;You should get into a shell on the same box as if you ssh'ed to the same node.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Check for running PBS processes&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_e60a488b3ad2451b941cc647e5306c71-1"&gt;&lt;/a&gt;$ pgrep -l pbs
+&lt;pre class="code text"&gt;&lt;a name="rest_code_eb8b6173f7024342a59f96d903e7998e-1"&gt;&lt;/a&gt;$ pgrep -l pbs
 &lt;/pre&gt;&lt;p&gt;You should see 3 processes (something like)&lt;/p&gt;
-&lt;pre class="code text"&gt;&lt;a name="rest_code_7b3a093d67394ec8af563c15b2ea423c-1"&gt;&lt;/a&gt;18030 pbs_server
-&lt;a name="rest_code_7b3a093d67394ec8af563c15b2ea423c-2"&gt;&lt;/a&gt;18074 pbs_sched
-&lt;a name="rest_code_7b3a093d67394ec8af563c15b2ea423c-3"&gt;&lt;/a&gt;18122 pbs_mon
+&lt;pre class="code text"&gt;&lt;a name="rest_code_0c11a07c27174e9298472c3f6f0b330a-1"&gt;&lt;/a&gt;18030 pbs_server
+&lt;a name="rest_code_0c11a07c27174e9298472c3f6f0b330a-2"&gt;&lt;/a&gt;18074 pbs_sched
+&lt;a name="rest_code_0c11a07c27174e9298472c3f6f0b330a-3"&gt;&lt;/a&gt;18122 pbs_mon
 &lt;/pre&gt;&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Sometimes on reboot, the &lt;tt class="docutils literal"&gt;pbs_sched&lt;/tt&gt; process doesn't get started. Invoking
@@ -970,12 +1002,12 @@ doesn't seem to be working.&lt;/p&gt;
 &lt;li&gt;&lt;tt class="docutils literal"&gt;qpeek&lt;/tt&gt; is a local Perl script instead of an actual PBS/Torque command&lt;/li&gt;
 &lt;li&gt;Edit &lt;tt class="docutils literal"&gt;~/bin/qpeek&lt;/tt&gt; and replace the like that looks like:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre class="code perl"&gt;&lt;a name="rest_code_84bd0dc570774ff193ea66625a5d460e-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$host&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"mgt2.cluster"&lt;/span&gt; &lt;span class="c1"&gt;# or whatever host is listed&lt;/span&gt;
+&lt;pre class="code perl"&gt;&lt;a name="rest_code_8c40b4c4a94e40bb82cfbef3a3e7f195-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$host&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"mgt2.cluster"&lt;/span&gt; &lt;span class="c1"&gt;# or whatever host is listed&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;with&lt;/p&gt;
-&lt;pre class="code perl"&gt;&lt;a name="rest_code_b6e92e7ed40f4f85a16f9c6586e185aa-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$host&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"leopardws01.wucon.wustl.edu"&lt;/span&gt; &lt;span class="c1"&gt;# or what your FQDN is&lt;/span&gt;
+&lt;pre class="code perl"&gt;&lt;a name="rest_code_ddcfb09241c74848bd1bfe18324cf585-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$host&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"leopardws01.wucon.wustl.edu"&lt;/span&gt; &lt;span class="c1"&gt;# or what your FQDN is&lt;/span&gt;
 &lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Set up server such that &lt;tt class="docutils literal"&gt;qstat&lt;/tt&gt; queries by default show jobs for all users&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_588467e7015f4af49d765826b829c05d-1"&gt;&lt;/a&gt;$ sudo qmgr -c &lt;span class="s2"&gt;"set server query_other_jobs = True"&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_d50cae4ec2f542e4b8c6d69626541c49-1"&gt;&lt;/a&gt;$ sudo qmgr -c &lt;span class="s2"&gt;"set server query_other_jobs = True"&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;See &lt;a class="reference external" href="http://community.pbspro.org/t/pbs-command-to-see-other-users-job-from-user-environment/745"&gt;http://community.pbspro.org/t/pbs-command-to-see-other-users-job-from-user-environment/745&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Set up PBS job prologue and epilogue scripts&lt;/p&gt;
@@ -985,41 +1017,53 @@ information will go in the &lt;tt class="docutils literal"&gt;stdout&lt;/tt&gt; 
 owned by &lt;tt class="docutils literal"&gt;root&lt;/tt&gt; and should be executable. They need to exist on every execution node.
 But in the current case, we only have one execution node.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;/var/spool/torque/mom_priv/prologue&lt;/tt&gt;&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_ef4e93397a54451286577fab000be454-1"&gt;&lt;/a&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-2"&gt;&lt;/a&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-3"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-4"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Begin PBS Prologue &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-5"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job ID: &lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-6"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"User ID: &lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-7"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Group ID: &lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-8"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job Name: &lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-9"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resource Limits: &lt;/span&gt;&lt;span class="nv"&gt;$5&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-10"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Queue: &lt;/span&gt;&lt;span class="nv"&gt;$6&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-11"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Account: &lt;/span&gt;&lt;span class="nv"&gt;$7&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-12"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-13"&gt;&lt;/a&gt;
-&lt;a name="rest_code_ef4e93397a54451286577fab000be454-14"&gt;&lt;/a&gt;&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-1"&gt;&lt;/a&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-2"&gt;&lt;/a&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-3"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-4"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Begin PBS Prologue &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-5"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job ID: &lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-6"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"User ID: &lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-7"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Group ID: &lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-8"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job Name: &lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-9"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resource Limits: &lt;/span&gt;&lt;span class="nv"&gt;$5&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-10"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Queue: &lt;/span&gt;&lt;span class="nv"&gt;$6&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-11"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Account: &lt;/span&gt;&lt;span class="nv"&gt;$7&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-12"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-13"&gt;&lt;/a&gt;
+&lt;a name="rest_code_80a12f2f06344ba68aa38ecaecf2e703-14"&gt;&lt;/a&gt;&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;&lt;tt class="docutils literal"&gt;/var/spool/torque/mom_priv/epilogue&lt;/tt&gt;&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-1"&gt;&lt;/a&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-2"&gt;&lt;/a&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-3"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-4"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Begin PBS Epilogue &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-5"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job ID: &lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-6"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"User ID: &lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-7"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Group ID: &lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-8"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job Name: &lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-9"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Session ID: &lt;/span&gt;&lt;span class="nv"&gt;$5&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-10"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resource List: &lt;/span&gt;&lt;span class="nv"&gt;$6&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-11"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resources Used: &lt;/span&gt;&lt;span class="nv"&gt;$7&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-12"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Queue Name: &lt;/span&gt;&lt;span class="nv"&gt;$8&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-13"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Account String: &lt;/span&gt;&lt;span class="nv"&gt;$9&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-14"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-15"&gt;&lt;/a&gt;
-&lt;a name="rest_code_a4330c9d426e417ba528fc8cbfbfd0c5-16"&gt;&lt;/a&gt;&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-1"&gt;&lt;/a&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-2"&gt;&lt;/a&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-3"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-4"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Begin PBS Epilogue &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-5"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job ID: &lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-6"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"User ID: &lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-7"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Group ID: &lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-8"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Job Name: &lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-9"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Session ID: &lt;/span&gt;&lt;span class="nv"&gt;$5&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-10"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resource List: &lt;/span&gt;&lt;span class="nv"&gt;$6&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-11"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Resources Used: &lt;/span&gt;&lt;span class="nv"&gt;$7&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-12"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Queue Name: &lt;/span&gt;&lt;span class="nv"&gt;$8&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-13"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"Account String: &lt;/span&gt;&lt;span class="nv"&gt;$9&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-14"&gt;&lt;/a&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"-----------------------------------------------------"&lt;/span&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-15"&gt;&lt;/a&gt;
+&lt;a name="rest_code_e2fadcc6f4d840ab84ac90ff1986cde1-16"&gt;&lt;/a&gt;&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
 &lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>linux</category><category>setup</category><category>ubuntu</category><guid>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</guid><pubDate>Fri, 23 Mar 2018 19:33:25 GMT</pubDate></item><item><title>Creating a Release from a Bugfix Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>linux</category><category>setup</category><category>ubuntu</category><guid>http://www.SoftDevTrain.com/posts/setting-up-new-ubuntu-workstation.html</guid><pubDate>Mon, 09 Apr 2018 14:50:25 GMT</pubDate></item><item><title>A very good stackoverflow overview of git branches, forks, merges, and clones</title><link>http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html#an-excellent-post-that-should-be-read-and-periodically-reviewed" id="id1"&gt;An excellent post that should be read and periodically reviewed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;hr class="docutils"&gt;
+&lt;div class="section" id="an-excellent-post-that-should-be-read-and-periodically-reviewed"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html#id1"&gt;An excellent post that should be read and periodically reviewed&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;stackoverflow user Michael Durrant provides an excellent overview of Git repositories,
+branches, merging, forks, and Github usage
+&lt;a class="reference external" href="https://stackoverflow.com/questions/3329943/git-branch-fork-fetch-merge-rebase-and-clone-what-are-the-differences/"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>git</category><guid>http://www.SoftDevTrain.com/posts/a-very-good-stackoverflow-overview-of-git-branches-forks-merges-and-clones.html</guid><pubDate>Thu, 05 Apr 2018 16:28:19 GMT</pubDate></item><item><title>Creating a Release from a Bugfix Branch</title><link>http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html</link><dc:creator>Software Development Training LLC</dc:creator><description>&lt;div&gt;&lt;div class="contents topic" id="table-of-contents"&gt;
 &lt;p class="topic-title first"&gt;Table of Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://www.SoftDevTrain.com/posts/creating-a-release-from-a-bugfix-branch.html#assumptions" id="id1"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
